@@ -105,6 +105,8 @@ def check_correctness(generated_data,ks=[1, 2, 5]):
 
     remove_pattern=re.compile(r'tmp*')
 
+    per_task_results = dict()
+
     for i, data in tqdm(enumerate(generated_data)):
         task_num=data['task_num']
         difficulty=data['difficulty']
@@ -148,7 +150,9 @@ def check_correctness(generated_data,ks=[1, 2, 5]):
                 #print('syntax error')
                 #print(testcase)
                 pass
-        
+         
+        per_task_results[task_num] = dict()
+
         if len(passed_tests)>0: #start measuring coverage
             #total coverage for all tests
             cov_command_prefix=['pytest', '--cov=under_test', '--cov-branch', '--cov-report=json:coverage.json']
@@ -179,6 +183,7 @@ def check_correctness(generated_data,ks=[1, 2, 5]):
                 res_at_k=coverage_at_k_sample(passed_tests,k,cov_command_prefix)
                 line_covs_at_k[f'cov@{k}'].append(res_at_k['line_cov'])
                 branch_covs_at_k[f'cov@{k}'].append(res_at_k['branch_cov'])
+                per_task_results[task_num][k] = res_at_k
 
             os.chdir('..') #exit tmp_ folder
         else: #no test cases passed
@@ -206,7 +211,7 @@ def check_correctness(generated_data,ks=[1, 2, 5]):
     avg_line_cov=total_line_cov/len(generated_data)
     avg_branch_cov=total_branch_cov/len(generated_data)
     print(f'Average Line Coverage: {avg_line_cov}, Average Branch Coverage: {avg_branch_cov}')
-    return {'syn_correct':syn_correct,'exec_correct':exec_correct}, exec_fails
+    return per_task_results, {'syn_correct':syn_correct,'exec_correct':exec_correct}, exec_fails
 
     
 def parse_args():
@@ -224,4 +229,6 @@ if __name__=='__main__':
     predictions=read_jsonl(output_dir / args.path)
     print(len(predictions))
 
-    check_correctness(predictions, ks=args.ks)
+    per_task_results, _, _ = check_correctness(predictions, ks=args.ks)
+    with open(output_dir / args.path.replace('format.jsonl', 'result.json'), 'w') as f:
+        json.dump(per_task_results, f, indent=2)

@@ -169,7 +169,7 @@ if __name__=='__main__':
     print('coverage mode:', args.mode)
     output_dir = Path('predictions')
     finename,ext=os.path.splitext(args.path)
-    newpath=f'{finename}format{ext}'
+    newpath=f'{finename}_format{ext}'
     print(newpath)
     if args.mode=='line':
         print('reformat line coverage')
