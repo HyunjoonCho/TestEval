@@ -1,0 +1,44 @@
+totalcov_mistral-nemo_format.jsonl
+[1, 2, 5]
+210
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+Syntax Correctness: 0.8557142857142858
+Executable Correctness: 0.7380952380952381
+line coverage@1 0.7782392674359173
+branch coverage@1 0.6798501950711913
+line coverage@2 0.8092154530778507
+branch coverage@2 0.726597454459593
+line coverage@5 0.8486271157388166
+branch coverage@5 0.7866337168122883
+Average Line Coverage: 0.9197419281526864, Average Branch Coverage: 0.8993512043512042

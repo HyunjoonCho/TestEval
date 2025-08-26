@@ -143,8 +143,11 @@ def eval_correctness(generated_data):
                 cov_command.append(testpath)
 
                 subprocess.run(cov_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-                cov_report=json.load(open('coverage.json'))
-                executed_lines=cov_report['files']['under_test.py']['executed_lines']
+                try:
+                    cov_report=json.load(open('coverage.json'))
+                    executed_lines=cov_report['files']['under_test.py']['executed_lines']
+                except Exception:
+                    exectued_lines = []
 
                 if branch_firstline in executed_lines: #use startline+1 to check whether branch is covered
                     cov_branch_success+=1
