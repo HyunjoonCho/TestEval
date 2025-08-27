@@ -19,7 +19,7 @@ def generate_completion(args,prompt,system_message=''):
         'prompt': f'{system_message}\n{prompt}',
         'stream': False,
         'options': {
-            'temperature': 0.8,
+            'temperature': args.temperature, 
         },
     })
     return code_output
