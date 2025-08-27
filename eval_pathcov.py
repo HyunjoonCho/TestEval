@@ -85,12 +85,9 @@ def eval_correctness(generated_data):
     total_path_similarity=0 #similarity score: based on longest common subsequence
     remove_pattern=re.compile(r'tmp*')
 
-    per_task_results = dict()
+    per_path_similarity = dict()
 
     for i, data in tqdm(enumerate(generated_data)):
-        per_task_total_cases = 0
-        per_task_path_sim = list()
-
         task_num=data['task_num']
         difficulty=data['difficulty']
         func_name=data['func_name']
@@ -111,7 +108,7 @@ def eval_correctness(generated_data):
             with open(f'test_logs/{task_title}.log', 'w') as f:
                 f.write('') #add empty log file
             total_cases+=1
-            per_task_total_cases += 1
+            per_path_similarity[f"{task_num}_{j}"] = 0.0 
             try:
                 res=compile(testcase,'<string>','exec') #check syntax correctness
                 total_syn_correct+=1
@@ -136,7 +133,8 @@ def eval_correctness(generated_data):
                         if path_sim==1:
                             total_path_match+=1
                         total_path_similarity+=path_sim
-                        per_task_path_sim.append(path_sim)
+                        per_path_similarity[f"{task_num}_{j}"] = path_sim
+                        
                         passed_tests.append({'path': f'test_{j}.py', 'pass': True})
                 else:
                     exec_fails.append({'task':task_num,'test_num':j,'error':res})
@@ -151,8 +149,6 @@ def eval_correctness(generated_data):
                 pass
         #print(passed_tests)
         os.chdir('..') #exit tmp_ folder
-
-        per_task_results[task_num] = {'total': per_task_total_cases, 'sim': per_task_path_sim}
 
     for dirpath, dirnames, filenames in os.walk('./', topdown=False): #execute() runs too fast, remove dirs at last
         # Filter dirnames based on the regex pattern
@@ -170,7 +166,7 @@ def eval_correctness(generated_data):
     print('path exact match accuracy:', path_exactmatch_acc)
     print('path similarity score:', path_similarity_score)
 
-    return per_task_results
+    return per_path_similarity
 
 if __name__=='__main__':
     args=parse_args()
@@ -179,6 +175,6 @@ if __name__=='__main__':
     predictions=read_jsonl(output_dir / args.path)
     print(len(predictions))
 
-    per_task_results = eval_correctness(predictions)
+    per_path_similarity = eval_correctness(predictions)
     with open(output_dir / args.path.replace('format.jsonl', 'result.json'), 'w') as f:
-        json.dump(per_task_results, f, indent=2)
+        json.dump(per_path_similarity, f, indent=2)

@@ -66,12 +66,9 @@ def eval_correctness(generated_data):
     cov_hardbranch=0
     remove_pattern=re.compile(r'tmp*')
 
-    per_task_results = dict()
+    per_branch_coverage = dict()
 
     for i, data in tqdm(enumerate(generated_data)):
-        per_task_total_cases = [0] * 3
-        per_task_cov_cases = [0] * 3
-
         task_num=data['task_num']
         difficulty=data['difficulty']
         func_name=data['func_name']
@@ -94,7 +91,7 @@ def eval_correctness(generated_data):
 
             total_cases+=1
             branch_diff=ref_branches[j]['difficulty']
-            per_task_total_cases[branch_diff] += 1
+            per_branch_coverage[f"{task_num}_{startline}_{endline}"] = {'difficulty': branch_diff, 'covered': False} 
             if branch_diff==0:
                 total_easy+=1
             elif branch_diff==1:
@@ -151,7 +148,7 @@ def eval_correctness(generated_data):
 
                 if branch_firstline in executed_lines: #use startline+1 to check whether branch is covered
                     cov_branch_success+=1
-                    per_task_cov_cases[branch_diff] += 1
+                    per_branch_coverage[f"{task_num}_{startline}_{endline}"]['covered'] = True
                     if branch_diff==0:
                         cov_easybranch+=1
                     elif branch_diff==1:
@@ -165,7 +162,6 @@ def eval_correctness(generated_data):
             os.chdir('..') #exit tmp_ folder
         else: #no test cases passed
             pass
-        per_task_results[task_num] = {'total': per_task_total_cases, 'covered': per_task_cov_cases}
 
     for dirpath, dirnames, filenames in os.walk('./', topdown=False): #execute() runs too fast, remove dirs at last
         # Filter dirnames based on the regex pattern
@@ -189,7 +185,7 @@ def eval_correctness(generated_data):
     print(f'Medium branch coverage rate: {medium_covrate}')
     print(f'Hard branch coverage rate: {hard_covrate}')
 
-    return per_task_results, {'syn_correct':syn_correct,'exec_correct':exec_correct, 'cov_branch':cov_branch_rate}, exec_fails
+    return per_branch_coverage, {'syn_correct':syn_correct,'exec_correct':exec_correct, 'cov_branch':cov_branch_rate}, exec_fails
 
     
 def parse_args():
@@ -205,6 +201,6 @@ if __name__=='__main__':
     predictions=read_jsonl(output_dir / args.path)
     print(len(predictions))
 
-    per_task_results, _, _ = eval_correctness(predictions)
+    per_branch_coverage, _, _ = eval_correctness(predictions)
     with open(output_dir / args.path.replace('format.jsonl', 'result.json'), 'w') as f:
-        json.dump(per_task_results, f, indent=2)
+        json.dump(per_branch_coverage, f, indent=2)

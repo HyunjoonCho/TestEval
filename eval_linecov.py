@@ -62,12 +62,9 @@ def eval_correctness(generated_data, covmode='branch'):
     cov_line_success=0
     remove_pattern=re.compile(r'tmp*')
 
-    per_task_results = dict()
+    per_line_results = dict()
 
     for i, data in tqdm(enumerate(generated_data)):
-        per_task_total_cases = 0
-        per_task_cov_cases = 0
-
         task_num=data['task_num']
         difficulty=data['difficulty']
         func_name=data['func_name']
@@ -86,7 +83,7 @@ def eval_correctness(generated_data, covmode='branch'):
             #testcase=test_cases[fixed_testcase_num] #comparison: use the first test case
             lineno=int(lineno)
             total_cases+=1
-            per_task_total_cases += 1
+            per_line_results[f"{task_num}_{lineno}"] = False
 
             try:
                 res=compile(testcase,'<string>','exec') #check syntax correctness
@@ -131,7 +128,7 @@ def eval_correctness(generated_data, covmode='branch'):
                 #missline_lines=
                 if lineno in executed_lines:
                     cov_line_success+=1
-                    per_task_cov_cases += 1
+                    per_line_results[f"{task_num}_{lineno}"] = True 
                     print(f'covered line {lineno}')
                 else:
                     print('not covered')
@@ -139,7 +136,6 @@ def eval_correctness(generated_data, covmode='branch'):
             os.chdir('..') #exit tmp_ folder
         else: #no test cases passed
             pass
-        per_task_results[task_num] = {'total': per_task_total_cases, 'covered': per_task_cov_cases}
 
     for dirpath, dirnames, filenames in os.walk('./', topdown=False): #execute() runs too fast, remove dirs at last
         # Filter dirnames based on the regex pattern
@@ -157,7 +153,7 @@ def eval_correctness(generated_data, covmode='branch'):
     cov_line_rate_exec=cov_line_success/total_exec_correct
     print(f'Accuracy in cover selected line: {cov_line_rate}')
 
-    return per_task_results, {'syn_correct':syn_correct,'exec_correct':exec_correct, 'cov_line':cov_line_rate}, exec_fails
+    return per_line_results, {'syn_correct':syn_correct,'exec_correct':exec_correct, 'cov_line':cov_line_rate}, exec_fails
 
     
 def parse_args():
@@ -174,6 +170,6 @@ if __name__=='__main__':
     predictions=read_jsonl(output_dir / args.path)
     print(len(predictions))
 
-    per_task_results, _, _ = eval_correctness(predictions)
+    per_line_results, _, _ = eval_correctness(predictions)
     with open(output_dir / args.path.replace('format.jsonl', 'result.json'), 'w') as f:
-        json.dump(per_task_results, f, indent=2)
+        json.dump(per_line_results, f, indent=2)
