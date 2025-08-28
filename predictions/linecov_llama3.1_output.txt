@@ -1,413 +1,491 @@
 linecov_llama3.1_format.jsonl
 210
-covered line 16
-not covered
-False
-False
 not covered
 not covered
+covered line 29
 not covered
-covered line 30
 covered line 32
-[(-1, -1, 2), (-1, 0, 1)]
-covered line 14
+not covered
+not covered
 covered line 29
-covered line 30
-covered line 31
 not covered
 not covered
+covered line 32
 not covered
-True
+covered line 34
+not covered
+covered line 37
+covered line 39
 covered line 23
+covered line 28
 covered line 29
 covered line 30
 not covered
+covered line 14
 func under test not called
+True
 False
-func under test not called
 False
 covered line 15
-covered line 23
+not covered
 covered line 25
+covered line 28
 not covered
 not covered
 covered line 32
+covered line 33
 not covered
 covered line 36
+covered line 37
+covered line 38
+covered line 21
 not covered
 not covered
 not covered
 not covered
 not covered
-[]
+not covered
 [['hit', 'hot', 'dot', 'dog', 'cog'], ['hit', 'hot', 'lot', 'log', 'cog']]
-None
-func under test not called
-False
-func under test not called
-func under test not called
+covered line 18
 not covered
 not covered
 not covered
 not covered
-covered line 55
+not covered
+not covered
+not covered
+not covered
+not covered
 not covered
 covered line 14
 covered line 34
-covered line 43
-0
-func under test not called
-not covered
-not covered
-covered line 33
-not covered
-not covered
-not covered
-not covered
-func under test not called
-func under test not called
-covered line 24
-covered line 25
-not covered
+covered line 36
+covered line 27
 covered line 28
 covered line 32
+[[1, 3], [2, 0]]
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+covered line 15
+covered line 17
+covered line 18
+func under test not called
+covered line 20
+covered line 22
+covered line 23
+covered line 24
+covered line 25
+covered line 26
+covered line 27
+covered line 28
+covered line 29
+covered line 31
+covered line 32
+not covered
+not covered
+not covered
+False
+False
+True
+not covered
+not covered
+not covered
+not covered
+[[0, 1], [1, 0]]
+[[0, 1], [1, 0]]
+[[0, 1], [1, 0]]
+not covered
+not covered
+not covered
+not covered
+covered line 30
+2
+3
+5
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+False
+False
+True
+not covered
+covered line 21
+not covered
+not covered
+not covered
+covered line 19
+not covered
+covered line 22
+covered line 22
+covered line 23
+covered line 31
 covered line 33
 not covered
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
 covered line 14
 not covered
 not covered
-covered line 53
-func under test not called
-False
-False
+covered line 30
+not covered
+covered line 41
 not covered
 not covered
-not covered
-[[0, 1]]
-func under test not called
-not covered
-False
-not covered
-not covered
-not covered
-2
-3
-2
-not covered
-not covered
-covered line 25
-not covered
-not covered
-not covered
-covered line 32
-covered line 35
-not covered
-func under test not called
-func under test not called
-func under test not called
-func under test not called
-func under test not called
-covered line 33
-covered line 17
-covered line 21
-not covered
-not covered
-covered line 21
-covered line 23
-covered line 33
 not covered
 covered line 45
-func under test not called
-5
-covered line 33
-func under test not called
-func under test not called
-False
-not covered
-not covered
-not covered
-not covered
-not covered
 not covered
 not covered
 not covered
 covered line 50
-not covered
-covered line 19
-1
+covered line 51
+covered line 52
 func under test not called
-not covered
-not covered
+func under test not called
+func under test not called
+covered line 21
+covered line 22
 covered line 23
 covered line 24
+covered line 25
 covered line 29
-not covered
-func under test not called
-covered line 26
+covered line 30
 covered line 32
 not covered
-func under test not called
-covered line 22
 not covered
 not covered
 not covered
-func under test not called
-covered line 19
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+[-1, -1, -1]
+[-1, -1, -1]
+[-1, -1, -1]
+[-1, -1, -1]
+not covered
+not covered
+not covered
+not covered
 []
-func under test not called
-func under test not called
-func under test not called
-['class Solution {', 'public:']
 []
-not covered
-covered line 27
-not covered
-not covered
-not covered
-not covered
-not covered
-not covered
-3
-2
-3
+[]
+[]
+['string s = ;']
+[]
+[]
+[]
+[]
+covered line 21
 not covered
 not covered
-not covered
-not covered
-not covered
-not covered
-not covered
-not covered
-[-5, 10]
-[-5, -10]
-func under test not called
-func under test not called
-covered line 19
-not covered
-covered line 22
-not covered
-func under test not called
-func under test not called
-['2*b', '1']
-func under test not called
-func under test not called
-func under test not called
-['14']
-func under test not called
-func under test not called
-func under test not called
-func under test not called
-covered line 14
-not covered
-not covered
-not covered
-not covered
-not covered
-not covered
-not covered
-covered line 98
-not covered
-covered line 115
-not covered
-covered line 134
-covered line 139
-not covered
-not covered
-not covered
-func under test not called
-func under test not called
-not covered
-not covered
-not covered
-not covered
-[3, 7]
-not covered
-not covered
-not covered
-not covered
-False
-False
 not covered
 not covered
 not covered
 not covered
 covered line 31
-func under test not called
-RL
-LL.RRRRLLL
-LLLLLLLLLLRRLL...
-func under test not called
-LLLLLRRRRRR
-RR.L
-LL.RRRRLLL
-RR.LLLLLRLL...R
-func under test not called
-not covered
-covered line 23
-not covered
-not covered
-covered line 27
+covered line 33
 not covered
 not covered
 not covered
-covered line 32
-covered line 34
 not covered
-not covered
-not covered
-func under test not called
-1
-1
 not covered
 covered line 42
+not covered
+3
+3
+3
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+func under test not called
+func under test not called
+[-5, -10]
+func under test not called
+func under test not called
+covered line 17
+not covered
+covered line 21
+not covered
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+not covered
+not covered
+not covered
+not covered
+covered line 82
+not covered
+covered line 119
+not covered
+covered line 14
+not covered
+not covered
+not covered
+not covered
+0
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+[11, 13]
+[2, 5]
+[2, 5]
+covered line 29
+not covered
+not covered
+not covered
 True
-11
+False
+not covered
+not covered
+not covered
+covered line 28
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+LL.RRRRLLL
+LL.RRRRLLL
+LL.RRRRLLL
+LL.RRRRLLL
+func under test not called
+func under test not called
+LL.RRRRLLL
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+not covered
+not covered
+not covered
+not covered
+not covered
+5
+not covered
+1
+covered line 21
+covered line 41
+not covered
+not covered
 not covered
 covered line 27
-not covered
+covered line 29
 not covered
 covered line 33
 not covered
 not covered
+covered line 21
+None
 [-1, -1]
+[0, 3]
+func under test not called
+[0, 3]
+[-1, -1]
+[0, 3]
+[0, 3]
+[0, 3]
+[0, 3]
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+22
+func under test not called
+func under test not called
+not covered
+func under test not called
+func under test not called
+not covered
+not covered
+[1]
+[1, 1, 0, 0]
+func under test not called
+func under test not called
+func under test not called
 func under test not called
 not covered
 not covered
 not covered
 not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+func under test not called
+not covered
+not covered
+not covered
+0
+not covered
+not covered
+0
+0
+not covered
+not covered
+1
+2
+not covered
+not covered
+[0, 0]
+[0, 0]
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+a0b1c2
+covered line 16
+covered line 20
+not covered
+covered line 25
+not covered
+1
+0
+covered line 16
+covered line 18
+not covered
+not covered
+not covered
+not covered
+covered line 35
+not covered
+0
+covered line 27
+not covered
+not covered
+not covered
+not covered
+covered line 39
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+covered line 21
+covered line 31
+-1
+func under test not called
+covered line 27
+covered line 59
+covered line 60
+covered line 14
 not covered
 not covered
 not covered
 covered line 52
-36770
-func under test not called
-func under test not called
-not covered
-covered line 30
-not covered
-not covered
-not covered
-func under test not called
-func under test not called
-1
-func under test not called
-func under test not called
-func under test not called
-covered line 24
-covered line 37
-covered line 25
-4
-not covered
-not covered
-not covered
-not covered
-not covered
-covered line 22
-bacd
-not covered
-not covered
-covered line 26
-covered line 31
-9
-covered line 34
-not covered
+covered line 54
 covered line 55
-not covered
-not covered
-not covered
-Expected 1 but got 0
+covered line 56
+3
 covered line 18
 covered line 20
 not covered
-covered line 32
+not covered
+not covered
+not covered
 1
-not covered
-not covered
-4
-not covered
-not covered
-func under test not called
-func under test not called
-not covered
-covered line 35
-func under test not called
-not covered
-not covered
-[[], [0, 1, 2]]
-func under test not called
-not covered
-covered line 26
-covered line 57
-func under test not called
-0
-None
-0
-not covered
-covered line 19
-not covered
-not covered
-not covered
-not covered
-0
-not covered
-not covered
-covered line 28
-0
-not covered
-covered line 28
-True
-func under test not called
-True
-not covered
-not covered
-not covered
-not covered
-4
-covered line 38
-not covered
-not covered
-func under test not called
+1
+1
+1
 2
-covered line 37
-not covered
--1
-func under test not called
-0
-func under test not called
-covered line 35
-covered line 59
-4
-not covered
-func under test not called
-not covered
-not covered
-func under test not called
-covered line 26
-covered line 32
-func under test not called
-not covered
-not covered
-4
-covered line 26
-covered line 33
-func under test not called
-not covered
-3
-func under test not called
-3
-not covered
-covered line 24
-not covered
-not covered
-func under test not called
-func under test not called
-0
 1
 1
+1
+1
+1
+1
+0
+1
+not covered
+covered line 18
+not covered
+not covered
+covered line 23
+not covered
 not covered
 not covered
 not covered
 covered line 29
+not covered
+covered line 31
+not covered
+covered line 33
 not covered
 not covered
 not covered
@@ -415,255 +493,205 @@ not covered
 not covered
 covered line 40
 covered line 41
-covered line 43
 not covered
-[-1]
+not covered
+not covered
 [1, 1]
+covered line 31
 not covered
 not covered
-0
-covered line 25
 not covered
 covered line 46
 covered line 48
-func under test not called
-func under test not called
+covered line 50
 not covered
-covered line 58
-True
-covered line 31
-0
-0
-4
-func under test not called
+covered line 14
 not covered
 not covered
 not covered
 covered line 35
+not covered
 covered line 38
-2
-covered line 21
-covered line 23
-covered line 22
-covered line 26
-bb
-not covered
-covered line 23
-not covered
-covered line 26
-not covered
-10000000000
-not covered
-not covered
-4
-func under test not called
-func under test not called
-covered line 31
-covered line 24
-2
-func under test not called
-2
-1
-not covered
-not covered
-not covered
-not covered
-covered line 22
-not covered
-covered line 27
-covered line 64
-covered line 22
-covered line 23
-False
-func under test not called
-True
-covered line 25
-not covered
-not covered
-not covered
-func under test not called
-func under test not called
-None
-not covered
-covered line 36
-not covered
-covered line 40
-covered line 46
-not covered
-covered line 21
-covered line 26
-covered line 27
-covered line 49
-covered line 68
-False
-covered line 30
-not covered
-not covered
-2
-func under test not called
-not covered
-covered line 32
--1
--1
-not covered
-covered line 69
-not covered
-not covered
-not covered
-False
-False
-not covered
-not covered
-not covered
-not covered
-func under test not called
-func under test not called
-5
-3
-func under test not called
-covered line 26
-False
-False
-False
-False
-not covered
-covered line 25
-not covered
-not covered
-not covered
-not covered
-not covered
-not covered
-3
-0
-func under test not called
-0
-not covered
-not covered
-not covered
-not covered
-not covered
-covered line 44
-not covered
-not covered
-not covered
-not covered
-[2, 3]
-not covered
-not covered
-not covered
-not covered
-not covered
-9
-covered line 41
-covered line 46
-not covered
 not covered
 not covered
 covered line 20
+covered line 56
+not covered
+covered line 22
+covered line 23
+covered line 24
+not covered
+covered line 26
+not covered
 1
+0
+10000000000
+-5000000000
 not covered
 not covered
+not covered
+not covered
+not covered
+2
 func under test not called
+2
+2
+not covered
 covered line 19
+covered line 20
+not covered
+not covered
+not covered
+not covered
+covered line 26
+func under test not called
+func under test not called
+not covered
+covered line 23
+False
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+covered line 36
+func under test not called
+func under test not called
+func under test not called
+covered line 49
+covered line 54
+covered line 20
+covered line 30
+covered line 36
+func under test not called
+func under test not called
+not covered
+not covered
+False
+False
+False
+False
+covered line 14
+not covered
+not covered
+not covered
 not covered
 func under test not called
-6
 func under test not called
+func under test not called
+False
+False
+False
+False
+not covered
+covered line 25
+not covered
+not covered
+not covered
+0
+func under test not called
+-1
+0
+0
+0
+0
+0
+0
 0
 not covered
+covered line 24
+not covered
+not covered
+not covered
+not covered
 not covered
 not covered
 not covered
 not covered
 func under test not called
-covered line 26
-covered line 50
+not covered
+not covered
+not covered
+covered line 41
+-1
+-1
+not covered
+not covered
+covered line 18
+covered line 31
+not covered
+not covered
+not covered
+10
 func under test not called
+func under test not called
+-24
+func under test not called
+not covered
+not covered
+covered line 28
+not covered
+not covered
+not covered
+not covered
+covered line 21
+not covered
+not covered
+not covered
+not covered
+inf
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
+covered line 25
+not covered
+not covered
+11
+
+11
+covered line 20
+not covered
+not covered
+not covered
+not covered
+covered line 32
+not covered
+func under test not called
+3
+3
+3
+covered line 28
+covered line 41
+covered line 43
+covered line 21
+not covered
+not covered
+not covered
+not covered
+not covered
+not covered
 not covered
 not covered
 not covered
 not covered
 covered line 29
 not covered
-not covered
-0
-not covered
-not covered
-covered line 25
-not covered
-func under test not called
-func under test not called
-inf
-covered line 22
-not covered
-not covered
-not covered
-not covered
-covered line 25
-not covered
-None
-not covered
-covered line 23
-covered line 24
-covered line 28
-not covered
-not covered
-not covered
-covered line 41
-[2, 2]
-func under test not called
-not covered
-not covered
-func under test not called
-0
 covered line 32
-6
-covered line 38
-covered line 33
-covered line 53
-func under test not called
+[]
+[]
 not covered
--1
-not covered
-not covered
-func under test not called
-covered line 37
-covered line 43
-2
-not covered
-not covered
-not covered
-not covered
-not covered
-not covered
-not covered
-not covered
-not covered
-not covered
-not covered
-not covered
-[0, 3, 5, 6, 9]
-func under test not called
-not covered
-1
-1
-not covered
-not covered
-not covered
-covered line 40
-covered line 31
-covered line 36
-func under test not called
-func under test not called
-covered line 53
-not covered
-covered line 38
-func under test not called
 not covered
 not covered
 covered line 31
-1261 447 1340
-Syntax Correctness: 0.941044776119403
-Executable Correctness: 0.3335820895522388
-Accuracy in cover selected line: 0.11641791044776119
+0
+0
+0

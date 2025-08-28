@@ -1,351 +1,224 @@
 pathcov_llama3.1_format.jsonl
 210
-func under test not called
-func under test not called
-False
-7
-['LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n', 'LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n'] 1.0
-0
-['LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n', 'LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n'] 0.0
-15
-['LOOP #2: Entered while loop at line 26-40\n', 'BRANCH #3: Covered if branch at line 28-35\n', 'LOOP #1: Entered for loop at line 20-40\n', 'BRANCH #2: Covered if branch at line 21-22\n', 'LOOP #1: Entered for loop at line 20-40\n'] 0.2
-[]
-0
-['LOOP #1: Entered for loop at line 20-40\n', 'LOOP #2: Entered while loop at line 26-40\n', 'BRANCH #5: Covered else branch at line 38-39\n'] 0.0
-[]
-0
-['BRANCH #4: Covered elif branch at line 36-37\n', 'LOOP #2: Entered while loop at line 26-40\n', 'BRANCH #4: Covered elif branch at line 36-37\n', 'LOOP #2: Entered while loop at line 26-40\n', 'BRANCH #4: Covered elif branch at line 36-37\n'] 0.0
-True
-0
-['LOOP #1: Entered for loop at line 21-24\n', 'LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n', 'LOOP #3: Entered for loop at line 26-33\n'] 0.0
+16
+['LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n', 'LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #2: Covered if branch at line 27-30\n', 'LOOP #2: Entered for loop at line 25-33\n'] 0.8
+27
+['LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n', 'LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #2: Covered if branch at line 27-30\n'] 0.8
+27
+['LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n', 'LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n'] 0.6
+20
+['LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n', 'LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n'] 0.6
+3
+['LOOP #2: Entered while loop at line 26-40\n', 'BRANCH #3: Covered if branch at line 28-35\n', 'LOOP #1: Entered for loop at line 20-40\n', 'BRANCH #2: Covered if branch at line 21-22\n', 'LOOP #1: Entered for loop at line 20-40\n'] 0.4
+3
+['LOOP #1: Entered for loop at line 20-40\n', 'LOOP #2: Entered while loop at line 26-40\n', 'BRANCH #5: Covered else branch at line 38-39\n'] 0.6666666666666666
+3
+['LOOP #1: Entered for loop at line 20-40\n', 'LOOP #2: Entered while loop at line 26-40\n', 'BRANCH #3: Covered if branch at line 28-35\n'] 1.0
+3
+['BRANCH #4: Covered elif branch at line 36-37\n', 'LOOP #2: Entered while loop at line 26-40\n', 'BRANCH #4: Covered elif branch at line 36-37\n', 'LOOP #2: Entered while loop at line 26-40\n', 'BRANCH #4: Covered elif branch at line 36-37\n'] 0.2
+29
+['LOOP #1: Entered for loop at line 21-24\n', 'LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n', 'LOOP #3: Entered for loop at line 26-33\n'] 0.6
 23
-['LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n', 'LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n'] 0.4
-0
-['LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n', 'LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n'] 0.0
-0
-['BRANCH #1: Covered if branch at line 22-23\n', 'LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #2: Covered if branch at line 27-30\n', 'LOOP #2: Entered for loop at line 25-33\n'] 0.0
+['LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n', 'LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n'] 0.8
+28
+['LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #3: Covered elif branch at line 31-32\n', 'LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n'] 0.4
+5
+['BRANCH #1: Covered if branch at line 22-23\n', 'LOOP #2: Entered for loop at line 25-33\n', 'LOOP #3: Entered for loop at line 26-33\n', 'BRANCH #2: Covered if branch at line 27-30\n', 'LOOP #2: Entered for loop at line 25-33\n'] 0.8
 11
 ['LOOP #2: Entered while loop at line 26-28\n', 'LOOP #2: Entered while loop at line 26-28\n', 'LOOP #2: Entered while loop at line 26-28\n', 'LOOP #3: Entered while loop at line 30-32\n', 'LOOP #4: Entered while loop at line 34-36\n'] 1.0
-0
-['LOOP #2: Entered while loop at line 26-28\n', 'LOOP #3: Entered while loop at line 30-32\n', 'LOOP #4: Entered while loop at line 34-36\n', 'LOOP #4: Entered while loop at line 34-36\n', 'LOOP #4: Entered while loop at line 34-36\n'] 0.0
-0
-['LOOP #4: Entered while loop at line 34-36\n', 'LOOP #4: Entered while loop at line 34-36\n', 'LOOP #4: Entered while loop at line 34-36\n', 'LOOP #5: Entered while loop at line 38-40\n', 'LOOP #1: Entered while loop at line 24-45\n'] 0.0
+11
+['LOOP #4: Entered while loop at line 34-36\n', 'LOOP #5: Entered while loop at line 38-40\n', 'LOOP #1: Entered while loop at line 24-45\n', 'LOOP #2: Entered while loop at line 26-28\n', 'LOOP #2: Entered while loop at line 26-28\n'] 0.8
+11
+['LOOP #2: Entered while loop at line 26-28\n', 'LOOP #3: Entered while loop at line 30-32\n', 'LOOP #4: Entered while loop at line 34-36\n', 'LOOP #4: Entered while loop at line 34-36\n', 'LOOP #4: Entered while loop at line 34-36\n'] 1.0
+11
+['LOOP #4: Entered while loop at line 34-36\n', 'LOOP #4: Entered while loop at line 34-36\n', 'LOOP #4: Entered while loop at line 34-36\n', 'LOOP #5: Entered while loop at line 38-40\n', 'LOOP #1: Entered while loop at line 24-45\n'] 1.0
 6
 ['LOOP #1: Entered for loop at line 21-39\n', 'BRANCH #8: Covered else branch at line 35-38\n'] 1.0
-0
-['LOOP #1: Entered for loop at line 21-39\n', 'BRANCH #4: Covered elif branch at line 26-30\n', 'BRANCH #5: Covered if branch at line 27-28\n'] 0.0
-0
-['LOOP #1: Entered for loop at line 21-39\n', 'BRANCH #2: Covered if branch at line 22-25\n'] 0.0
+False
+8
+['LOOP #1: Entered for loop at line 21-39\n', 'BRANCH #4: Covered elif branch at line 26-30\n', 'BRANCH #5: Covered if branch at line 27-28\n'] 0.6666666666666666
+14
+['LOOP #1: Entered for loop at line 21-39\n', 'BRANCH #2: Covered if branch at line 22-25\n'] 1.0
 0
 ['BRANCH #3: Covered if branch at line 29-30\n', 'BRANCH #4: Covered if branch at line 32-34\n', 'LOOP #5: Entered for loop at line 33-35\n', 'LOOP #5: Entered for loop at line 33-35\n', 'LOOP #5: Entered for loop at line 33-35\n'] 0.0
-func under test not called
+0
+['LOOP #1: Entered for loop at line 18-23\n', 'LOOP #2: Entered for loop at line 19-23\n', 'LOOP #2: Entered for loop at line 19-23\n', 'LOOP #3: Entered for loop at line 24-28\n', 'LOOP #4: Entered for loop at line 25-28\n'] 0.0
+0
+['BRANCH #2: Covered if branch at line 26-27\n', 'LOOP #4: Entered for loop at line 25-28\n', 'BRANCH #2: Covered if branch at line 26-27\n', 'LOOP #3: Entered for loop at line 24-28\n', 'LOOP #4: Entered for loop at line 25-28\n'] 0.0
+0
+['LOOP #4: Entered for loop at line 25-28\n', 'LOOP #4: Entered for loop at line 25-28\n', 'LOOP #4: Entered for loop at line 25-28\n', 'BRANCH #2: Covered if branch at line 26-27\n', 'BRANCH #3: Covered if branch at line 29-30\n'] 0.0
 46
 ['LOOP #5: Entered for loop at line 30-32\n', 'LOOP #5: Entered for loop at line 30-32\n', 'LOOP #5: Entered for loop at line 30-32\n', 'LOOP #5: Entered for loop at line 30-32\n', 'LOOP #5: Entered for loop at line 30-32\n'] 1.0
-func under test not called
-True
-0
-['LOOP #3: Entered for loop at line 26-28\n', 'LOOP #4: Entered for loop at line 29-32\n', 'LOOP #5: Entered for loop at line 30-32\n', 'LOOP #5: Entered for loop at line 30-32\n', 'LOOP #5: Entered for loop at line 30-32\n'] 0.0
-209
-['BRANCH #4: Covered if branch at line 38-39\n', 'LOOP #4: Entered for loop at line 35-44\n', 'LOOP #1: Entered for loop at line 16-18\n', 'BRANCH #1: Covered if branch at line 17-18\n', 'LOOP #1: Entered for loop at line 16-18\n'] 1.0
+4
+['LOOP #1: Entered for loop at line 19-20\n'] 1.0
+46
+['LOOP #3: Entered for loop at line 26-28\n', 'LOOP #4: Entered for loop at line 29-32\n', 'LOOP #5: Entered for loop at line 30-32\n', 'LOOP #5: Entered for loop at line 30-32\n', 'LOOP #5: Entered for loop at line 30-32\n'] 1.0
+1
+['BRANCH #4: Covered if branch at line 38-39\n', 'LOOP #4: Entered for loop at line 35-44\n', 'LOOP #1: Entered for loop at line 16-18\n', 'BRANCH #1: Covered if branch at line 17-18\n', 'LOOP #1: Entered for loop at line 16-18\n'] 0.0
 1
 ['LOOP #1: Entered for loop at line 16-18\n', 'BRANCH #10: Covered if branch at line 60-63\n', 'LOOP #5: Entered for loop at line 59-64\n', 'LOOP #1: Entered for loop at line 16-18\n', 'LOOP #1: Entered for loop at line 16-18\n'] 0.0
-syntax error
-def test_findLadders():
-    solution = Solution()
-
-    def test_case_1():
-        return (
-            solution.findLadders("hit", "cog", ["hot","dot","dog","lot","log","cog"])
 20
-['LOOP #2: Entered for loop at line 22-27\n', 'BRANCH #2: Covered if branch at line 23-26\n', 'LOOP #5: Entered for loop at line 40-46\n', 'LOOP #6: Entered for loop at line 41-46\n', 'BRANCH #7: Covered else branch at line 44-45\n'] 1.0
-func under test not called
-func under test not called
+['LOOP #2: Entered for loop at line 22-27\n', 'BRANCH #2: Covered if branch at line 23-26\n', 'LOOP #1: Entered for loop at line 21-27\n', 'LOOP #2: Entered for loop at line 22-27\n', 'BRANCH #2: Covered if branch at line 23-26\n'] 1.0
+20
+['LOOP #2: Entered for loop at line 22-27\n', 'BRANCH #2: Covered if branch at line 23-26\n', 'LOOP #2: Entered for loop at line 22-27\n', 'BRANCH #2: Covered if branch at line 23-26\n', 'LOOP #2: Entered for loop at line 22-27\n'] 0.8
+9
+['LOOP #3: Entered for loop at line 21-24\n', 'LOOP #3: Entered for loop at line 21-24\n', 'LOOP #2: Entered for loop at line 19-24\n', 'LOOP #3: Entered for loop at line 21-24\n', 'LOOP #4: Entered for loop at line 25-33\n'] 0.6
+9
+['LOOP #3: Entered for loop at line 21-24\n', 'LOOP #4: Entered for loop at line 25-33\n', 'BRANCH #1: Covered if branch at line 26-28\n', 'LOOP #4: Entered for loop at line 25-33\n', 'LOOP #5: Entered for loop at line 30-33\n'] 1.0
+9
+['LOOP #2: Entered for loop at line 19-24\n', 'LOOP #3: Entered for loop at line 21-24\n', 'LOOP #4: Entered for loop at line 25-33\n', 'BRANCH #1: Covered if branch at line 26-28\n', 'LOOP #4: Entered for loop at line 25-33\n'] 1.0
+9
+['LOOP #1: Entered for loop at line 15-16\n', 'LOOP #4: Entered for loop at line 25-33\n', 'BRANCH #1: Covered if branch at line 26-28\n'] 0.6666666666666666
+8
+['LOOP #1: Entered while loop at line 31-40\n', 'BRANCH #4: Covered else branch at line 36-39\n', 'BRANCH #6: Covered if branch at line 55-56\n', 'LOOP #1: Entered while loop at line 31-40\n', 'BRANCH #3: Covered if branch at line 32-35\n'] 0.4
 0
-['LOOP #2: Entered for loop at line 19-24\n', 'LOOP #3: Entered for loop at line 21-24\n', 'LOOP #4: Entered for loop at line 25-33\n', 'BRANCH #1: Covered if branch at line 26-28\n', 'LOOP #4: Entered for loop at line 25-33\n'] 0.0
+['LOOP #1: Entered while loop at line 31-40\n', 'BRANCH #4: Covered else branch at line 36-39\n', 'LOOP #2: Entered while loop at line 41-44\n', 'BRANCH #2: Covered if branch at line 16-18\n', 'BRANCH #2: Covered if branch at line 16-18\n'] 0.0
 func under test not called
-[[1, 4], [3, 0]]
-0
-['LOOP #1: Entered while loop at line 31-40\n', 'BRANCH #4: Covered else branch at line 36-39\n', 'BRANCH #6: Covered if branch at line 55-56\n', 'LOOP #1: Entered while loop at line 31-40\n', 'BRANCH #3: Covered if branch at line 32-35\n'] 0.0
-11
-['LOOP #1: Entered while loop at line 31-40\n', 'BRANCH #4: Covered else branch at line 36-39\n', 'LOOP #2: Entered while loop at line 41-44\n', 'BRANCH #2: Covered if branch at line 16-18\n', 'BRANCH #2: Covered if branch at line 16-18\n'] 0.4
-11
-['BRANCH #4: Covered else branch at line 36-39\n', 'LOOP #2: Entered while loop at line 41-44\n', 'BRANCH #2: Covered if branch at line 16-18\n', 'BRANCH #2: Covered if branch at line 16-18\n', 'BRANCH #2: Covered if branch at line 16-18\n'] 0.4
-syntax error
-def test_calculate():
-    solution = Solution()
-
-    def helper(s):
-func under test not called
+14
+['BRANCH #1: Covered if branch at line 19-20\n', 'LOOP #1: Entered for loop at line 18-34\n', 'BRANCH #2: Covered if branch at line 21-33\n', 'BRANCH #3: Covered if branch at line 22-24\n', 'LOOP #1: Entered for loop at line 18-34\n'] 1.0
 0
 ['BRANCH #1: Covered if branch at line 19-20\n', 'LOOP #1: Entered for loop at line 18-34\n', 'BRANCH #2: Covered if branch at line 21-33\n', 'BRANCH #5: Covered elif branch at line 27-31\n', 'BRANCH #7: Covered else branch at line 30-31\n'] 0.0
 func under test not called
 0
-['LOOP #3: Entered for loop at line 19-22\n', 'LOOP #4: Entered for loop at line 20-22\n', 'LOOP #4: Entered for loop at line 20-22\n', 'BRANCH #2: Covered if branch at line 26-27\n', 'LOOP #2: Entered for loop at line 17-28\n'] 0.0
+['LOOP #3: Entered for loop at line 19-22\n', 'LOOP #4: Entered for loop at line 20-22\n', 'LOOP #4: Entered for loop at line 20-22\n', 'LOOP #5: Entered for loop at line 29-32\n', 'LOOP #6: Entered for loop at line 30-32\n'] 0.0
 0
-['BRANCH #1: Covered if branch at line 23-24\n', 'LOOP #2: Entered for loop at line 17-28\n', 'LOOP #3: Entered for loop at line 19-22\n', 'LOOP #4: Entered for loop at line 20-22\n', 'LOOP #4: Entered for loop at line 20-22\n'] 0.0
-48
+['LOOP #3: Entered for loop at line 19-22\n', 'LOOP #4: Entered for loop at line 20-22\n', 'LOOP #4: Entered for loop at line 20-22\n', 'BRANCH #2: Covered if branch at line 26-27\n', 'LOOP #2: Entered for loop at line 17-28\n'] 0.0
+34
 ['LOOP #3: Entered while loop at line 36-37\n', 'LOOP #4: Entered while loop at line 45-54\n', 'BRANCH #3: Covered else branch at line 50-53\n', 'LOOP #5: Entered while loop at line 55-59\n', 'LOOP #1: Entered for loop at line 33-39\n'] 0.6
-[[0, 2]]
+1
+['LOOP #1: Entered for loop at line 16-23\n', 'BRANCH #2: Covered if branch at line 17-18\n'] 0.5
+False
+0
+['LOOP #1: Entered for loop at line 16-23\n'] 0.0
+[[0, 1], [1, 0]]
 0
 ['LOOP #2: Entered for loop at line 20-27\n', 'LOOP #2: Entered for loop at line 20-27\n', 'BRANCH #2: Covered if branch at line 23-24\n', 'LOOP #1: Entered for loop at line 16-27\n', 'LOOP #2: Entered for loop at line 20-27\n'] 0.0
-10
-['LOOP #2: Entered for loop at line 20-27\n', 'LOOP #2: Entered for loop at line 20-27\n', 'LOOP #2: Entered for loop at line 20-27\n', 'BRANCH #2: Covered if branch at line 23-24\n', 'LOOP #1: Entered for loop at line 16-27\n'] 0.8
 [[0, 1], [1, 0]]
-21
-['LOOP #1: Entered for loop at line 16-27\n', 'BRANCH #1: Covered if branch at line 17-18\n', 'LOOP #2: Entered for loop at line 20-27\n', 'BRANCH #3: Covered if branch at line 25-26\n', 'LOOP #1: Entered for loop at line 16-27\n'] 0.2
-19
-['BRANCH #1: Covered if branch at line 28-29\n', 'LOOP #2: Entered for loop at line 27-32\n', 'BRANCH #2: Covered else branch at line 30-31\n', 'LOOP #2: Entered for loop at line 27-32\n', 'BRANCH #1: Covered if branch at line 28-29\n'] 0.6
-syntax error
-def test_removeKdigits():
-    solution = Solution()
-
-    def is_equal(expected):
-1219
+0
+['LOOP #2: Entered for loop at line 20-27\n', 'LOOP #2: Entered for loop at line 20-27\n', 'LOOP #2: Entered for loop at line 20-27\n', 'BRANCH #2: Covered if branch at line 23-24\n', 'LOOP #1: Entered for loop at line 16-27\n'] 0.0
+[[0, 1], [1, 0]]
+0
+['LOOP #1: Entered for loop at line 16-27\n', 'BRANCH #1: Covered if branch at line 17-18\n', 'LOOP #2: Entered for loop at line 20-27\n', 'BRANCH #3: Covered if branch at line 25-26\n', 'LOOP #1: Entered for loop at line 16-27\n'] 0.0
+0
+['LOOP #4: Entered for loop at line 28-32\n', 'BRANCH #2: Covered if branch at line 29-30\n', 'LOOP #4: Entered for loop at line 28-32\n', 'LOOP #4: Entered for loop at line 28-32\n', 'LOOP #4: Entered for loop at line 28-32\n'] 0.0
 14
 ['LOOP #1: Entered for loop at line 19-24\n', 'LOOP #2: Entered while loop at line 20-22\n', 'LOOP #1: Entered for loop at line 19-24\n', 'LOOP #1: Entered for loop at line 19-24\n', 'LOOP #2: Entered while loop at line 20-22\n'] 1.0
-1
-['BRANCH #1: Covered if branch at line 13-14\n'] 1.0
-8
-['LOOP #2: Entered while loop at line 20-22\n', 'LOOP #1: Entered for loop at line 19-24\n', 'LOOP #1: Entered for loop at line 19-24\n', 'LOOP #2: Entered while loop at line 20-22\n', 'LOOP #1: Entered for loop at line 19-24\n'] 0.4
+7
+['BRANCH #1: Covered if branch at line 13-14\n'] 0.0
 func under test not called
-85
-['BRANCH #2: Covered if branch at line 39-40\n', 'LOOP #4: Entered for loop at line 34-47\n', 'BRANCH #2: Covered if branch at line 39-40\n', 'LOOP #4: Entered for loop at line 34-47\n', 'BRANCH #2: Covered if branch at line 39-40\n'] 1.0
-syntax error
-def test_pacificAtlantic():
-    class Solution:
-        def pacificAtlantic(self, heights):
-            dirs = ((0, 1), (1, 0), (0, -1), (-1, 0))
-            m = len(heights)
-            n = len(heights[0])
-            qP = collections.deque()
-            qA = collections.deque()
-            seenP = [[False] * n for _ in range(m)]
-            seenA = [[False] * n for _ in range(m)]
-
-            for i in range(m):
-                qP.append((i, 0))
-                qA.append((i, n - 1))
-                seenP[i][0] = True
-                seenA[i][n - 1] = True
-
-            def bfs(q: collections.deque, seen: List[List[bool]]):
-                while q:
-                    i, j = q.popleft()
-                    h = heights[i][j]
-                    for dx, dy in dirs:
-                        x = i + dx
-                        y = j + dy
-                        if (x < 0 or x == m) and not ((dx, dy) == (-1, 0)):
-                            continue
-                        elif x > n - 1 or (x == m and (dx, dy) != (0, 1)):
-                            continue
-                        if seen[x][y] or heights[x][y] < h:
-                            continue
-                        q.append((x, y))
-                        seen[x][y] = True
-
-            bfs(qP, seenP)
-            bfs(qA, seenA)
-
-            res=[]
-            for i in range(m):
-                for j in range(n):
-                    if seenP[i][j] and (i == m - 1 or heights[i + 1][j] < heights[i][j]):
-                        res.append([i, j])
-                    elif seenA[j][n - 1] and (j == n - 1 or heights[i][j + 1] < heights[i][j]):
-
-            return res
-
-    solution = Solution()
-    assert solution.pacificAtlantic([[1]]) == [[0, 0]]
-339
-['LOOP #4: Entered for loop at line 37-46\n', 'BRANCH #1: Covered if branch at line 40-41\n', 'LOOP #4: Entered for loop at line 37-46\n', 'BRANCH #1: Covered if branch at line 40-41\n', 'LOOP #3: Entered while loop at line 34-46\n'] 1.0
-5
-1
-['BRANCH #5: Covered if branch at line 34-35\n'] 1.0
+0
+['BRANCH #5: Covered if branch at line 34-35\n'] 0.0
 3
 0
+['BRANCH #4: Covered else branch at line 31-32\n', 'LOOP #1: Entered while loop at line 20-33\n', 'BRANCH #4: Covered else branch at line 31-32\n', 'LOOP #1: Entered while loop at line 20-33\n', 'BRANCH #4: Covered else branch at line 31-32\n'] 0.0
+5
+0
 ['LOOP #1: Entered while loop at line 20-33\n', 'BRANCH #4: Covered else branch at line 31-32\n', 'BRANCH #5: Covered if branch at line 34-35\n'] 0.0
-0
-['LOOP #1: Entered for loop at line 15-36\n', 'BRANCH #6: Covered if branch at line 26-27\n', 'LOOP #1: Entered for loop at line 15-36\n', 'BRANCH #5: Covered if branch at line 24-25\n', 'LOOP #1: Entered for loop at line 15-36\n'] 0.0
-0
-['LOOP #1: Entered for loop at line 15-36\n', 'BRANCH #2: Covered if branch at line 18-19\n', 'LOOP #1: Entered for loop at line 15-36\n', 'BRANCH #1: Covered if branch at line 16-17\n', 'LOOP #1: Entered for loop at line 15-36\n'] 0.0
-15
-['BRANCH #10: Covered if branch at line 34-35\n', 'LOOP #1: Entered for loop at line 15-36\n', 'LOOP #1: Entered for loop at line 15-36\n', 'BRANCH #6: Covered if branch at line 26-27\n', 'LOOP #1: Entered for loop at line 15-36\n'] 0.8
+func under test not called
+func under test not called
+func under test not called
 func under test not called
 False
 0
-['BRANCH #3: Covered if branch at line 26-29\n', 'BRANCH #4: Covered if branch at line 27-28\n', 'LOOP #3: Entered while loop at line 35-39\n', 'LOOP #1: Entered for loop at line 19-39\n', 'LOOP #2: Entered while loop at line 25-32\n'] 0.0
-5
-['LOOP #3: Entered while loop at line 35-39\n', 'LOOP #1: Entered for loop at line 19-39\n', 'LOOP #3: Entered while loop at line 35-39\n', 'LOOP #1: Entered for loop at line 19-39\n', 'LOOP #2: Entered while loop at line 25-32\n'] 0.4
-11
-['LOOP #3: Entered while loop at line 35-39\n', 'LOOP #1: Entered for loop at line 19-39\n', 'LOOP #3: Entered while loop at line 35-39\n', 'LOOP #1: Entered for loop at line 19-39\n', 'LOOP #3: Entered while loop at line 35-39\n'] 0.8
-func under test not called
-10
-['LOOP #2: Entered for loop at line 17-19\n', 'LOOP #2: Entered for loop at line 17-19\n', 'LOOP #2: Entered for loop at line 17-19\n', 'BRANCH #2: Covered if branch at line 20-22\n', 'BRANCH #3: Covered if branch at line 21-22\n'] 0.6
-40
-['BRANCH #3: Covered if branch at line 32-33\n', 'LOOP #3: Entered while loop at line 25-37\n', 'LOOP #4: Entered for loop at line 27-37\n', 'BRANCH #3: Covered if branch at line 32-33\n', 'LOOP #4: Entered for loop at line 27-37\n'] 0.8
-60
-['BRANCH #2: Covered if branch at line 30-31\n', 'LOOP #3: Entered while loop at line 25-37\n', 'LOOP #4: Entered for loop at line 27-37\n', 'BRANCH #3: Covered if branch at line 32-33\n', 'LOOP #4: Entered for loop at line 27-37\n'] 1.0
-17
-['LOOP #2: Entered for loop at line 43-46\n', 'LOOP #1: Entered for loop at line 42-46\n', 'LOOP #2: Entered for loop at line 43-46\n', 'BRANCH #6: Covered if branch at line 44-45\n', 'BRANCH #1: Covered if branch at line 20-21\n'] 0.4
-13
-['BRANCH #1: Covered if branch at line 20-21\n', 'LOOP #2: Entered for loop at line 43-46\n', 'LOOP #1: Entered for loop at line 42-46\n', 'LOOP #2: Entered for loop at line 43-46\n', 'BRANCH #6: Covered if branch at line 44-45\n'] 0.6
-2
-22
-['BRANCH #2: Covered if branch at line 20-21\n', 'LOOP #1: Entered for loop at line 17-22\n', 'BRANCH #2: Covered if branch at line 20-21\n', 'LOOP #1: Entered for loop at line 17-22\n', 'BRANCH #1: Covered if branch at line 18-19\n'] 0.8
-32
-['LOOP #2: Entered for loop at line 25-30\n', 'LOOP #2: Entered for loop at line 25-30\n', 'LOOP #3: Entered for loop at line 31-34\n', 'LOOP #3: Entered for loop at line 31-34\n', 'LOOP #3: Entered for loop at line 31-34\n'] 0.4
-2
+['LOOP #1: Entered for loop at line 19-39\n', 'LOOP #2: Entered while loop at line 25-32\n', 'LOOP #2: Entered while loop at line 25-32\n', 'LOOP #2: Entered while loop at line 25-32\n', 'BRANCH #3: Covered if branch at line 26-29\n'] 0.0
+False
 0
-['LOOP #3: Entered for loop at line 31-34\n', 'LOOP #4: Entered for loop at line 35-38\n', 'LOOP #4: Entered for loop at line 35-38\n', 'LOOP #4: Entered for loop at line 35-38\n', 'LOOP #4: Entered for loop at line 35-38\n'] 0.0
-32
-['BRANCH #1: Covered if branch at line 18-19\n', 'BRANCH #2: Covered if branch at line 20-21\n', 'LOOP #1: Entered for loop at line 17-22\n', 'BRANCH #2: Covered if branch at line 20-21\n', 'LOOP #2: Entered for loop at line 25-30\n'] 1.0
+['LOOP #3: Entered while loop at line 35-39\n', 'LOOP #1: Entered for loop at line 19-39\n', 'LOOP #3: Entered while loop at line 35-39\n', 'LOOP #1: Entered for loop at line 19-39\n', 'LOOP #3: Entered while loop at line 35-39\n'] 0.0
+func under test not called
 5
 ['LOOP #1: Entered while loop at line 37-55\n', 'LOOP #1: Entered while loop at line 37-55\n', 'LOOP #1: Entered while loop at line 37-55\n', 'LOOP #1: Entered while loop at line 37-55\n', 'LOOP #1: Entered while loop at line 37-55\n'] 0.2
-func under test not called
+syntax error
+def test_isValid():
+    solution = Solution()
+
+    def check(code):
 5
 ['LOOP #1: Entered while loop at line 37-55\n', 'BRANCH #6: Covered if branch at line 40-53\n', 'BRANCH #7: Covered if branch at line 41-44\n', 'LOOP #1: Entered while loop at line 37-55\n', 'LOOP #1: Entered while loop at line 37-55\n'] 0.4
-30
-['LOOP #2: Entered for loop at line 25-30\n', 'BRANCH #2: Covered if branch at line 26-27\n', 'LOOP #2: Entered for loop at line 25-30\n', 'LOOP #2: Entered for loop at line 25-30\n', 'BRANCH #3: Covered if branch at line 28-29\n'] 0.6
-32
+func under test not called
+43
 ['BRANCH #1: Covered if branch at line 18-19\n', 'LOOP #1: Entered for loop at line 17-20\n', 'BRANCH #1: Covered if branch at line 18-19\n', 'LOOP #1: Entered for loop at line 17-20\n', 'BRANCH #1: Covered if branch at line 18-19\n'] 1.0
-0
-0
-['BRANCH #2: Covered if branch at line 21-23\n', 'LOOP #2: Entered for loop at line 19-26\n', 'BRANCH #1: Covered if branch at line 20-25\n', 'BRANCH #2: Covered if branch at line 21-23\n', 'LOOP #1: Entered for loop at line 18-26\n'] 0.0
+func under test not called
+func under test not called
 1
 0
-['LOOP #2: Entered for loop at line 19-26\n', 'LOOP #1: Entered for loop at line 18-26\n', 'LOOP #2: Entered for loop at line 19-26\n', 'LOOP #2: Entered for loop at line 19-26\n', 'LOOP #2: Entered for loop at line 19-26\n'] 0.0
-0
-['LOOP #1: Entered for loop at line 18-26\n', 'LOOP #2: Entered for loop at line 19-26\n', 'LOOP #2: Entered for loop at line 19-26\n', 'LOOP #2: Entered for loop at line 19-26\n', 'LOOP #1: Entered for loop at line 18-26\n'] 0.0
+['BRANCH #2: Covered if branch at line 21-23\n', 'LOOP #2: Entered for loop at line 19-26\n', 'BRANCH #1: Covered if branch at line 20-25\n', 'BRANCH #2: Covered if branch at line 21-23\n', 'LOOP #1: Entered for loop at line 18-26\n'] 0.0
+89
+['LOOP #2: Entered for loop at line 19-26\n', 'LOOP #1: Entered for loop at line 18-26\n', 'LOOP #2: Entered for loop at line 19-26\n', 'LOOP #2: Entered for loop at line 19-26\n', 'LOOP #2: Entered for loop at line 19-26\n'] 0.6
+89
+['LOOP #1: Entered for loop at line 18-26\n', 'LOOP #2: Entered for loop at line 19-26\n', 'LOOP #2: Entered for loop at line 19-26\n', 'LOOP #2: Entered for loop at line 19-26\n', 'LOOP #1: Entered for loop at line 18-26\n'] 0.6
 1
 0
 ['BRANCH #2: Covered if branch at line 21-23\n', 'LOOP #1: Entered for loop at line 18-26\n', 'LOOP #2: Entered for loop at line 19-26\n', 'BRANCH #1: Covered if branch at line 20-25\n', 'BRANCH #2: Covered if branch at line 21-23\n'] 0.0
 0
-['BRANCH #9: Covered if branch at line 57-58\n', 'LOOP #2: Entered for loop at line 49-54\n', 'BRANCH #4: Covered else branch at line 25-27\n', 'LOOP #2: Entered for loop at line 49-54\n', 'BRANCH #3: Covered elif branch at line 23-24\n'] 0.0
-[2, 3]
-0
 ['BRANCH #5: Covered if branch at line 31-32\n', 'BRANCH #3: Covered elif branch at line 23-24\n', 'LOOP #2: Entered for loop at line 49-54\n', 'BRANCH #7: Covered if branch at line 50-51\n', 'BRANCH #11: Covered if branch at line 63-64\n'] 0.0
-17
-['LOOP #2: Entered for loop at line 49-54\n', 'BRANCH #5: Covered if branch at line 31-32\n', 'BRANCH #3: Covered elif branch at line 23-24\n', 'LOOP #2: Entered for loop at line 49-54\n', 'BRANCH #7: Covered if branch at line 50-51\n'] 0.8
-202
-['LOOP #4: Entered for loop at line 21-25\n', 'BRANCH #1: Covered if branch at line 24-25\n', 'LOOP #4: Entered for loop at line 21-25\n', 'BRANCH #1: Covered if branch at line 24-25\n', 'LOOP #4: Entered for loop at line 21-25\n'] 1.0
-func under test not called
+0
+['LOOP #4: Entered for loop at line 21-25\n', 'BRANCH #1: Covered if branch at line 24-25\n', 'LOOP #4: Entered for loop at line 21-25\n', 'BRANCH #1: Covered if branch at line 24-25\n', 'LOOP #4: Entered for loop at line 21-25\n'] 0.0
+syntax error
+def test_knightProbability():
+    solution = Solution()
+
+    def check_result(n, k, row, column):
 0
 ['LOOP #4: Entered for loop at line 21-25\n', 'LOOP #4: Entered for loop at line 21-25\n', 'BRANCH #1: Covered if branch at line 24-25\n', 'LOOP #4: Entered for loop at line 21-25\n', 'BRANCH #1: Covered if branch at line 24-25\n'] 0.0
 [-1, -1, -1]
-func under test not called
-syntax error
-    def test_minStickers(self):
-        def minStickers(stickers, target):
-            maxMask = 1 << len(target)
-            dp = [float('inf')] * maxMask
-            dp[0] = 0
-
-            for mask in range(maxMask):
-                if dp[mask] == float('inf'):
-                    continue
-                for sticker in stickers:
-                    superMask = mask
-                    for c in sticker:
-                        for i, t in enumerate(target):
-                            if c == t and not (superMask >> i & 1):
-                                superMask |= 1 << i
-                                break
-                        else:
-                            break
-                    dp[superMask] = min(dp[superMask], dp[mask] + 1)
-
-            return -1 if dp[-1] == float('inf') else dp[-1]
-
-        solution=Solution()
-        self.assertEqual(minStickers(["with","example","science"], "thehat"), 2)
-271
-['BRANCH #8: Covered else branch at line 37-40\n', 'LOOP #2: Entered while loop at line 19-40\n', 'BRANCH #8: Covered else branch at line 37-40\n', 'LOOP #2: Entered while loop at line 19-40\n', 'BRANCH #4: Covered elif branch at line 29-31\n'] 1.0
-11
-['BRANCH #2: Covered if branch at line 30-31\n', 'LOOP #3: Entered for loop at line 21-39\n', 'BRANCH #5: Covered else branch at line 36-37\n', 'LOOP #2: Entered for loop at line 20-39\n', 'LOOP #3: Entered for loop at line 21-39\n'] 0.8
+0
+['LOOP #1: Entered for loop at line 19-25\n', 'BRANCH #1: Covered if branch at line 21-22\n', 'BRANCH #2: Covered if branch at line 23-24\n', 'LOOP #2: Entered for loop at line 27-31\n', 'LOOP #2: Entered for loop at line 27-31\n'] 0.0
+0
+['BRANCH #2: Covered if branch at line 23-24\n', 'LOOP #1: Entered for loop at line 19-25\n', 'BRANCH #1: Covered if branch at line 21-22\n', 'BRANCH #2: Covered if branch at line 23-24\n', 'LOOP #1: Entered for loop at line 19-25\n'] 0.0
+['class Solution {', 'public:', 'public int[] getA();', '}']
+0
+['BRANCH #8: Covered else branch at line 37-40\n', 'LOOP #2: Entered while loop at line 19-40\n', 'BRANCH #8: Covered else branch at line 37-40\n', 'LOOP #2: Entered while loop at line 19-40\n', 'BRANCH #4: Covered elif branch at line 29-31\n'] 0.0
+0
+['BRANCH #10: Covered if branch at line 41-43\n', 'LOOP #1: Entered for loop at line 17-44\n', 'LOOP #2: Entered while loop at line 19-40\n', 'BRANCH #8: Covered else branch at line 37-40\n', 'BRANCH #9: Covered if branch at line 38-39\n'] 0.0
+[]
+0
+['BRANCH #1: Covered if branch at line 20-24\n', 'LOOP #1: Entered for loop at line 17-44\n', 'LOOP #2: Entered while loop at line 19-40\n', 'BRANCH #8: Covered else branch at line 37-40\n', 'LOOP #2: Entered while loop at line 19-40\n'] 0.0
+0
+['LOOP #1: Entered for loop at line 17-19\n', 'LOOP #1: Entered for loop at line 17-19\n', 'LOOP #1: Entered for loop at line 17-19\n', 'LOOP #2: Entered for loop at line 20-39\n', 'LOOP #3: Entered for loop at line 21-39\n'] 0.0
+0
+['BRANCH #2: Covered if branch at line 30-31\n', 'LOOP #3: Entered for loop at line 21-39\n', 'BRANCH #5: Covered else branch at line 36-37\n', 'LOOP #2: Entered for loop at line 20-39\n', 'LOOP #3: Entered for loop at line 21-39\n'] 0.0
+3
 0
 ['LOOP #3: Entered for loop at line 21-39\n', 'BRANCH #5: Covered else branch at line 36-37\n', 'LOOP #3: Entered for loop at line 21-39\n', 'BRANCH #5: Covered else branch at line 36-37\n', 'LOOP #3: Entered for loop at line 21-39\n'] 0.0
 0
 ['LOOP #4: Entered while loop at line 26-27\n', 'LOOP #4: Entered while loop at line 26-27\n', 'LOOP #5: Entered while loop at line 28-29\n', 'LOOP #5: Entered while loop at line 28-29\n', 'LOOP #5: Entered while loop at line 28-29\n'] 0.0
 [3]
-func under test not called
-[-5]
 0
-['LOOP #1: Entered for loop at line 15-27\n', 'BRANCH #1: Covered if branch at line 16-17\n', 'LOOP #1: Entered for loop at line 15-27\n', 'BRANCH #2: Covered else branch at line 18-26\n', 'BRANCH #4: Covered elif branch at line 23-24\n'] 0.0
-syntax error
-    def test_networkDelayTime(self):
-        def networkDelayTime(times, n, k):
-            graph = [[] for _ in range(n)]
-
-            for u, v, w in times:
-                graph[u - 1].append((v - 1, w))
-
-            return _dijkstra(graph, k - 1)
-
-        def _dijkstra(graph, src):
-            dist = [float('inf')] * len(graph)
-
-            dist[src] = 0
-            minHeap = [(dist[src], src)]
-
-            while minHeap:
-                d, u = heapq.heappop(minHeap)
-                if d > dist[u]:
-                    continue
-                for v, w in graph[u]:
-                    if d + w < dist[v]:
-                        dist[v] = d + w
-                        heapq.heappush(minHeap, (dist[v], v))
-
-            maxDist = max(dist)
-            return maxDist if maxDist != float('inf') else -1
-
-        solution=Solution()
-        times=[[2,1,1],[3,2,7],[1,3,4],[5,1,3]]
-        n=3
-        k=2
-        self.assertEqual(networkDelayTime(times,n,k), 8)
-
-if __name__ == '__main__':
-    unittest.main()
-11
-['LOOP #3: Entered for loop at line 30-34\n', 'BRANCH #2: Covered if branch at line 31-33\n', 'LOOP #3: Entered for loop at line 30-34\n', 'BRANCH #2: Covered if branch at line 31-33\n', 'LOOP #2: Entered while loop at line 26-34\n'] 1.0
-syntax error
-def test_basicCalculatorIV():
-    class Solution:
-        def basicCalculatorIV(self, expression: str, evalvars: List[str], evalints: List[int]) -> List[str]:
-            # ... (rest of the function remains the same)
-    
-    solution = Solution()
-    print(solution.basicCalculatorIV("a*b + c", ["a", "b"], [1, 2]))
-0
-['LOOP #12: Entered for loop at line 128-141\n', 'BRANCH #21: Covered if branch at line 129-137\n', 'BRANCH #22: Covered if branch at line 132-133\n', 'LOOP #1: Entered for loop at line 19-20\n', 'LOOP #12: Entered for loop at line 128-141\n'] 0.0
+['BRANCH #1: Covered if branch at line 16-17\n', 'LOOP #1: Entered for loop at line 15-27\n', 'BRANCH #2: Covered else branch at line 18-26\n', 'LOOP #2: Entered while loop at line 19-20\n', 'BRANCH #5: Covered else branch at line 25-26\n'] 0.0
+7
+['LOOP #1: Entered for loop at line 15-27\n', 'BRANCH #1: Covered if branch at line 16-17\n', 'LOOP #1: Entered for loop at line 15-27\n', 'BRANCH #2: Covered else branch at line 18-26\n', 'BRANCH #4: Covered elif branch at line 23-24\n'] 0.8
+6
+['BRANCH #1: Covered if branch at line 16-17\n', 'LOOP #1: Entered for loop at line 15-27\n', 'BRANCH #1: Covered if branch at line 16-17\n', 'LOOP #1: Entered for loop at line 15-27\n', 'BRANCH #2: Covered else branch at line 18-26\n'] 0.8
 func under test not called
+78
+['BRANCH #1: Covered if branch at line 13-14\n', 'LOOP #12: Entered for loop at line 128-141\n', 'BRANCH #25: Covered elif branch at line 138-139\n', 'BRANCH #1: Covered if branch at line 13-14\n', 'LOOP #12: Entered for loop at line 128-141\n'] 1.0
+func under test not called
+func under test not called
+func under test not called
+59
+['LOOP #12: Entered for loop at line 128-141\n', 'BRANCH #21: Covered if branch at line 129-137\n', 'BRANCH #22: Covered if branch at line 132-133\n', 'LOOP #1: Entered for loop at line 19-20\n', 'LOOP #12: Entered for loop at line 128-141\n'] 0.8
+10
+['LOOP #2: Entered while loop at line 20-21\n', 'LOOP #2: Entered while loop at line 20-21\n', 'LOOP #1: Entered while loop at line 19-34\n', 'LOOP #3: Entered while loop at line 22-23\n', 'LOOP #3: Entered while loop at line 22-23\n'] 0.4
 1
 ['LOOP #2: Entered while loop at line 20-21\n', 'LOOP #1: Entered while loop at line 19-34\n', 'LOOP #3: Entered while loop at line 22-23\n', 'LOOP #3: Entered while loop at line 22-23\n', 'LOOP #1: Entered while loop at line 19-34\n'] 0.0
 1
 ['BRANCH #1: Covered if branch at line 13-14\n'] 1.0
--1
 0
 ['LOOP #2: Entered for loop at line 16-19\n', 'LOOP #2: Entered for loop at line 16-19\n', 'LOOP #2: Entered for loop at line 16-19\n', 'LOOP #1: Entered for loop at line 15-19\n', 'LOOP #2: Entered for loop at line 16-19\n'] 0.0
--1
 0
 ['LOOP #2: Entered for loop at line 16-19\n', 'LOOP #2: Entered for loop at line 16-19\n', 'LOOP #1: Entered for loop at line 15-19\n', 'LOOP #2: Entered for loop at line 16-19\n', 'LOOP #2: Entered for loop at line 16-19\n'] 0.0
-[41, 71]
+[2, 3]
 0
 ['LOOP #3: Entered while loop at line 25-26\n', 'BRANCH #1: Covered if branch at line 28-29\n', 'BRANCH #3: Covered if branch at line 34-35\n', 'LOOP #1: Entered while loop at line 18-40\n', 'LOOP #2: Entered for loop at line 24-33\n'] 0.0
-51
-['BRANCH #2: Covered if branch at line 30-32\n', 'LOOP #2: Entered for loop at line 24-33\n', 'LOOP #3: Entered while loop at line 25-26\n', 'BRANCH #1: Covered if branch at line 28-29\n', 'BRANCH #5: Covered else branch at line 38-39\n'] 0.8
+[2, 5]
 0
-['LOOP #4: Entered for loop at line 34-38\n', 'BRANCH #3: Covered if branch at line 35-37\n', 'LOOP #3: Entered while loop at line 28-38\n', 'LOOP #4: Entered for loop at line 34-38\n', 'BRANCH #3: Covered if branch at line 35-37\n'] 0.0
-16
-['BRANCH #3: Covered if branch at line 35-37\n', 'LOOP #4: Entered for loop at line 34-38\n', 'BRANCH #3: Covered if branch at line 35-37\n', 'LOOP #3: Entered while loop at line 28-38\n', 'BRANCH #2: Covered if branch at line 32-33\n'] 0.8
-13
-['LOOP #2: Entered for loop at line 22-24\n', 'LOOP #2: Entered for loop at line 22-24\n', 'LOOP #2: Entered for loop at line 22-24\n', 'LOOP #2: Entered for loop at line 22-24\n', 'LOOP #3: Entered while loop at line 28-38\n'] 0.8
-False
-1
-['BRANCH #1: Covered if branch at line 19-20\n'] 0.0
+['BRANCH #2: Covered if branch at line 30-32\n', 'LOOP #2: Entered for loop at line 24-33\n', 'LOOP #3: Entered while loop at line 25-26\n', 'BRANCH #1: Covered if branch at line 28-29\n', 'BRANCH #5: Covered else branch at line 38-39\n'] 0.0
+[11, 13]
+0
+['LOOP #2: Entered for loop at line 24-33\n', 'BRANCH #2: Covered if branch at line 30-32\n', 'LOOP #2: Entered for loop at line 24-33\n', 'LOOP #3: Entered while loop at line 25-26\n', 'BRANCH #1: Covered if branch at line 28-29\n'] 0.0
+[23, 29]
+0
+['LOOP #2: Entered for loop at line 24-33\n', 'LOOP #3: Entered while loop at line 25-26\n', 'BRANCH #1: Covered if branch at line 28-29\n', 'BRANCH #4: Covered elif branch at line 36-37\n', 'LOOP #1: Entered while loop at line 18-40\n'] 0.0
 0
 syntax error
 def test_validTicTacToe():
@@ -354,761 +227,631 @@ def test_validTicTacToe():
 
         def validTicTacToe(self, board):
 
-            def isWin(c: str) -> bool:
+            def isWin(c):
                 return any((row.count(c) == 3 for row in board)) or any((row.count(c) == 3 for row in list(zip(*board)))) or all((board[i][i] == c for i in range(3))) or all((board[i][2 - i] == c for i in range(3)))
             countX = sum((row.count('X') for row in board))
             countO = sum((row.count('O') for row in board))
             if countX < countO:
                 return False
-            elif countX - countO > 1:
+            if countX - countO > 1:
                 return False
-            else:
-                pass
-            if isWin('X') and countX == countO:
+            if isWin('X'):
+                return True
+            if isWin('O'):
                 return False
-            elif isWin('O') and countX != countO:
-                return False
-            else:
-                pass
-            return True
     solution = Solution()
-    board = ['XXO', 'XYX', 'OXX']
-    assert solution.validTicTacToe(board) == False
+    board = ['XXX', '   ', '   ']
+    assert solution.validTicTacToe(board)
 False
-1
+0
+['LOOP #3: Entered for loop at line 23-25\n', 'LOOP #1: Entered for loop at line 21-25\n', 'LOOP #2: Entered for loop at line 22-25\n', 'LOOP #3: Entered for loop at line 23-25\n', 'LOOP #3: Entered for loop at line 23-25\n'] 0.0
+True
+0
 ['LOOP #2: Entered for loop at line 22-25\n', 'LOOP #3: Entered for loop at line 23-25\n', 'LOOP #1: Entered for loop at line 21-25\n', 'LOOP #2: Entered for loop at line 22-25\n', 'LOOP #3: Entered for loop at line 23-25\n'] 0.0
-0
-['LOOP #3: Entered for loop at line 23-25\n', 'LOOP #1: Entered for loop at line 21-25\n', 'LOOP #2: Entered for loop at line 22-25\n', 'LOOP #3: Entered for loop at line 23-25\n', 'LOOP #4: Entered for loop at line 26-29\n'] 0.0
-False
-0
-['LOOP #3: Entered for loop at line 23-25\n', 'LOOP #2: Entered for loop at line 22-25\n', 'LOOP #3: Entered for loop at line 23-25\n', 'LOOP #3: Entered for loop at line 23-25\n', 'LOOP #3: Entered for loop at line 23-25\n'] 0.0
-1
-15
-['BRANCH #2: Covered if branch at line 30-31\n', 'LOOP #5: Entered for loop at line 29-37\n', 'LOOP #6: Entered for loop at line 33-37\n', 'LOOP #6: Entered for loop at line 33-37\n', 'BRANCH #3: Covered if branch at line 34-35\n'] 0.6
-LL.RRR.L
+25
+['LOOP #3: Entered for loop at line 23-25\n', 'LOOP #1: Entered for loop at line 21-25\n', 'LOOP #2: Entered for loop at line 22-25\n', 'LOOP #3: Entered for loop at line 23-25\n', 'LOOP #4: Entered for loop at line 26-29\n'] 0.8
+25
+['LOOP #3: Entered for loop at line 23-25\n', 'LOOP #2: Entered for loop at line 22-25\n', 'LOOP #3: Entered for loop at line 23-25\n', 'LOOP #3: Entered for loop at line 23-25\n', 'LOOP #3: Entered for loop at line 23-25\n'] 0.8
+LL.RRRRLLL
 0
 ['LOOP #1: Entered for loop at line 17-40\n', 'LOOP #1: Entered for loop at line 17-40\n', 'LOOP #1: Entered for loop at line 17-40\n', 'BRANCH #3: Covered elif branch at line 24-39\n', 'BRANCH #6: Covered else branch at line 31-38\n'] 0.0
-0
-['LOOP #4: Entered while loop at line 34-38\n', 'LOOP #1: Entered for loop at line 17-40\n', 'LOOP #1: Entered for loop at line 17-40\n', 'LOOP #1: Entered for loop at line 17-40\n', 'BRANCH #1: Covered if branch at line 18-23\n'] 0.0
-LLL.....
+25
+['LOOP #4: Entered while loop at line 34-38\n', 'LOOP #1: Entered for loop at line 17-40\n', 'LOOP #1: Entered for loop at line 17-40\n', 'LOOP #1: Entered for loop at line 17-40\n', 'BRANCH #1: Covered if branch at line 18-23\n'] 0.6
+LL.RRRRLLL
 0
 ['LOOP #1: Entered for loop at line 17-40\n', 'LOOP #1: Entered for loop at line 17-40\n', 'BRANCH #3: Covered elif branch at line 24-39\n', 'BRANCH #6: Covered else branch at line 31-38\n', 'LOOP #1: Entered for loop at line 17-40\n'] 0.0
-LL.RRLLL
+LL.RRRRLLL
 0
 ['BRANCH #2: Covered if branch at line 19-22\n', 'LOOP #2: Entered while loop at line 20-22\n', 'LOOP #1: Entered for loop at line 17-40\n', 'LOOP #1: Entered for loop at line 17-40\n', 'BRANCH #3: Covered elif branch at line 24-39\n'] 0.0
+5
 0
 ['LOOP #3: Entered while loop at line 23-26\n', 'LOOP #3: Entered while loop at line 23-26\n', 'LOOP #4: Entered while loop at line 27-30\n', 'LOOP #4: Entered while loop at line 27-30\n', 'BRANCH #1: Covered if branch at line 31-32\n'] 0.0
 5
 0
 ['LOOP #3: Entered while loop at line 23-26\n', 'LOOP #4: Entered while loop at line 27-30\n', 'LOOP #4: Entered while loop at line 27-30\n', 'BRANCH #1: Covered if branch at line 31-32\n', 'LOOP #1: Entered while loop at line 16-33\n'] 0.0
-2
-15
-['LOOP #5: Entered for loop at line 38-43\n', 'BRANCH #3: Covered if branch at line 39-42\n', 'LOOP #3: Entered for loop at line 22-26\n', 'LOOP #1: Entered while loop at line 17-28\n', 'LOOP #2: Entered for loop at line 18-26\n'] 1.0
-syntax error
-def test_kSimilarity():
-    solution = Solution()
-
-    def is_k_similar(s1: str, s2: str) -> int:
-syntax error
-    def test_kSimilarity(self):
-        def kSimilarity(s1, s2):
-            ans = 0
-            q = collections.deque([s1])
-            seen = {s1}
-
-            while q:
-                for _ in range(len(q)):
-                    curr = q.popleft()
-                    if curr == s2:
-                        return ans
-                    for child in self._getChildren(curr, s2):
-                        if child in seen:
-                            continue
-                        q.append(child)
-                        seen.add(child)
-                ans += 1
-
-            return -1
-
-        def _getChildren(self, curr, target):
-            children = []
-            s = list(curr)
-            i = 0
-            while curr[i] == target[i]:
-                i += 1
-
-            for j in range(i + 1, len(s)):
-                if s[j] == target[i]:
-                    s[i], s[j] = s[j], s[i]
-                    children.append(''.join(s))
-                    s[i], s[j] = s[j], s[i]
-
-            return children
-
-        solution = Solution()
-        self.assertEqual(kSimilarity("ab", "ba"), 1)
+8
+['LOOP #4: Entered while loop at line 35-37\n', 'LOOP #5: Entered for loop at line 38-43\n', 'BRANCH #3: Covered if branch at line 39-42\n', 'LOOP #3: Entered for loop at line 22-26\n', 'LOOP #1: Entered while loop at line 17-28\n'] 0.8
+func under test not called
 0
 ['LOOP #3: Entered for loop at line 24-26\n', 'LOOP #3: Entered for loop at line 24-26\n', 'LOOP #3: Entered for loop at line 24-26\n', 'LOOP #1: Entered for loop at line 13-16\n', 'LOOP #1: Entered for loop at line 13-16\n'] 0.0
+2
 0
 ['LOOP #1: Entered for loop at line 13-16\n', 'BRANCH #1: Covered if branch at line 14-15\n', 'LOOP #3: Entered for loop at line 24-26\n', 'LOOP #2: Entered for loop at line 17-20\n'] 0.0
 0
-['BRANCH #5: Covered if branch at line 32-33\n'] 0.0
+['LOOP #2: Entered for loop at line 17-20\n', 'LOOP #2: Entered for loop at line 17-20\n', 'LOOP #2: Entered for loop at line 17-20\n', 'BRANCH #2: Covered if branch at line 18-19\n', 'LOOP #4: Entered for loop at line 28-30\n'] 0.0
 1
-['LOOP #3: Entered for loop at line 21-23\n', 'LOOP #3: Entered for loop at line 21-23\n', 'LOOP #3: Entered for loop at line 21-23\n', 'LOOP #3: Entered for loop at line 21-23\n', 'LOOP #3: Entered for loop at line 21-23\n'] 0.0
+['BRANCH #5: Covered if branch at line 32-33\n'] 1.0
+14
+['LOOP #3: Entered for loop at line 21-23\n', 'LOOP #3: Entered for loop at line 21-23\n', 'LOOP #3: Entered for loop at line 21-23\n', 'LOOP #3: Entered for loop at line 21-23\n', 'LOOP #3: Entered for loop at line 21-23\n'] 1.0
 1
-['BRANCH #6: Covered if branch at line 34-35\n'] 0.0
+['BRANCH #6: Covered if branch at line 34-35\n'] 1.0
+func under test not called
 0
-['LOOP #1: Entered for loop at line 15-19\n', 'LOOP #2: Entered for loop at line 17-19\n', 'LOOP #5: Entered for loop at line 40-42\n', 'LOOP #3: Entered for loop at line 21-23\n', 'LOOP #3: Entered for loop at line 21-23\n'] 0.0
-func under test not called
-func under test not called
-16
-['LOOP #1: Entered for loop at line 17-28\n', 'LOOP #2: Entered for loop at line 18-28\n', 'LOOP #2: Entered for loop at line 18-28\n', 'LOOP #2: Entered for loop at line 18-28\n', 'BRANCH #1: Covered if branch at line 20-21\n'] 1.0
-16
-['LOOP #1: Entered for loop at line 17-28\n', 'LOOP #2: Entered for loop at line 18-28\n', 'LOOP #2: Entered for loop at line 18-28\n', 'LOOP #2: Entered for loop at line 18-28\n', 'BRANCH #3: Covered elif branch at line 24-25\n'] 0.8
-3
-['LOOP #2: Entered for loop at line 18-28\n', 'LOOP #2: Entered for loop at line 18-28\n', 'BRANCH #3: Covered elif branch at line 24-25\n', 'LOOP #2: Entered for loop at line 18-28\n', 'LOOP #2: Entered for loop at line 18-28\n'] 0.2
+['BRANCH #2: Covered if branch at line 17-18\n'] 0.0
 0
 ['LOOP #2: Entered for loop at line 30-36\n', 'LOOP #2: Entered for loop at line 30-36\n', 'BRANCH #4: Covered if branch at line 31-35\n', 'BRANCH #5: Covered if branch at line 33-35\n', 'LOOP #3: Entered for loop at line 39-45\n'] 0.0
-[0, 3]
 0
-['LOOP #3: Entered for loop at line 39-45\n', 'LOOP #3: Entered for loop at line 39-45\n', 'BRANCH #6: Covered if branch at line 40-44\n', 'BRANCH #7: Covered if branch at line 42-44\n', 'LOOP #4: Entered while loop at line 46-50\n'] 0.0
-func under test not called
-32
+['LOOP #3: Entered for loop at line 39-45\n', 'LOOP #3: Entered for loop at line 39-45\n', 'LOOP #3: Entered for loop at line 39-45\n', 'BRANCH #6: Covered if branch at line 40-44\n', 'BRANCH #7: Covered if branch at line 42-44\n'] 0.0
+0
+['LOOP #3: Entered for loop at line 22-32\n', 'LOOP #4: Entered for loop at line 25-32\n', 'BRANCH #3: Covered if branch at line 30-31\n', 'LOOP #4: Entered for loop at line 25-32\n', 'BRANCH #2: Covered if branch at line 28-29\n'] 0.0
+44
 0
 ['LOOP #4: Entered for loop at line 25-32\n', 'BRANCH #2: Covered if branch at line 28-29\n', 'LOOP #4: Entered for loop at line 25-32\n', 'BRANCH #2: Covered if branch at line 28-29\n', 'LOOP #4: Entered for loop at line 25-32\n'] 0.0
-240
-636
-['LOOP #4: Entered for loop at line 25-32\n', 'BRANCH #2: Covered if branch at line 28-29\n', 'LOOP #3: Entered for loop at line 22-32\n', 'LOOP #4: Entered for loop at line 25-32\n', 'BRANCH #2: Covered if branch at line 28-29\n'] 1.0
-10
+0
+['LOOP #4: Entered for loop at line 25-32\n', 'BRANCH #2: Covered if branch at line 28-29\n', 'LOOP #3: Entered for loop at line 22-32\n', 'LOOP #4: Entered for loop at line 25-32\n', 'BRANCH #2: Covered if branch at line 28-29\n'] 0.0
+44
 0
 ['LOOP #4: Entered for loop at line 25-32\n', 'BRANCH #2: Covered if branch at line 28-29\n', 'LOOP #4: Entered for loop at line 25-32\n', 'BRANCH #3: Covered if branch at line 30-31\n', 'LOOP #4: Entered for loop at line 25-32\n'] 0.0
-20
-159
+10
+0
 syntax error
 def test_knightDialer():
 
-    def knightDialer(self, n: int) -> int:
-        dirs = ((1, 2), (2, 1), (2, -1), (1, -2), (-1, -2), (-2, -1), (-2, 1), (-1, 2))
-        kMod = 10 ** 9 + 7
-        dp = [[1] * 3 for _ in range(4)]
-        dp[3][0] = dp[3][2] = 0
-        for _ in range(n - 1):
-            newDp = [[0] * 3 for _ in range(4)]
-            for i in range(4):
-                for j in range(3):
-                    if (i, j) in ((3, 0), (3, 2)):
-                        continue
-                    for (dx, dy) in dirs:
-                        x = i + dx
-                        y = j + dy
-                        if x < 0 or x >= 4 or y < 0 or (y >= 3):
+    class Solution:
+
+        def knightDialer(self, n: int) -> int:
+            dirs = ((1, 2), (2, 1), (2, -1), (1, -2), (-1, -2), (-2, -1), (-2, 1), (-1, 2))
+            kMod = 10 ** 9 + 7
+            dp = [[1] * 3 for _ in range(4)]
+            dp[3][0] = dp[3][2] = 0
+            for _ in range(n - 1):
+                newDp = [[0] * 3 for _ in range(4)]
+                for i in range(4):
+                    for j in range(3):
+                        if (i, j) in ((3, 0), (3, 2)):
                             continue
-                        if (x, y) in ((3, 0), (3, 2)):
-                            continue
-                        newDp[x][y] = (newDp[x][y] + dp[i][j]) % kMod
-            dp = newDp
-        return sum(map(sum, dp)) % kMod
+                        for (dx, dy) in dirs:
+                            x = i + dx
+                            y = j + dy
+                            if x < 0 or x >= 4 or y < 0 or (y >= 3):
+                                continue
+                            if (x, y) in ((3, 0), (3, 2)):
+                                continue
+                            newDp[x][y] = (newDp[x][y] + dp[i][j]) % kMod
+                        newDp[i][j] = (newDp[i][j] + dp[i][j]) % kMod
+                dp = newDp
+            return sum(map(sum, dp)) % kMod
     solution = Solution()
-    print(solution.knightDialer(2))
-32
-['LOOP #2: Entered for loop at line 42-46\n', 'LOOP #2: Entered for loop at line 42-46\n', 'BRANCH #6: Covered if branch at line 43-45\n', 'BRANCH #5: Covered if branch at line 30-31\n', 'BRANCH #3: Covered elif branch at line 23-24\n'] 1.0
+    print(solution.knightDialer(1))
+1
+0
+['LOOP #3: Entered for loop at line 47-51\n', 'BRANCH #5: Covered if branch at line 30-31\n', 'LOOP #3: Entered for loop at line 47-51\n', 'BRANCH #5: Covered if branch at line 30-31\n', 'LOOP #3: Entered for loop at line 47-51\n'] 0.0
+0
+['LOOP #1: Entered for loop at line 28-31\n', 'LOOP #2: Entered for loop at line 32-35\n', 'LOOP #2: Entered for loop at line 32-35\n', 'BRANCH #3: Covered if branch at line 33-35\n', 'BRANCH #1: Covered if branch at line 19-20\n'] 0.0
 0
 ['BRANCH #2: Covered if branch at line 29-30\n', 'LOOP #1: Entered for loop at line 28-31\n', 'BRANCH #2: Covered if branch at line 29-30\n', 'BRANCH #1: Covered if branch at line 19-20\n', 'LOOP #2: Entered for loop at line 32-35\n'] 0.0
 0
 ['LOOP #1: Entered for loop at line 15-20\n', 'LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n'] 0.0
 0
-['LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n', 'LOOP #1: Entered for loop at line 15-20\n', 'LOOP #2: Entered for loop at line 16-20\n'] 0.0
-18
-['BRANCH #1: Covered if branch at line 21-26\n', 'LOOP #2: Entered for loop at line 28-41\n', 'BRANCH #2: Covered if branch at line 29-38\n', 'LOOP #3: Entered for loop at line 31-38\n', 'LOOP #4: Entered for loop at line 32-38\n'] 1.0
-14
-['LOOP #3: Entered for loop at line 31-38\n', 'LOOP #4: Entered for loop at line 32-38\n', 'LOOP #4: Entered for loop at line 32-38\n', 'LOOP #4: Entered for loop at line 32-38\n', 'LOOP #2: Entered for loop at line 28-41\n'] 0.6
-syntax error
-    def test_sampleStats(self):
-        count = [0]*126 + [1] + [2]*10 + [3]*5 + [4]
-        result = Solution().sampleStats(count)
-        self.assertAlmostEqual(result[0], 0)
-        self.assertAlmostEqual(result[1], 255)
-        self.assertAlmostEqual(result[2], 8.33333)
-
-def test_sampleStats():
-    solution=Solution()
-    count = [0, 0, 0, 0, 1, 1, 1]
-    result = solution.sampleStats(count)
-4
-58
-['LOOP #2: Entered for loop at line 20-30\n', 'BRANCH #1: Covered if branch at line 21-29\n', 'BRANCH #3: Covered else branch at line 24-25\n', 'BRANCH #5: Covered else branch at line 28-29\n', 'LOOP #3: Entered for loop at line 31-38\n'] 1.0
+['LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n'] 0.0
 0
-['BRANCH #5: Covered else branch at line 28-29\n', 'LOOP #2: Entered for loop at line 20-30\n', 'BRANCH #1: Covered if branch at line 21-29\n', 'BRANCH #3: Covered else branch at line 24-25\n', 'BRANCH #5: Covered else branch at line 28-29\n'] 0.0
-20
-['BRANCH #2: Covered if branch at line 22-23\n', 'BRANCH #4: Covered if branch at line 26-27\n', 'LOOP #2: Entered for loop at line 20-30\n', 'BRANCH #1: Covered if branch at line 21-29\n', 'BRANCH #3: Covered else branch at line 24-25\n'] 0.6
+['LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n', 'LOOP #1: Entered for loop at line 15-20\n', 'LOOP #2: Entered for loop at line 16-20\n'] 0.0
+0
+['LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n', 'LOOP #1: Entered for loop at line 15-20\n', 'LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n'] 0.0
+0
+['LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n', 'LOOP #2: Entered for loop at line 16-20\n', 'LOOP #3: Entered for loop at line 21-31\n'] 0.0
+0
+['LOOP #2: Entered for loop at line 29-34\n', 'LOOP #2: Entered for loop at line 29-34\n', 'LOOP #2: Entered for loop at line 29-34\n', 'LOOP #2: Entered for loop at line 29-34\n', 'LOOP #2: Entered for loop at line 29-34\n'] 0.0
+0
+['LOOP #2: Entered for loop at line 20-30\n', 'BRANCH #1: Covered if branch at line 21-29\n', 'BRANCH #3: Covered else branch at line 24-25\n', 'BRANCH #5: Covered else branch at line 28-29\n', 'LOOP #3: Entered for loop at line 31-38\n'] 0.0
+func under test not called
+0
+['BRANCH #2: Covered if branch at line 22-23\n', 'BRANCH #4: Covered if branch at line 26-27\n', 'LOOP #2: Entered for loop at line 20-30\n', 'BRANCH #1: Covered if branch at line 21-29\n', 'BRANCH #3: Covered else branch at line 24-25\n'] 0.0
 0
 ['BRANCH #3: Covered else branch at line 24-25\n', 'BRANCH #4: Covered if branch at line 26-27\n', 'LOOP #2: Entered for loop at line 20-30\n', 'LOOP #2: Entered for loop at line 20-30\n', 'LOOP #3: Entered for loop at line 31-38\n'] 0.0
-0
-['BRANCH #4: Covered if branch at line 39-40\n', 'LOOP #3: Entered while loop at line 32-46\n', 'LOOP #4: Entered for loop at line 33-44\n', 'LOOP #5: Entered for loop at line 36-44\n', 'LOOP #5: Entered for loop at line 36-44\n'] 0.0
+18
+['BRANCH #5: Covered if branch at line 30-31\n', 'LOOP #2: Entered for loop at line 44-46\n', 'BRANCH #5: Covered if branch at line 30-31\n', 'LOOP #2: Entered for loop at line 44-46\n', 'LOOP #2: Entered for loop at line 44-46\n'] 1.0
 18
 ['BRANCH #5: Covered if branch at line 30-31\n', 'LOOP #3: Entered for loop at line 47-49\n', 'LOOP #4: Entered for loop at line 50-52\n', 'BRANCH #5: Covered if branch at line 30-31\n', 'LOOP #4: Entered for loop at line 50-52\n'] 0.8
 18
+['BRANCH #5: Covered if branch at line 30-31\n', 'LOOP #2: Entered for loop at line 44-46\n', 'LOOP #2: Entered for loop at line 44-46\n', 'LOOP #3: Entered for loop at line 47-49\n', 'LOOP #3: Entered for loop at line 47-49\n'] 1.0
+18
+['BRANCH #5: Covered if branch at line 30-31\n', 'LOOP #2: Entered for loop at line 44-46\n', 'LOOP #2: Entered for loop at line 44-46\n', 'BRANCH #5: Covered if branch at line 30-31\n', 'LOOP #3: Entered for loop at line 47-49\n'] 0.6
+18
+['LOOP #2: Entered for loop at line 44-46\n', 'BRANCH #5: Covered if branch at line 30-31\n', 'LOOP #3: Entered for loop at line 47-49\n', 'LOOP #4: Entered for loop at line 50-52\n', 'BRANCH #5: Covered if branch at line 30-31\n'] 0.6
+18
 ['BRANCH #4: Covered else branch at line 25-27\n', 'LOOP #1: Entered for loop at line 41-43\n', 'BRANCH #4: Covered else branch at line 25-27\n', 'LOOP #1: Entered for loop at line 41-43\n', 'BRANCH #5: Covered if branch at line 30-31\n'] 0.6
-0
-['LOOP #2: Entered for loop at line 46-59\n', 'BRANCH #4: Covered if branch at line 50-52\n', 'BRANCH #2: Covered if branch at line 33-34\n', 'BRANCH #6: Covered if branch at line 57-59\n', 'LOOP #1: Entered while loop at line 45-61\n'] 0.0
-func under test not called
-3
-['BRANCH #4: Covered if branch at line 50-52\n', 'BRANCH #2: Covered if branch at line 33-34\n', 'LOOP #2: Entered for loop at line 46-59\n', 'BRANCH #2: Covered if branch at line 33-34\n', 'LOOP #1: Entered while loop at line 45-61\n'] 0.2
-[]
 1
-['LOOP #1: Entered for loop at line 20-26\n', 'LOOP #2: Entered for loop at line 27-35\n', 'BRANCH #4: Covered if branch at line 28-31\n', 'LOOP #2: Entered for loop at line 27-35\n', 'BRANCH #4: Covered if branch at line 28-31\n'] 0.0
+['BRANCH #1: Covered if branch at line 13-14\n'] 1.0
 0
+['LOOP #4: Entered for loop at line 37-41\n', 'LOOP #4: Entered for loop at line 37-41\n', 'LOOP #4: Entered for loop at line 37-41\n', 'LOOP #4: Entered for loop at line 37-41\n', 'LOOP #4: Entered for loop at line 37-41\n'] 0.0
 0
-['BRANCH #3: Covered if branch at line 30-32\n', 'BRANCH #4: Covered if branch at line 31-32\n', 'BRANCH #2: Covered if branch at line 19-20\n', 'BRANCH #2: Covered if branch at line 19-20\n', 'BRANCH #1: Covered if branch at line 17-18\n'] 0.0
-func under test not called
+['BRANCH #1: Covered if branch at line 17-18\n', 'BRANCH #2: Covered if branch at line 19-20\n', 'BRANCH #2: Covered if branch at line 19-20\n', 'BRANCH #1: Covered if branch at line 17-18\n', 'BRANCH #2: Covered if branch at line 19-20\n'] 0.0
+0
+['BRANCH #2: Covered if branch at line 19-20\n', 'BRANCH #2: Covered if branch at line 19-20\n', 'BRANCH #1: Covered if branch at line 17-18\n', 'BRANCH #1: Covered if branch at line 17-18\n', 'BRANCH #2: Covered if branch at line 19-20\n'] 0.0
 0
 ['BRANCH #2: Covered if branch at line 19-20\n', 'BRANCH #2: Covered if branch at line 19-20\n', 'LOOP #4: Entered for loop at line 37-41\n', 'LOOP #4: Entered for loop at line 37-41\n', 'LOOP #4: Entered for loop at line 37-41\n'] 0.0
-1
 0
 ['BRANCH #1: Covered if branch at line 17-18\n', 'BRANCH #2: Covered if branch at line 19-20\n', 'LOOP #3: Entered for loop at line 36-41\n', 'LOOP #4: Entered for loop at line 37-41\n', 'LOOP #4: Entered for loop at line 37-41\n'] 0.0
-17
-['BRANCH #2: Covered if branch at line 34-35\n', 'LOOP #5: Entered for loop at line 31-36\n', 'LOOP #5: Entered for loop at line 31-36\n', 'LOOP #1: Entered while loop at line 24-43\n', 'LOOP #2: Entered for loop at line 26-43\n'] 0.4
+0
+['BRANCH #1: Covered if branch at line 21-23\n', 'LOOP #2: Entered for loop at line 20-24\n', 'LOOP #1: Entered for loop at line 19-24\n', 'LOOP #2: Entered for loop at line 20-24\n', 'LOOP #2: Entered for loop at line 20-24\n'] 0.0
+0
+0
+['LOOP #4: Entered for loop at line 26-29\n', 'LOOP #4: Entered for loop at line 26-29\n', 'LOOP #3: Entered for loop at line 25-29\n', 'LOOP #4: Entered for loop at line 26-29\n', 'LOOP #4: Entered for loop at line 26-29\n'] 0.0
+0
+0
+['LOOP #4: Entered for loop at line 26-29\n', 'BRANCH #2: Covered if branch at line 27-28\n', 'LOOP #4: Entered for loop at line 26-29\n', 'LOOP #3: Entered for loop at line 25-29\n', 'LOOP #4: Entered for loop at line 26-29\n'] 0.0
+0
+['BRANCH #1: Covered if branch at line 21-23\n', 'LOOP #3: Entered for loop at line 25-29\n', 'LOOP #4: Entered for loop at line 26-29\n', 'BRANCH #2: Covered if branch at line 27-28\n', 'LOOP #4: Entered for loop at line 26-29\n'] 0.0
+0
+['LOOP #5: Entered for loop at line 31-36\n', 'BRANCH #2: Covered if branch at line 34-35\n', 'LOOP #5: Entered for loop at line 31-36\n', 'LOOP #4: Entered for loop at line 29-43\n', 'LOOP #5: Entered for loop at line 31-36\n'] 0.0
+0
+['LOOP #6: Entered for loop at line 48-51\n', 'LOOP #7: Entered for loop at line 49-51\n', 'BRANCH #1: Covered if branch at line 16-17\n'] 0.0
+4
+0
+['BRANCH #4: Covered if branch at line 34-35\n', 'LOOP #3: Entered for loop at line 27-41\n', 'LOOP #3: Entered for loop at line 27-41\n', 'BRANCH #2: Covered if branch at line 30-31\n', 'LOOP #3: Entered for loop at line 27-41\n'] 0.0
 func under test not called
-[0, 0]
-0
-['LOOP #3: Entered for loop at line 27-36\n', 'LOOP #3: Entered for loop at line 27-36\n', 'BRANCH #4: Covered if branch at line 37-39\n', 'LOOP #2: Entered for loop at line 24-40\n', 'LOOP #3: Entered for loop at line 27-36\n'] 0.0
-51
-['LOOP #6: Entered for loop at line 37-39\n', 'LOOP #4: Entered for loop at line 35-39\n', 'LOOP #5: Entered for loop at line 36-39\n', 'LOOP #6: Entered for loop at line 37-39\n', 'LOOP #6: Entered for loop at line 37-39\n'] 1.0
-26
-['LOOP #4: Entered for loop at line 22-26\n', 'BRANCH #2: Covered if branch at line 25-26\n', 'LOOP #2: Entered while loop at line 18-26\n', 'LOOP #4: Entered for loop at line 22-26\n', 'BRANCH #2: Covered if branch at line 25-26\n'] 0.6
-28
-['BRANCH #1: Covered if branch at line 23-24\n', 'BRANCH #2: Covered if branch at line 25-26\n', 'LOOP #1: Entered for loop at line 17-28\n', 'LOOP #2: Entered while loop at line 18-26\n', 'LOOP #4: Entered for loop at line 22-26\n'] 0.6
-17
-['LOOP #4: Entered for loop at line 22-26\n', 'LOOP #4: Entered for loop at line 22-26\n', 'LOOP #4: Entered for loop at line 22-26\n', 'LOOP #4: Entered for loop at line 22-26\n', 'LOOP #4: Entered for loop at line 22-26\n'] 0.2
-0
-['BRANCH #1: Covered if branch at line 15-16\n', 'LOOP #1: Entered for loop at line 14-16\n', 'BRANCH #1: Covered if branch at line 15-16\n', 'LOOP #1: Entered for loop at line 14-16\n', 'BRANCH #1: Covered if branch at line 15-16\n'] 0.0
+func under test not called
+func under test not called
+func under test not called
+21
+['BRANCH #1: Covered if branch at line 15-16\n', 'LOOP #1: Entered for loop at line 14-16\n', 'BRANCH #1: Covered if branch at line 15-16\n', 'LOOP #1: Entered for loop at line 14-16\n', 'BRANCH #1: Covered if branch at line 15-16\n'] 0.6
 21
 ['BRANCH #1: Covered if branch at line 15-16\n', 'LOOP #1: Entered for loop at line 14-16\n', 'LOOP #1: Entered for loop at line 14-16\n', 'BRANCH #1: Covered if branch at line 15-16\n', 'LOOP #1: Entered for loop at line 14-16\n'] 1.0
-29
-['LOOP #1: Entered for loop at line 14-16\n', 'BRANCH #1: Covered if branch at line 15-16\n', 'LOOP #1: Entered for loop at line 14-16\n', 'LOOP #1: Entered for loop at line 14-16\n', 'BRANCH #1: Covered if branch at line 15-16\n'] 0.8
-func under test not called
 21
-['LOOP #2: Entered for loop at line 18-21\n', 'BRANCH #2: Covered if branch at line 19-20\n', 'LOOP #2: Entered for loop at line 18-21\n', 'BRANCH #2: Covered if branch at line 19-20\n', 'LOOP #2: Entered for loop at line 18-21\n'] 1.0
-a0b1c2
+['LOOP #1: Entered for loop at line 14-16\n', 'BRANCH #1: Covered if branch at line 15-16\n', 'LOOP #1: Entered for loop at line 14-16\n', 'LOOP #1: Entered for loop at line 14-16\n', 'BRANCH #1: Covered if branch at line 15-16\n'] 1.0
+21
+['BRANCH #1: Covered if branch at line 15-16\n', 'LOOP #2: Entered for loop at line 18-21\n', 'LOOP #2: Entered for loop at line 18-21\n', 'LOOP #2: Entered for loop at line 18-21\n', 'LOOP #2: Entered for loop at line 18-21\n'] 0.4
+21
+['LOOP #2: Entered for loop at line 18-21\n', 'BRANCH #2: Covered if branch at line 19-20\n', 'LOOP #2: Entered for loop at line 18-21\n', 'BRANCH #2: Covered if branch at line 19-20\n', 'LOOP #2: Entered for loop at line 18-21\n'] 0.6
 21
 ['BRANCH #2: Covered if branch at line 19-20\n', 'LOOP #2: Entered for loop at line 18-21\n', 'BRANCH #2: Covered if branch at line 19-20\n', 'LOOP #2: Entered for loop at line 18-21\n', 'BRANCH #2: Covered if branch at line 19-20\n'] 0.6
-func under test not called
-syntax error
-def test_findCriticalAndPseudoCriticalEdges(self):
-    class Solution:
-        def findCriticalAndPseudoCriticalEdges(self, n: int, edges: List[List[int]]) -> List[List[int]]:
-            # Your code here...
-
-    solution = Solution()
-    n = 3
-    edges = [[0,1,2],[1,2,3],[0,2,5]]
-    result = solution.findCriticalAndPseudoCriticalEdges(n, edges)
-0
 0
 ['BRANCH #4: Covered if branch at line 30-31\n', 'LOOP #1: Entered for loop at line 27-38\n', 'LOOP #1: Entered for loop at line 27-38\n', 'BRANCH #3: Covered if branch at line 28-29\n', 'BRANCH #5: Covered elif branch at line 32-33\n'] 0.0
 0
 ['BRANCH #3: Covered if branch at line 28-29\n', 'BRANCH #4: Covered if branch at line 30-31\n', 'LOOP #1: Entered for loop at line 27-38\n', 'LOOP #1: Entered for loop at line 27-38\n', 'BRANCH #3: Covered if branch at line 28-29\n'] 0.0
 1
 ['BRANCH #2: Covered if branch at line 17-19\n'] 1.0
--1
-17
-['BRANCH #9: Covered if branch at line 51-52\n', 'LOOP #1: Entered for loop at line 44-56\n', 'BRANCH #5: Covered if branch at line 33-34\n', 'BRANCH #2: Covered if branch at line 22-23\n', 'BRANCH #10: Covered if branch at line 54-55\n'] 0.4
+1
+['BRANCH #1: Covered if branch at line 15-16\n'] 1.0
+4
+['BRANCH #2: Covered else branch at line 28-29\n', 'LOOP #3: Entered while loop at line 25-31\n', 'BRANCH #1: Covered if branch at line 26-27\n', 'LOOP #3: Entered while loop at line 25-31\n', 'BRANCH #1: Covered if branch at line 26-27\n'] 0.0
+4
+['LOOP #3: Entered while loop at line 25-31\n', 'BRANCH #2: Covered else branch at line 28-29\n'] 0.0
+4
+['LOOP #3: Entered while loop at line 25-31\n', 'BRANCH #2: Covered else branch at line 28-29\n', 'LOOP #3: Entered while loop at line 25-31\n', 'BRANCH #1: Covered if branch at line 26-27\n', 'LOOP #3: Entered while loop at line 25-31\n'] 0.0
 0
 ['LOOP #1: Entered for loop at line 19-24\n', 'LOOP #2: Entered for loop at line 20-24\n', 'LOOP #2: Entered for loop at line 20-24\n', 'LOOP #2: Entered for loop at line 20-24\n', 'BRANCH #1: Covered if branch at line 21-23\n'] 0.0
+2
 0
 ['LOOP #4: Entered for loop at line 26-29\n', 'BRANCH #2: Covered if branch at line 27-28\n', 'LOOP #3: Entered for loop at line 25-29\n', 'LOOP #4: Entered for loop at line 26-29\n', 'LOOP #4: Entered for loop at line 26-29\n'] 0.0
-None
 0
-['LOOP #3: Entered for loop at line 22-24\n', 'LOOP #2: Entered for loop at line 21-24\n', 'LOOP #3: Entered for loop at line 22-24\n', 'LOOP #4: Entered for loop at line 25-32\n', 'LOOP #5: Entered for loop at line 26-32\n'] 0.0
+['LOOP #3: Entered for loop at line 34-40\n', 'LOOP #2: Entered for loop at line 33-40\n', 'LOOP #3: Entered for loop at line 34-40\n', 'LOOP #3: Entered for loop at line 34-40\n', 'LOOP #3: Entered for loop at line 34-40\n'] 0.0
 0
 ['LOOP #2: Entered for loop at line 33-40\n', 'LOOP #3: Entered for loop at line 34-40\n', 'LOOP #3: Entered for loop at line 34-40\n', 'LOOP #3: Entered for loop at line 34-40\n', 'LOOP #3: Entered for loop at line 34-40\n'] 0.0
-func under test not called
-func under test not called
-True
+0
+['LOOP #2: Entered for loop at line 33-40\n', 'LOOP #3: Entered for loop at line 34-40\n', 'LOOP #3: Entered for loop at line 34-40\n', 'LOOP #3: Entered for loop at line 34-40\n', 'LOOP #2: Entered for loop at line 33-40\n'] 0.0
+0
+['LOOP #3: Entered for loop at line 34-40\n', 'LOOP #3: Entered for loop at line 34-40\n', 'LOOP #3: Entered for loop at line 34-40\n', 'LOOP #2: Entered for loop at line 33-40\n', 'LOOP #3: Entered for loop at line 34-40\n'] 0.0
 0
 ['LOOP #3: Entered for loop at line 34-40\n', 'LOOP #3: Entered for loop at line 34-40\n', 'LOOP #3: Entered for loop at line 34-40\n', 'LOOP #3: Entered for loop at line 34-40\n', 'LOOP #2: Entered for loop at line 33-40\n'] 0.0
-5
+7
 ['LOOP #1: Entered for loop at line 15-18\n', 'LOOP #2: Entered for loop at line 20-22\n', 'LOOP #3: Entered for loop at line 29-31\n', 'BRANCH #3: Covered if branch at line 30-31\n', 'BRANCH #1: Covered if branch at line 21-22\n'] 0.6
-[]
-5
+10
+['LOOP #1: Entered for loop at line 15-18\n', 'LOOP #1: Entered for loop at line 15-18\n', 'LOOP #1: Entered for loop at line 15-18\n', 'LOOP #2: Entered for loop at line 20-22\n', 'LOOP #3: Entered for loop at line 29-31\n'] 1.0
+7
+['LOOP #1: Entered for loop at line 15-18\n', 'LOOP #1: Entered for loop at line 15-18\n', 'LOOP #2: Entered for loop at line 20-22\n', 'LOOP #3: Entered for loop at line 29-31\n', 'LOOP #2: Entered for loop at line 20-22\n'] 1.0
+7
 ['LOOP #3: Entered for loop at line 29-31\n', 'LOOP #2: Entered for loop at line 20-22\n', 'LOOP #3: Entered for loop at line 29-31\n', 'BRANCH #3: Covered if branch at line 30-31\n', 'BRANCH #1: Covered if branch at line 21-22\n'] 0.4
+0
+['BRANCH #1: Covered if branch at line 18-19\n', 'LOOP #2: Entered while loop at line 25-29\n', 'BRANCH #2: Covered if branch at line 26-27\n', 'LOOP #2: Entered while loop at line 25-29\n', 'BRANCH #2: Covered if branch at line 26-27\n'] 0.0
 0
 ['BRANCH #2: Covered if branch at line 26-27\n', 'LOOP #2: Entered while loop at line 25-29\n', 'BRANCH #2: Covered if branch at line 26-27\n', 'LOOP #1: Entered while loop at line 17-21\n', 'BRANCH #1: Covered if branch at line 18-19\n'] 0.0
 0
 syntax error
 def test_checkPalindromeFormation():
-    solution = Solution()
-    assert solution.checkPalindromeFormation('x', 'y')
-2
-['LOOP #1: Entered while loop at line 17-21\n', 'LOOP #1: Entered while loop at line 17-21\n', 'LOOP #1: Entered while loop at line 17-21\n'] 0.6666666666666666
-syntax error
-    def test_countSubgraphsForEachDiameter(self):
-        n = 3
-        edges = [[1,2],[2,3]]
-        self.assertEqual(Solution().countSubgraphsForEachDiameter(n, edges), [2])
 
-if __name__ == '__main__':
-    unittest.main()
-3
-['LOOP #1: Entered for loop at line 40-43\n', 'BRANCH #5: Covered if branch at line 31-32\n', 'BRANCH #5: Covered if branch at line 31-32\n', 'BRANCH #5: Covered if branch at line 31-32\n', 'BRANCH #5: Covered if branch at line 31-32\n'] 0.2
-None
+    class Solution:
+
+        def checkPalindromeFormation(self, a: str, b: str) -> bool:
+            return self._check(a, b) or self._check(b, a)
+
+        def _check(self, a: str, b: str) -> bool:
+            (i, j) = (0, len(a) - 1)
+            while i < j:
+                if a[i] != b[j]:
+                    return self._isPalindrome(a, i, j) or self._isPalindrome(b, i, j)
+                i += 1
+                j -= 1
+            return True
+
+        def _isPalindrome(self, s: str, i: int, j: int) -> bool:
+            while i < j:
+                if s[i] != s[j]:
+                    return False
+                i += 1
+                j -= 1
+            return True
+    solution = Solution()
+    assert solution.checkPalindromeFormation('x', 'y') == True
 0
-['LOOP #2: Entered for loop at line 27-39\n', 'BRANCH #4: Covered if branch at line 36-38\n', 'LOOP #2: Entered for loop at line 27-39\n', 'BRANCH #2: Covered if branch at line 30-31\n', 'LOOP #2: Entered for loop at line 27-39\n'] 0.0
-28
-['BRANCH #4: Covered if branch at line 36-38\n', 'LOOP #2: Entered for loop at line 27-39\n', 'BRANCH #2: Covered if branch at line 30-31\n', 'LOOP #2: Entered for loop at line 27-39\n', 'BRANCH #2: Covered if branch at line 30-31\n'] 1.0
+['LOOP #1: Entered while loop at line 17-21\n', 'LOOP #1: Entered while loop at line 17-21\n', 'LOOP #1: Entered while loop at line 17-21\n'] 0.0
+func under test not called
+func under test not called
+func under test not called
 46
 ['LOOP #3: Entered for loop at line 44-46\n', 'LOOP #2: Entered for loop at line 43-46\n', 'LOOP #3: Entered for loop at line 44-46\n', 'LOOP #3: Entered for loop at line 44-46\n', 'LOOP #4: Entered for loop at line 47-57\n'] 1.0
-[[3, 2], [2, 1]]
 46
 ['LOOP #2: Entered for loop at line 43-46\n', 'LOOP #3: Entered for loop at line 44-46\n', 'LOOP #3: Entered for loop at line 44-46\n', 'LOOP #4: Entered for loop at line 47-57\n', 'LOOP #5: Entered for loop at line 49-50\n'] 1.0
-44
-['BRANCH #2: Covered if branch at line 30-31\n', 'BRANCH #1: Covered if branch at line 20-21\n', 'LOOP #5: Entered for loop at line 49-50\n', 'BRANCH #2: Covered if branch at line 30-31\n', 'BRANCH #1: Covered if branch at line 20-21\n'] 0.8
-68
+46
+['BRANCH #2: Covered if branch at line 30-31\n', 'BRANCH #1: Covered if branch at line 20-21\n', 'LOOP #5: Entered for loop at line 49-50\n', 'BRANCH #2: Covered if branch at line 30-31\n', 'BRANCH #1: Covered if branch at line 20-21\n'] 0.2
+46
 ['LOOP #7: Entered for loop at line 53-54\n', 'LOOP #8: Entered for loop at line 55-57\n', 'LOOP #4: Entered for loop at line 47-57\n', 'LOOP #5: Entered for loop at line 49-50\n', 'BRANCH #1: Covered if branch at line 20-21\n'] 1.0
-syntax error
-def test_minimumJumps():
-    solution = Solution()
-
-    def get_min_jumps(forbidden, a, b, x):
-19
-['BRANCH #3: Covered if branch at line 38-40\n', 'LOOP #1: Entered while loop at line 28-42\n', 'LOOP #2: Entered for loop at line 29-40\n', 'BRANCH #3: Covered if branch at line 38-40\n', 'LOOP #2: Entered for loop at line 29-40\n'] 0.6
-48
-['LOOP #1: Entered while loop at line 28-42\n', 'LOOP #2: Entered for loop at line 29-40\n', 'BRANCH #3: Covered if branch at line 38-40\n', 'LOOP #1: Entered while loop at line 28-42\n', 'LOOP #2: Entered for loop at line 29-40\n'] 0.8
-261
-['LOOP #1: Entered for loop at line 21-30\n', 'LOOP #2: Entered for loop at line 22-30\n', 'LOOP #3: Entered while loop at line 26-30\n', 'LOOP #2: Entered for loop at line 22-30\n', 'LOOP #1: Entered for loop at line 21-30\n'] 0.8
-375
-['BRANCH #6: Covered if branch at line 50-51\n', 'BRANCH #5: Covered if branch at line 43-44\n', 'LOOP #5: Entered for loop at line 57-60\n', 'BRANCH #7: Covered if branch at line 58-60\n', 'LOOP #5: Entered for loop at line 57-60\n'] 1.0
-7
-['LOOP #1: Entered for loop at line 19-32\n', 'LOOP #2: Entered while loop at line 25-30\n', 'LOOP #2: Entered while loop at line 25-30\n', 'BRANCH #2: Covered if branch at line 27-28\n', 'LOOP #1: Entered for loop at line 19-32\n'] 0.4
-16
-['LOOP #2: Entered for loop at line 20-25\n', 'LOOP #2: Entered for loop at line 20-25\n', 'LOOP #2: Entered for loop at line 20-25\n', 'LOOP #2: Entered for loop at line 20-25\n', 'BRANCH #1: Covered if branch at line 21-22\n'] 0.4
-14
-['LOOP #2: Entered for loop at line 20-25\n', 'LOOP #1: Entered for loop at line 18-27\n', 'LOOP #2: Entered for loop at line 20-25\n', 'LOOP #2: Entered for loop at line 20-25\n', 'LOOP #2: Entered for loop at line 20-25\n'] 1.0
-15
-['LOOP #2: Entered for loop at line 20-25\n', 'BRANCH #1: Covered if branch at line 21-22\n', 'LOOP #2: Entered for loop at line 20-25\n', 'LOOP #2: Entered for loop at line 20-25\n', 'LOOP #2: Entered for loop at line 20-25\n'] 0.2
-2
-9
-['LOOP #1: Entered for loop at line 23-29\n', 'BRANCH #4: Covered else branch at line 27-28\n', 'LOOP #1: Entered for loop at line 23-29\n', 'BRANCH #4: Covered else branch at line 27-28\n', 'LOOP #1: Entered for loop at line 23-29\n'] 1.0
+46
+['BRANCH #1: Covered if branch at line 20-21\n', 'LOOP #1: Entered for loop at line 25-26\n', 'BRANCH #2: Covered if branch at line 30-31\n', 'LOOP #1: Entered for loop at line 25-26\n', 'LOOP #6: Entered for loop at line 51-54\n'] 1.0
+46
+['LOOP #6: Entered for loop at line 51-54\n', 'LOOP #7: Entered for loop at line 53-54\n', 'LOOP #7: Entered for loop at line 53-54\n', 'LOOP #7: Entered for loop at line 53-54\n', 'LOOP #8: Entered for loop at line 55-57\n'] 0.6
+18
+['BRANCH #3: Covered if branch at line 38-40\n', 'LOOP #1: Entered while loop at line 28-42\n', 'LOOP #2: Entered for loop at line 29-40\n', 'BRANCH #3: Covered if branch at line 38-40\n', 'LOOP #2: Entered for loop at line 29-40\n'] 1.0
+18
+['BRANCH #2: Covered if branch at line 35-37\n', 'LOOP #1: Entered while loop at line 28-42\n', 'LOOP #2: Entered for loop at line 29-40\n', 'BRANCH #2: Covered if branch at line 35-37\n', 'BRANCH #3: Covered if branch at line 38-40\n'] 1.0
+18
+['LOOP #1: Entered while loop at line 28-42\n', 'LOOP #2: Entered for loop at line 29-40\n', 'BRANCH #3: Covered if branch at line 38-40\n', 'LOOP #1: Entered while loop at line 28-42\n', 'LOOP #2: Entered for loop at line 29-40\n'] 0.6
+163
+['BRANCH #2: Covered if branch at line 30-31\n', 'LOOP #2: Entered while loop at line 29-33\n', 'BRANCH #2: Covered if branch at line 30-31\n', 'LOOP #2: Entered while loop at line 29-33\n', 'LOOP #2: Entered while loop at line 29-33\n'] 1.0
+163
+['LOOP #4: Entered for loop at line 49-51\n', 'BRANCH #6: Covered if branch at line 50-51\n', 'LOOP #4: Entered for loop at line 49-51\n', 'LOOP #4: Entered for loop at line 49-51\n', 'LOOP #4: Entered for loop at line 49-51\n'] 1.0
+163
+['LOOP #2: Entered while loop at line 29-33\n', 'LOOP #1: Entered for loop at line 25-33\n', 'LOOP #2: Entered while loop at line 29-33\n', 'LOOP #2: Entered while loop at line 29-33\n', 'LOOP #2: Entered while loop at line 29-33\n'] 0.8
+74
+['BRANCH #6: Covered if branch at line 50-51\n', 'BRANCH #5: Covered if branch at line 43-44\n', 'LOOP #5: Entered for loop at line 57-60\n', 'LOOP #5: Entered for loop at line 57-60\n', 'BRANCH #7: Covered if branch at line 58-60\n'] 0.8
+74
+['BRANCH #6: Covered if branch at line 50-51\n', 'BRANCH #5: Covered if branch at line 43-44\n', 'LOOP #5: Entered for loop at line 57-60\n', 'BRANCH #7: Covered if branch at line 58-60\n', 'LOOP #5: Entered for loop at line 57-60\n'] 0.8
+[-1, -1]
 0
-['LOOP #1: Entered for loop at line 23-29\n', 'BRANCH #4: Covered else branch at line 27-28\n', 'LOOP #2: Entered for loop at line 30-36\n', 'BRANCH #6: Covered else branch at line 34-35\n', 'LOOP #2: Entered for loop at line 30-36\n'] 0.0
-7
-['LOOP #3: Entered for loop at line 38-40\n', 'LOOP #4: Entered for loop at line 42-48\n', 'BRANCH #3: Covered if branch at line 43-44\n', 'LOOP #4: Entered for loop at line 42-48\n', 'LOOP #3: Entered for loop at line 38-40\n'] 0.0
-7
-['LOOP #4: Entered for loop at line 42-48\n', 'BRANCH #3: Covered if branch at line 43-44\n', 'LOOP #4: Entered for loop at line 42-48\n', 'LOOP #3: Entered for loop at line 38-40\n', 'LOOP #4: Entered for loop at line 42-48\n'] 0.0
-10
-['LOOP #1: Entered for loop at line 18-25\n', 'LOOP #1: Entered for loop at line 18-25\n', 'LOOP #1: Entered for loop at line 18-25\n', 'LOOP #2: Entered for loop at line 26-28\n', 'LOOP #2: Entered for loop at line 26-28\n'] 1.0
-20
-['BRANCH #8: Covered if branch at line 55-56\n', 'LOOP #3: Entered for loop at line 48-57\n', 'BRANCH #5: Covered if branch at line 30-31\n', 'BRANCH #7: Covered else branch at line 53-56\n', 'BRANCH #8: Covered if branch at line 55-56\n'] 0.4
-10
-['BRANCH #8: Covered if branch at line 55-56\n', 'LOOP #3: Entered for loop at line 48-57\n', 'BRANCH #7: Covered else branch at line 53-56\n', 'BRANCH #8: Covered if branch at line 55-56\n', 'LOOP #3: Entered for loop at line 48-57\n'] 0.2
-15
-['BRANCH #7: Covered else branch at line 53-56\n', 'BRANCH #8: Covered if branch at line 55-56\n', 'LOOP #3: Entered for loop at line 48-57\n', 'BRANCH #6: Covered if branch at line 51-52\n', 'LOOP #3: Entered for loop at line 48-57\n'] 0.8
-syntax error
-def test_minimumHammingDistance():
-    def minimumHammingDistance(self, source, target, allowedSwaps):
-        n = len(source)
-        ans = 0
-        uf = UnionFind(n)
-        groupIdToCount = [collections.Counter() for _ in range(n)]
-        
-        uf.unionByRank(1, 2) 
-        self.rank[uf.find(1)] > self.rank[uf.find(2)] and uf.id[uf.find(2)] = uf.find(1)
-        uf.unionByRank(3, 4)
-        self.rank[uf.find(3)] < self.rank[uf.find(4)] or uf.id[uf.find(3)] == uf.find(3) and uf.id[uf.find(4)] != uf.find(4) and uf.id[uf.find(4)] = uf.find(3)
-        
-        for i in range(n):
-            groupIdToCount[uf.find(i)][source[i]] += 1
-            
-        for i in range(n):
-            groupId = uf.find(i)
-            count = groupIdToCount[groupId]
-            if target[i] not in count:
-                ans += 1
-            else:
-                count[target[i]] -= 1
-                if count[target[i]] == 0:
-                    del count[target[i]]
-                    
-        return ans
-
-    solution=Solution()
-    source = [1, 2, 3, 4]
-    target = [5, 6, 7, 8]
-    allowedSwaps = [[1, 2], [3, 4]]
-    print(solution.minimumHammingDistance(source, target, allowedSwaps))
+['LOOP #1: Entered for loop at line 18-27\n', 'LOOP #2: Entered for loop at line 20-25\n', 'BRANCH #1: Covered if branch at line 21-22\n', 'LOOP #3: Entered for loop at line 28-31\n'] 0.0
+[-1, -1]
+0
+['LOOP #2: Entered for loop at line 20-25\n', 'LOOP #1: Entered for loop at line 18-27\n', 'LOOP #2: Entered for loop at line 20-25\n', 'LOOP #2: Entered for loop at line 20-25\n', 'LOOP #2: Entered for loop at line 20-25\n'] 0.0
+[-1, -1]
+0
+['LOOP #2: Entered for loop at line 20-25\n', 'BRANCH #1: Covered if branch at line 21-22\n', 'LOOP #2: Entered for loop at line 20-25\n', 'LOOP #2: Entered for loop at line 20-25\n', 'LOOP #2: Entered for loop at line 20-25\n'] 0.0
+[-1, -1]
+0
+['LOOP #2: Entered for loop at line 20-25\n', 'BRANCH #2: Covered if branch at line 23-24\n', 'LOOP #2: Entered for loop at line 20-25\n', 'BRANCH #2: Covered if branch at line 23-24\n', 'LOOP #2: Entered for loop at line 20-25\n'] 0.0
+0
+['LOOP #1: Entered for loop at line 23-29\n', 'BRANCH #4: Covered else branch at line 27-28\n', 'LOOP #1: Entered for loop at line 23-29\n', 'BRANCH #4: Covered else branch at line 27-28\n', 'LOOP #1: Entered for loop at line 23-29\n'] 0.0
 func under test not called
-19
-['BRANCH #3: Covered if branch at line 38-40\n', 'LOOP #3: Entered for loop at line 34-41\n', 'BRANCH #3: Covered if branch at line 38-40\n', 'LOOP #3: Entered for loop at line 34-41\n', 'BRANCH #2: Covered if branch at line 35-37\n'] 0.8
+13
+['BRANCH #4: Covered else branch at line 27-28\n', 'LOOP #1: Entered for loop at line 23-29\n', 'BRANCH #3: Covered if branch at line 24-26\n', 'LOOP #1: Entered for loop at line 23-29\n', 'BRANCH #4: Covered else branch at line 27-28\n'] 1.0
 syntax error
-def test_countRestrictedPaths(self):
+def test_checkWays():
+
     class Solution:
-        def countRestrictedPaths(self, n: int, edges: List[List[int]]) -> int:
-            # implementation...
 
-    solution = Solution()
-    graph = [[] for _ in range(4)]
-    graph[0].append((1, 2))
-    graph[1].append((0, 2))
-    graph[1].append((3, 6))
-    graph[3].append((1, 6))
-    self.assertEqual(solution.countRestrictedPaths(4, [[0,1,2],[1,2,3],[0,3,6]]), 5)
-syntax error
-def test_numDifferentIntegers():
-    solution = Solution()
+        def checkWays(self, pairs):
+            kMax = 501
+            graph = collections.defaultdict(list)
+            degrees = [0] * kMax
+            connected = [[False] * kMax for _ in range(kMax)]
+            for (u, v) in pairs:
+                graph[u].append(v)
+                graph[v].append(u)
+                degrees[u] += 1
+                degrees[v] += 1
+                connected[u][v] = True
+                connected[v][u] = True
+            for (_, children) in graph.items():
+                children.sort(key=lambda a: degrees[a], reverse=True)
+            root = next((i for (i, d) in enumerate(degrees) if d == len(graph) - 1), -1)
+            if root == -1:
+                return 0
+            hasMoreThanOneWay = False
 
-    def test_numDifferentIntegers_helper(word):
-syntax error
-def test_numDifferentIntegers():
+            def dfs(u: int, ancestors: List[int], seen: List[bool]) -> bool:
+                nonlocal hasMoreThanOneWay
+                seen[u] = True
+                for ancestor in ancestors:
+                    if not connected[u][ancestor]:
+                        return False
+                ancestors.append(u)
+                v = graph[u][0]
+                if seen[v]:
+                    continue
+                if degrees[v] == degrees[u]:
+                    hasMoreThanOneWay = True
+                if not dfs(v, ancestors, seen):
+                    return False
+                ancestors.pop()
+                return True
+            if not dfs(root, [], [False] * kMax):
+                return 0
+            if hasMoreThanOneWay:
+                return 2
+            else:
+                return 1
     solution = Solution()
-
-    def _test_word(word):
+    pairs = [[1, 2], [2, 3]]
+    assert solution.checkWays(pairs) == 2
+0
+['BRANCH #4: Covered if branch at line 45-46\n', 'LOOP #3: Entered for loop at line 38-40\n', 'LOOP #4: Entered for loop at line 42-48\n', 'BRANCH #3: Covered if branch at line 43-44\n', 'LOOP #4: Entered for loop at line 42-48\n'] 0.0
+14
+['BRANCH #7: Covered else branch at line 53-56\n', 'BRANCH #8: Covered if branch at line 55-56\n', 'LOOP #3: Entered for loop at line 48-57\n', 'BRANCH #6: Covered if branch at line 51-52\n', 'LOOP #3: Entered for loop at line 48-57\n'] 1.0
+func under test not called
+func under test not called
+0
+['BRANCH #1: Covered if branch at line 17-18\n', 'LOOP #1: Entered for loop at line 16-22\n', 'BRANCH #1: Covered if branch at line 17-18\n', 'LOOP #1: Entered for loop at line 16-22\n', 'BRANCH #1: Covered if branch at line 17-18\n'] 0.0
+0
+['BRANCH #1: Covered if branch at line 17-18\n', 'LOOP #1: Entered for loop at line 16-22\n', 'BRANCH #2: Covered elif branch at line 19-21\n', 'BRANCH #5: Covered else branch at line 32-33\n', 'LOOP #1: Entered for loop at line 16-22\n'] 0.0
 0
 ['LOOP #1: Entered for loop at line 16-22\n', 'BRANCH #1: Covered if branch at line 17-18\n', 'LOOP #1: Entered for loop at line 16-22\n', 'BRANCH #1: Covered if branch at line 17-18\n', 'LOOP #1: Entered for loop at line 16-22\n'] 0.0
 0
-0
 ['BRANCH #5: Covered else branch at line 32-33\n', 'LOOP #1: Entered for loop at line 16-22\n', 'BRANCH #1: Covered if branch at line 17-18\n', 'LOOP #1: Entered for loop at line 16-22\n', 'BRANCH #2: Covered elif branch at line 19-21\n'] 0.0
-33
-['LOOP #2: Entered for loop at line 21-29\n', 'LOOP #3: Entered while loop at line 23-29\n', 'LOOP #2: Entered for loop at line 21-29\n', 'LOOP #3: Entered while loop at line 23-29\n', 'LOOP #2: Entered for loop at line 21-29\n'] 1.0
-syntax error
-def test_getBiggestThree(self):
-    class Solution:
-        def getBiggestThree(self, grid: List[List[int]]) -> List[int]:
-            # ... (function implementation remains the same)
-
-    solution = Solution()
-    grid = [[1, 2, 3], [4, 5, 6]]
-    self.assertEqual(solution.getBiggestThree(grid), [12, 11, 10])
-False
-0
-['BRANCH #1: Covered if branch at line 16-18\n', 'LOOP #1: Entered for loop at line 15-47\n', 'BRANCH #3: Covered else branch at line 22-23\n', 'BRANCH #4: Covered if branch at line 24-45\n', 'BRANCH #5: Covered if branch at line 28-37\n'] 0.0
 1
 0
-['LOOP #1: Entered for loop at line 15-47\n', 'BRANCH #1: Covered if branch at line 16-18\n', 'LOOP #1: Entered for loop at line 15-47\n', 'BRANCH #3: Covered else branch at line 22-23\n', 'BRANCH #4: Covered if branch at line 24-45\n'] 0.0
 0
+['BRANCH #1: Covered if branch at line 16-18\n', 'LOOP #1: Entered for loop at line 15-47\n', 'BRANCH #3: Covered else branch at line 22-23\n', 'BRANCH #4: Covered if branch at line 24-45\n', 'BRANCH #5: Covered if branch at line 28-37\n'] 0.0
+0
+0
+['LOOP #1: Entered for loop at line 15-47\n', 'BRANCH #1: Covered if branch at line 16-18\n', 'LOOP #1: Entered for loop at line 15-47\n', 'BRANCH #3: Covered else branch at line 22-23\n', 'BRANCH #4: Covered if branch at line 24-45\n'] 0.0
+1
 0
 ['BRANCH #3: Covered else branch at line 22-23\n', 'LOOP #1: Entered for loop at line 15-47\n', 'BRANCH #1: Covered if branch at line 16-18\n', 'LOOP #1: Entered for loop at line 15-47\n', 'BRANCH #3: Covered else branch at line 22-23\n'] 0.0
 0
 0
 ['LOOP #1: Entered for loop at line 15-47\n', 'BRANCH #3: Covered else branch at line 22-23\n', 'BRANCH #4: Covered if branch at line 24-45\n', 'BRANCH #5: Covered if branch at line 28-37\n', 'BRANCH #6: Covered if branch at line 29-30\n'] 0.0
-syntax error
-def test_longestCommonSubpath():
-    solution = Solution()
-
-    def assert_common_subpath(paths, expected_length):
-50
-['LOOP #3: Entered for loop at line 43-51\n', 'BRANCH #5: Covered else branch at line 47-48\n', 'BRANCH #6: Covered if branch at line 49-50\n', 'LOOP #3: Entered for loop at line 43-51\n', 'BRANCH #5: Covered else branch at line 47-48\n'] 1.0
-1
 0
-['LOOP #3: Entered for loop at line 24-35\n', 'BRANCH #1: Covered if branch at line 27-28\n', 'LOOP #3: Entered for loop at line 24-35\n', 'BRANCH #2: Covered if branch at line 29-30\n', 'LOOP #1: Entered while loop at line 20-35\n'] 0.0
-4
-['LOOP #3: Entered for loop at line 24-35\n', 'BRANCH #1: Covered if branch at line 27-28\n', 'LOOP #3: Entered for loop at line 24-35\n', 'BRANCH #1: Covered if branch at line 27-28\n', 'LOOP #3: Entered for loop at line 24-35\n'] 0.2
-func under test not called
-func under test not called
+0
+['BRANCH #4: Covered if branch at line 24-45\n', 'BRANCH #11: Covered elif branch at line 40-41\n', 'LOOP #1: Entered for loop at line 15-47\n', 'BRANCH #2: Covered if branch at line 19-21\n', 'BRANCH #4: Covered if branch at line 24-45\n'] 0.0
+49
+['BRANCH #4: Covered if branch at line 45-46\n', 'BRANCH #6: Covered if branch at line 49-50\n', 'LOOP #3: Entered for loop at line 43-51\n', 'BRANCH #4: Covered if branch at line 45-46\n', 'BRANCH #6: Covered if branch at line 49-50\n'] 1.0
+60
+['LOOP #3: Entered for loop at line 43-51\n', 'BRANCH #5: Covered else branch at line 47-48\n', 'BRANCH #6: Covered if branch at line 49-50\n', 'LOOP #3: Entered for loop at line 43-51\n', 'BRANCH #5: Covered else branch at line 47-48\n'] 0.8
+6
+['BRANCH #3: Covered elif branch at line 23-24\n', 'LOOP #1: Entered for loop at line 39-41\n', 'BRANCH #4: Covered else branch at line 25-27\n', 'LOOP #1: Entered for loop at line 39-41\n', 'BRANCH #3: Covered elif branch at line 23-24\n'] 0.8
+6
+['LOOP #1: Entered for loop at line 39-41\n', 'BRANCH #3: Covered elif branch at line 23-24\n', 'LOOP #1: Entered for loop at line 39-41\n', 'BRANCH #5: Covered if branch at line 30-31\n', 'BRANCH #5: Covered if branch at line 30-31\n'] 0.4
 0
 ['BRANCH #4: Covered if branch at line 33-35\n', 'LOOP #3: Entered for loop at line 26-44\n', 'LOOP #4: Entered for loop at line 27-44\n', 'BRANCH #7: Covered else branch at line 42-43\n', 'LOOP #4: Entered for loop at line 27-44\n'] 0.0
 0
 ['BRANCH #1: Covered if branch at line 13-14\n'] 0.0
-4
 0
 ['LOOP #4: Entered for loop at line 27-44\n', 'BRANCH #7: Covered else branch at line 42-43\n', 'LOOP #4: Entered for loop at line 27-44\n', 'BRANCH #4: Covered if branch at line 33-35\n', 'LOOP #3: Entered for loop at line 26-44\n'] 0.0
-71
-['LOOP #5: Entered for loop at line 56-57\n', 'LOOP #5: Entered for loop at line 56-57\n', 'LOOP #4: Entered for loop at line 54-57\n', 'BRANCH #7: Covered if branch at line 55-57\n', 'LOOP #5: Entered for loop at line 56-57\n'] 1.0
-syntax error
-def test_gcdSort():
-    solution = Solution()
-    def check(nums):
-27
-['LOOP #2: Entered for loop at line 22-32\n', 'LOOP #3: Entered for loop at line 23-32\n', 'LOOP #4: Entered for loop at line 25-32\n', 'LOOP #5: Entered for loop at line 27-32\n', 'LOOP #6: Entered for loop at line 28-32\n'] 1.0
-func under test not called
+45
+['LOOP #6: Entered while loop at line 62-66\n', 'LOOP #7: Entered while loop at line 65-66\n', 'LOOP #2: Entered for loop at line 43-45\n', 'BRANCH #1: Covered if branch at line 19-20\n', 'LOOP #3: Entered for loop at line 46-49\n'] 0.6
+32
+['LOOP #5: Entered for loop at line 56-57\n', 'LOOP #1: Entered for loop at line 42-45\n', 'LOOP #6: Entered while loop at line 62-66\n', 'LOOP #7: Entered while loop at line 65-66\n', 'LOOP #2: Entered for loop at line 43-45\n'] 1.0
+32
+['BRANCH #5: Covered if branch at line 31-32\n', 'LOOP #3: Entered for loop at line 46-49\n', 'BRANCH #5: Covered if branch at line 31-32\n', 'BRANCH #5: Covered if branch at line 31-32\n', 'LOOP #3: Entered for loop at line 46-49\n'] 0.8
+26
+['BRANCH #1: Covered if branch at line 30-31\n', 'LOOP #7: Entered for loop at line 35-40\n', 'BRANCH #2: Covered if branch at line 36-37\n', 'LOOP #7: Entered for loop at line 35-40\n', 'LOOP #7: Entered for loop at line 35-40\n'] 0.4
+26
+['LOOP #4: Entered for loop at line 25-32\n', 'LOOP #5: Entered for loop at line 27-32\n', 'LOOP #6: Entered for loop at line 28-32\n', 'BRANCH #1: Covered if branch at line 30-31\n', 'LOOP #4: Entered for loop at line 25-32\n'] 1.0
 15
-['BRANCH #3: Covered if branch at line 22-24\n', 'BRANCH #5: Covered if branch at line 27-28\n', 'LOOP #1: Entered for loop at line 17-29\n', 'BRANCH #2: Covered if branch at line 21-26\n', 'BRANCH #3: Covered if branch at line 22-24\n'] 1.0
-aab
-12
+['BRANCH #3: Covered if branch at line 22-24\n', 'BRANCH #5: Covered if branch at line 27-28\n', 'LOOP #1: Entered for loop at line 17-29\n', 'BRANCH #2: Covered if branch at line 21-26\n', 'BRANCH #3: Covered if branch at line 22-24\n'] 0.8
+17
 ['LOOP #1: Entered for loop at line 17-29\n', 'BRANCH #2: Covered if branch at line 21-26\n', 'BRANCH #3: Covered if branch at line 22-24\n', 'BRANCH #5: Covered if branch at line 27-28\n', 'LOOP #1: Entered for loop at line 17-29\n'] 1.0
 17
+['LOOP #1: Entered for loop at line 17-29\n', 'BRANCH #2: Covered if branch at line 21-26\n', 'BRANCH #4: Covered elif branch at line 25-26\n', 'LOOP #1: Entered for loop at line 17-29\n', 'LOOP #2: Entered while loop at line 18-20\n'] 0.8
+15
 ['BRANCH #5: Covered if branch at line 27-28\n', 'LOOP #1: Entered for loop at line 17-29\n', 'BRANCH #2: Covered if branch at line 21-26\n', 'BRANCH #3: Covered if branch at line 22-24\n', 'BRANCH #5: Covered if branch at line 27-28\n'] 0.8
-9
+15
 ['BRANCH #2: Covered if branch at line 21-26\n', 'BRANCH #3: Covered if branch at line 22-24\n', 'BRANCH #5: Covered if branch at line 27-28\n', 'LOOP #1: Entered for loop at line 17-29\n', 'BRANCH #2: Covered if branch at line 21-26\n'] 1.0
-173
-['LOOP #1: Entered for loop at line 31-34\n', 'LOOP #1: Entered for loop at line 31-34\n', 'LOOP #1: Entered for loop at line 31-34\n', 'BRANCH #3: Covered if branch at line 42-43\n', 'LOOP #3: Entered while loop at line 40-46\n'] 1.0
 0
-['BRANCH #2: Covered elif branch at line 32-36\n', 'LOOP #2: Entered while loop at line 22-37\n', 'LOOP #3: Entered for loop at line 28-37\n', 'BRANCH #2: Covered elif branch at line 32-36\n', 'BRANCH #3: Covered if branch at line 33-34\n'] 0.0
-20
-['LOOP #2: Entered while loop at line 22-37\n', 'LOOP #3: Entered for loop at line 28-37\n', 'LOOP #3: Entered for loop at line 28-37\n', 'BRANCH #2: Covered elif branch at line 32-36\n', 'LOOP #2: Entered while loop at line 22-37\n'] 0.8
-4
-['LOOP #3: Entered for loop at line 28-37\n', 'BRANCH #2: Covered elif branch at line 32-36\n', 'LOOP #2: Entered while loop at line 22-37\n', 'LOOP #3: Entered for loop at line 28-37\n', 'BRANCH #2: Covered elif branch at line 32-36\n'] 0.2
-syntax error
-def test_minimumOperations():
-    solution = Solution()
-
-    def test_case():
+['LOOP #1: Entered for loop at line 31-34\n', 'LOOP #1: Entered for loop at line 31-34\n', 'BRANCH #3: Covered if branch at line 42-43\n', 'LOOP #3: Entered while loop at line 40-46\n', 'LOOP #1: Entered for loop at line 31-34\n'] 0.0
 0
-['BRANCH #2: Covered if branch at line 25-26\n', 'LOOP #4: Entered for loop at line 22-29\n', 'BRANCH #2: Covered if branch at line 25-26\n', 'LOOP #1: Entered while loop at line 17-29\n', 'LOOP #2: Entered for loop at line 19-29\n'] 0.0
-13
-['LOOP #1: Entered for loop at line 40-54\n', 'BRANCH #6: Covered if branch at line 44-50\n', 'LOOP #2: Entered for loop at line 45-50\n', 'BRANCH #5: Covered if branch at line 30-31\n', 'BRANCH #7: Covered if branch at line 48-50\n'] 0.6
+['LOOP #1: Entered for loop at line 31-34\n', 'LOOP #1: Entered for loop at line 31-34\n', 'LOOP #1: Entered for loop at line 31-34\n', 'BRANCH #3: Covered if branch at line 42-43\n', 'LOOP #3: Entered while loop at line 40-46\n'] 0.0
+12
+['LOOP #1: Entered for loop at line 40-54\n', 'BRANCH #6: Covered if branch at line 44-50\n', 'LOOP #2: Entered for loop at line 45-50\n', 'BRANCH #5: Covered if branch at line 30-31\n', 'BRANCH #7: Covered if branch at line 48-50\n'] 0.8
+[True, False]
+10
+['BRANCH #5: Covered if branch at line 30-31\n', 'BRANCH #6: Covered if branch at line 44-50\n', 'LOOP #2: Entered for loop at line 45-50\n', 'BRANCH #5: Covered if branch at line 30-31\n', 'BRANCH #7: Covered if branch at line 48-50\n'] 0.6
+12
+['LOOP #2: Entered for loop at line 45-50\n', 'LOOP #2: Entered for loop at line 45-50\n', 'BRANCH #8: Covered if branch at line 52-53\n', 'BRANCH #4: Covered else branch at line 25-27\n', 'LOOP #1: Entered for loop at line 40-54\n'] 1.0
+2
 0
-['LOOP #2: Entered for loop at line 45-50\n', 'LOOP #2: Entered for loop at line 45-50\n', 'BRANCH #8: Covered if branch at line 52-53\n', 'BRANCH #4: Covered else branch at line 25-27\n', 'LOOP #1: Entered for loop at line 40-54\n'] 0.0
-syntax error
-def test_minimumBuckets():
-    solution = Solution()
-
-    def test_case():
-6
-['LOOP #1: Entered for loop at line 15-25\n', 'LOOP #1: Entered for loop at line 15-25\n', 'BRANCH #1: Covered if branch at line 16-24\n', 'BRANCH #2: Covered if branch at line 17-18\n', 'LOOP #1: Entered for loop at line 15-25\n'] 0.4
+['LOOP #1: Entered for loop at line 15-25\n', 'BRANCH #1: Covered if branch at line 16-24\n', 'BRANCH #4: Covered elif branch at line 21-22\n', 'LOOP #1: Entered for loop at line 15-25\n', 'BRANCH #1: Covered if branch at line 16-24\n'] 0.0
+2
+0
+['LOOP #1: Entered for loop at line 15-25\n', 'LOOP #1: Entered for loop at line 15-25\n', 'BRANCH #1: Covered if branch at line 16-24\n', 'BRANCH #2: Covered if branch at line 17-18\n', 'LOOP #1: Entered for loop at line 15-25\n'] 0.0
+2
 0
 ['BRANCH #3: Covered if branch at line 19-20\n', 'LOOP #1: Entered for loop at line 15-25\n', 'LOOP #1: Entered for loop at line 15-25\n', 'LOOP #1: Entered for loop at line 15-25\n', 'BRANCH #1: Covered if branch at line 16-24\n'] 0.0
-func under test not called
-32
+2
+0
+['BRANCH #1: Covered if branch at line 16-24\n', 'BRANCH #4: Covered elif branch at line 21-22\n', 'LOOP #1: Entered for loop at line 15-25\n', 'BRANCH #1: Covered if branch at line 16-24\n', 'BRANCH #5: Covered else branch at line 23-24\n'] 0.0
+30
+['LOOP #4: Entered for loop at line 57-60\n', 'BRANCH #6: Covered if branch at line 58-59\n', 'LOOP #2: Entered for loop at line 51-60\n', 'LOOP #3: Entered for loop at line 53-56\n', 'BRANCH #3: Covered elif branch at line 23-24\n'] 0.6
+30
 ['LOOP #4: Entered for loop at line 57-60\n', 'LOOP #2: Entered for loop at line 51-60\n', 'LOOP #3: Entered for loop at line 53-56\n', 'BRANCH #5: Covered if branch at line 36-37\n', 'BRANCH #3: Covered elif branch at line 23-24\n'] 1.0
-22
-['BRANCH #3: Covered elif branch at line 23-24\n', 'LOOP #4: Entered for loop at line 57-60\n', 'LOOP #4: Entered for loop at line 57-60\n', 'LOOP #4: Entered for loop at line 57-60\n', 'LOOP #2: Entered for loop at line 51-60\n'] 0.4
-23
-['BRANCH #5: Covered if branch at line 36-37\n', 'BRANCH #3: Covered elif branch at line 23-24\n', 'LOOP #4: Entered for loop at line 57-60\n', 'LOOP #4: Entered for loop at line 57-60\n', 'LOOP #5: Entered for loop at line 62-64\n'] 0.4
-15
+29
+['BRANCH #3: Covered elif branch at line 23-24\n', 'LOOP #4: Entered for loop at line 57-60\n', 'LOOP #4: Entered for loop at line 57-60\n', 'LOOP #4: Entered for loop at line 57-60\n', 'LOOP #2: Entered for loop at line 51-60\n'] 0.6
+30
+['BRANCH #5: Covered if branch at line 36-37\n', 'BRANCH #3: Covered elif branch at line 23-24\n', 'LOOP #4: Entered for loop at line 57-60\n', 'LOOP #4: Entered for loop at line 57-60\n', 'LOOP #5: Entered for loop at line 62-64\n'] 1.0
+10
 ['BRANCH #1: Covered if branch at line 21-23\n', 'LOOP #2: Entered for loop at line 20-24\n', 'LOOP #3: Entered for loop at line 25-28\n', 'BRANCH #2: Covered if branch at line 26-27\n', 'LOOP #3: Entered for loop at line 25-28\n'] 0.6
-10
-['LOOP #2: Entered for loop at line 20-24\n', 'BRANCH #1: Covered if branch at line 21-23\n', 'LOOP #2: Entered for loop at line 20-24\n', 'LOOP #3: Entered for loop at line 25-28\n', 'BRANCH #2: Covered if branch at line 26-27\n'] 0.4
-['bread', 'sandwich']
 11
-['LOOP #3: Entered for loop at line 25-28\n', 'LOOP #4: Entered while loop at line 29-36\n', 'LOOP #5: Entered for loop at line 32-36\n', 'BRANCH #3: Covered if branch at line 34-35\n', 'LOOP #5: Entered for loop at line 32-36\n'] 0.2
+['LOOP #2: Entered for loop at line 20-24\n', 'BRANCH #1: Covered if branch at line 21-23\n', 'LOOP #2: Entered for loop at line 20-24\n', 'LOOP #3: Entered for loop at line 25-28\n', 'BRANCH #2: Covered if branch at line 26-27\n'] 0.6
+11
+['LOOP #3: Entered for loop at line 25-28\n', 'LOOP #4: Entered while loop at line 29-36\n', 'LOOP #5: Entered for loop at line 32-36\n', 'BRANCH #3: Covered if branch at line 34-35\n', 'LOOP #5: Entered for loop at line 32-36\n'] 0.4
 10
-['LOOP #4: Entered while loop at line 29-36\n', 'LOOP #5: Entered for loop at line 32-36\n', 'BRANCH #3: Covered if branch at line 34-35\n', 'LOOP #5: Entered for loop at line 32-36\n', 'LOOP #4: Entered while loop at line 29-36\n'] 0.0
-10
+['LOOP #4: Entered while loop at line 29-36\n', 'LOOP #5: Entered for loop at line 32-36\n', 'BRANCH #3: Covered if branch at line 34-35\n', 'LOOP #5: Entered for loop at line 32-36\n', 'LOOP #4: Entered while loop at line 29-36\n'] 0.2
+11
 ['LOOP #2: Entered for loop at line 20-24\n', 'LOOP #2: Entered for loop at line 20-24\n', 'LOOP #3: Entered for loop at line 25-28\n', 'BRANCH #2: Covered if branch at line 26-27\n', 'LOOP #4: Entered while loop at line 29-36\n'] 0.6
-18
-['LOOP #7: Entered for loop at line 68-71\n', 'BRANCH #5: Covered if branch at line 69-70\n', 'LOOP #5: Entered for loop at line 55-65\n', 'BRANCH #3: Covered if branch at line 56-58\n', 'LOOP #5: Entered for loop at line 55-65\n'] 1.0
-21
-['LOOP #4: Entered for loop at line 42-45\n', 'LOOP #4: Entered for loop at line 42-45\n', 'BRANCH #2: Covered if branch at line 43-44\n', 'LOOP #4: Entered for loop at line 42-45\n', 'BRANCH #2: Covered if branch at line 43-44\n'] 0.8
-True
+False
 0
 ['LOOP #2: Entered for loop at line 20-27\n', 'BRANCH #1: Covered if branch at line 22-26\n', 'BRANCH #2: Covered if branch at line 25-26\n', 'LOOP #1: Entered for loop at line 19-27\n', 'LOOP #2: Entered for loop at line 20-27\n'] 0.0
-[(1, 1), (0, 2)]
-0
-['LOOP #3: Entered for loop at line 32-42\n', 'BRANCH #3: Covered if branch at line 35-36\n', 'LOOP #3: Entered for loop at line 32-42\n', 'BRANCH #3: Covered if branch at line 35-36\n', 'LOOP #4: Entered for loop at line 44-49\n'] 0.0
-2
-['BRANCH #3: Covered if branch at line 35-36\n', 'LOOP #3: Entered for loop at line 32-42\n', 'BRANCH #4: Covered if branch at line 37-38\n', 'LOOP #4: Entered for loop at line 44-49\n', 'BRANCH #6: Covered if branch at line 45-46\n'] 0.0
+24
+['LOOP #2: Entered for loop at line 20-27\n', 'LOOP #2: Entered for loop at line 20-27\n', 'BRANCH #1: Covered if branch at line 22-26\n', 'LOOP #2: Entered for loop at line 20-27\n', 'BRANCH #1: Covered if branch at line 22-26\n'] 0.6
+188
+['LOOP #2: Entered for loop at line 28-30\n', 'LOOP #2: Entered for loop at line 28-30\n', 'LOOP #2: Entered for loop at line 28-30\n', 'LOOP #2: Entered for loop at line 28-30\n', 'LOOP #2: Entered for loop at line 28-30\n'] 1.0
 188
 ['LOOP #3: Entered for loop at line 34-36\n', 'LOOP #3: Entered for loop at line 34-36\n', 'LOOP #3: Entered for loop at line 34-36\n', 'LOOP #3: Entered for loop at line 34-36\n', 'LOOP #3: Entered for loop at line 34-36\n'] 1.0
-137
+188
 ['BRANCH #3: Covered if branch at line 35-36\n', 'LOOP #1: Entered while loop at line 16-24\n', 'LOOP #2: Entered for loop at line 28-30\n', 'LOOP #2: Entered for loop at line 28-30\n', 'LOOP #2: Entered for loop at line 28-30\n'] 1.0
 188
 ['BRANCH #2: Covered if branch at line 29-30\n', 'LOOP #3: Entered for loop at line 34-36\n', 'LOOP #3: Entered for loop at line 34-36\n', 'LOOP #3: Entered for loop at line 34-36\n', 'LOOP #3: Entered for loop at line 34-36\n'] 1.0
-24
-['LOOP #3: Entered for loop at line 24-29\n', 'LOOP #4: Entered for loop at line 25-29\n', 'LOOP #5: Entered for loop at line 26-29\n', 'LOOP #5: Entered for loop at line 26-29\n', 'LOOP #5: Entered for loop at line 26-29\n'] 0.8
+2
+26
+['LOOP #1: Entered while loop at line 22-24\n', 'LOOP #1: Entered while loop at line 22-24\n', 'LOOP #1: Entered while loop at line 22-24\n', 'LOOP #5: Entered for loop at line 36-42\n', 'BRANCH #2: Covered if branch at line 39-41\n'] 0.6
 0
-['LOOP #1: Entered while loop at line 22-24\n', 'LOOP #1: Entered while loop at line 22-24\n', 'LOOP #1: Entered while loop at line 22-24\n', 'LOOP #5: Entered for loop at line 36-42\n', 'BRANCH #2: Covered if branch at line 39-41\n'] 0.0
-59
-['LOOP #1: Entered while loop at line 22-24\n', 'LOOP #7: Entered for loop at line 45-57\n', 'LOOP #1: Entered while loop at line 22-24\n', 'LOOP #1: Entered while loop at line 22-24\n', 'LOOP #1: Entered while loop at line 22-24\n'] 0.8
-65
-['LOOP #5: Entered for loop at line 34-39\n', 'BRANCH #3: Covered if branch at line 35-36\n', 'LOOP #3: Entered for loop at line 26-39\n', 'LOOP #4: Entered for loop at line 28-32\n', 'BRANCH #2: Covered else branch at line 31-32\n'] 0.6
-syntax error
-def test_countUnguarded(self):
-    class Solution:
-        def countUnguarded(self, m: int, n: int, guards: List[List[int]], walls: List[List[int]]) -> int:
-            # implementation of the function
-
-    solution = Solution()
-    self.assertEqual(solution.countUnguarded(5, 5, [[0,1],[4,3]], [[1,1],[1,2],[3,1],[3,2]]), 9)
-93
-['LOOP #4: Entered for loop at line 28-32\n', 'BRANCH #2: Covered else branch at line 31-32\n', 'LOOP #4: Entered for loop at line 28-32\n', 'BRANCH #2: Covered else branch at line 31-32\n', 'LOOP #4: Entered for loop at line 28-32\n'] 1.0
--1
-119
-['LOOP #6: Entered for loop at line 45-56\n', 'BRANCH #5: Covered if branch at line 50-51\n', 'LOOP #6: Entered for loop at line 45-56\n', 'BRANCH #5: Covered if branch at line 50-51\n', 'LOOP #1: Entered while loop at line 22-29\n'] 0.6
+['LOOP #5: Entered for loop at line 36-42\n', 'LOOP #1: Entered while loop at line 22-24\n', 'LOOP #1: Entered while loop at line 22-24\n', 'LOOP #1: Entered while loop at line 22-24\n', 'BRANCH #2: Covered if branch at line 39-41\n'] 0.0
+0
+['LOOP #7: Entered for loop at line 45-57\n', 'LOOP #7: Entered for loop at line 45-57\n', 'LOOP #1: Entered while loop at line 22-24\n', 'LOOP #7: Entered for loop at line 45-57\n', 'LOOP #6: Entered for loop at line 44-57\n'] 0.0
+2
+0
+['LOOP #1: Entered while loop at line 22-24\n', 'LOOP #7: Entered for loop at line 45-57\n', 'LOOP #1: Entered while loop at line 22-24\n', 'LOOP #1: Entered while loop at line 22-24\n', 'LOOP #1: Entered while loop at line 22-24\n'] 0.0
 1
 syntax error
 def test_strongPasswordCheckerII():
     solution = Solution()
-    assert not solution.strongPasswordCheckerII('aA9!'), 'Invalid password'
-False
+    assert solution.strongPasswordCheckerII('aA9!'), 'Test case failed'
 1
 ['BRANCH #4: Covered if branch at line 19-20\n'] 0.0
 1
 ['BRANCH #1: Covered if branch at line 13-14\n'] 1.0
-6
-['BRANCH #3: Covered if branch at line 31-32\n', 'LOOP #2: Entered for loop at line 18-21\n', 'LOOP #3: Entered for loop at line 28-33\n', 'BRANCH #3: Covered if branch at line 31-32\n', 'LOOP #2: Entered for loop at line 18-21\n'] 0.2
-8
-['LOOP #1: Entered for loop at line 15-17\n', 'LOOP #1: Entered for loop at line 15-17\n', 'LOOP #1: Entered for loop at line 15-17\n', 'LOOP #1: Entered for loop at line 15-17\n', 'LOOP #2: Entered for loop at line 18-21\n'] 0.8
-25
-['BRANCH #3: Covered if branch at line 31-32\n', 'LOOP #2: Entered for loop at line 18-21\n', 'LOOP #3: Entered for loop at line 28-33\n', 'LOOP #3: Entered for loop at line 28-33\n', 'LOOP #3: Entered for loop at line 28-33\n'] 0.8
-7
-['LOOP #2: Entered for loop at line 18-21\n', 'LOOP #3: Entered for loop at line 28-33\n', 'BRANCH #3: Covered if branch at line 31-32\n', 'LOOP #2: Entered for loop at line 18-21\n', 'LOOP #3: Entered for loop at line 28-33\n'] 0.4
 func under test not called
+6
+['LOOP #2: Entered for loop at line 18-21\n', 'LOOP #3: Entered for loop at line 28-33\n', 'BRANCH #3: Covered if branch at line 31-32\n', 'LOOP #2: Entered for loop at line 18-21\n', 'BRANCH #2: Covered if branch at line 25-26\n'] 0.4
+6
+['BRANCH #3: Covered if branch at line 31-32\n', 'LOOP #2: Entered for loop at line 18-21\n', 'LOOP #3: Entered for loop at line 28-33\n', 'LOOP #3: Entered for loop at line 28-33\n', 'LOOP #3: Entered for loop at line 28-33\n'] 0.6
+11
+['LOOP #2: Entered for loop at line 18-21\n', 'LOOP #3: Entered for loop at line 28-33\n', 'BRANCH #3: Covered if branch at line 31-32\n', 'LOOP #2: Entered for loop at line 18-21\n', 'LOOP #3: Entered for loop at line 28-33\n'] 0.6
 False
 2
 ['LOOP #1: Entered while loop at line 17-32\n', 'LOOP #2: Entered while loop at line 18-19\n', 'BRANCH #3: Covered if branch at line 26-27\n'] 0.3333333333333333
-0
-['LOOP #1: Entered while loop at line 17-32\n', 'LOOP #3: Entered while loop at line 20-21\n', 'LOOP #3: Entered while loop at line 20-21\n', 'BRANCH #2: Covered if branch at line 24-25\n'] 0.0
-False
-5
-['LOOP #2: Entered while loop at line 18-19\n', 'LOOP #1: Entered while loop at line 17-32\n', 'LOOP #2: Entered while loop at line 18-19\n', 'LOOP #2: Entered while loop at line 18-19\n', 'LOOP #3: Entered while loop at line 20-21\n'] 0.4
-False
 3
-['LOOP #3: Entered while loop at line 20-21\n', 'LOOP #3: Entered while loop at line 20-21\n', 'LOOP #3: Entered while loop at line 20-21\n', 'LOOP #3: Entered while loop at line 20-21\n', 'LOOP #3: Entered while loop at line 20-21\n'] 0.0
-syntax error
-def test_countTime():
-    solution = Solution()
-
-    def helper(time):
-syntax error
-def test_mostPopularCreator():
-    creators = ['Alice', 'Bob', 'Charlie']
-    ids = ['video1', 'video2', 'video3']
-    views = [100, 200, 50]
-    solution = Solution()
-
-    def helper(creators, ids, views):
-[]
-0
-['LOOP #2: Entered for loop at line 36-39\n', 'BRANCH #3: Covered if branch at line 37-38\n', 'LOOP #2: Entered for loop at line 36-39\n', 'BRANCH #3: Covered if branch at line 37-38\n', 'LOOP #2: Entered for loop at line 36-39\n'] 0.0
-func under test not called
+['LOOP #1: Entered while loop at line 17-32\n', 'LOOP #3: Entered while loop at line 20-21\n', 'LOOP #3: Entered while loop at line 20-21\n', 'BRANCH #2: Covered if branch at line 24-25\n'] 0.5
+4
+['LOOP #2: Entered while loop at line 18-19\n', 'LOOP #1: Entered while loop at line 17-32\n', 'LOOP #2: Entered while loop at line 18-19\n', 'LOOP #2: Entered while loop at line 18-19\n', 'LOOP #3: Entered while loop at line 20-21\n'] 0.4
+4
+['LOOP #3: Entered while loop at line 20-21\n', 'LOOP #3: Entered while loop at line 20-21\n', 'LOOP #3: Entered while loop at line 20-21\n', 'LOOP #3: Entered while loop at line 20-21\n', 'LOOP #3: Entered while loop at line 20-21\n'] 0.2
+2
+['BRANCH #1: Covered if branch at line 14-15\n', 'BRANCH #2: Covered if branch at line 16-17\n', 'BRANCH #3: Covered if branch at line 19-20\n'] 0.6666666666666666
+9
+['LOOP #1: Entered for loop at line 24-35\n', 'LOOP #1: Entered for loop at line 24-35\n', 'BRANCH #1: Covered if branch at line 25-28\n', 'LOOP #2: Entered for loop at line 36-39\n', 'BRANCH #3: Covered if branch at line 37-38\n'] 0.4
 func under test not called
 9
-['BRANCH #1: Covered if branch at line 21-28\n', 'BRANCH #2: Covered if branch at line 24-26\n', 'LOOP #1: Entered for loop at line 20-29\n', 'BRANCH #1: Covered if branch at line 21-28\n', 'LOOP #1: Entered for loop at line 20-29\n'] 0.6
-func under test not called
-syntax error
-def test_maxPoints(self):
-    class Solution:
-        def maxPoints(self, grid: List[List[int]], queries: List[int]) -> List[int]:
-            # function body here
-
-    solution = Solution()
-    grid = [[1,2,3],[4,5,6]]
-    queries = [1]
-
-    result = solution.maxPoints(grid, queries)
-[9]
-74
-['LOOP #1: Entered for loop at line 31-48\n', 'LOOP #2: Entered while loop at line 32-46\n', 'BRANCH #1: Covered if branch at line 34-36\n'] 0.6666666666666666
-56
-['LOOP #4: Entered for loop at line 41-42\n', 'LOOP #4: Entered for loop at line 41-42\n', 'LOOP #4: Entered for loop at line 41-42\n', 'LOOP #4: Entered for loop at line 41-42\n', 'LOOP #4: Entered for loop at line 41-42\n'] 1.0
+['LOOP #1: Entered for loop at line 24-35\n', 'BRANCH #2: Covered if branch at line 32-34\n', 'LOOP #1: Entered for loop at line 24-35\n', 'LOOP #2: Entered for loop at line 36-39\n', 'BRANCH #3: Covered if branch at line 37-38\n'] 0.4
 0
-['LOOP #3: Entered for loop at line 39-42\n', 'LOOP #1: Entered for loop at line 15-18\n', 'LOOP #1: Entered for loop at line 15-18\n', 'BRANCH #1: Covered if branch at line 16-17\n', 'LOOP #1: Entered for loop at line 15-18\n'] 0.0
+0
+['BRANCH #5: Covered if branch at line 36-37\n', 'LOOP #2: Entered for loop at line 30-40\n', 'BRANCH #4: Covered if branch at line 33-34\n', 'LOOP #2: Entered for loop at line 30-40\n', 'BRANCH #4: Covered if branch at line 33-34\n'] 0.0
+1
+0
+['BRANCH #2: Covered if branch at line 24-26\n', 'LOOP #1: Entered for loop at line 20-29\n', 'BRANCH #1: Covered if branch at line 21-28\n', 'LOOP #1: Entered for loop at line 20-29\n', 'BRANCH #1: Covered if branch at line 21-28\n'] 0.0
+-1
+0
+['BRANCH #1: Covered if branch at line 21-28\n', 'LOOP #1: Entered for loop at line 20-29\n', 'BRANCH #1: Covered if branch at line 21-28\n', 'LOOP #1: Entered for loop at line 20-29\n', 'BRANCH #1: Covered if branch at line 21-28\n'] 0.0
+func under test not called
+5
+['LOOP #1: Entered for loop at line 15-18\n', 'LOOP #1: Entered for loop at line 15-18\n', 'LOOP #1: Entered for loop at line 15-18\n', 'BRANCH #3: Covered if branch at line 25-27\n'] 0.75
+5
+['LOOP #1: Entered for loop at line 15-18\n', 'LOOP #1: Entered for loop at line 15-18\n', 'BRANCH #3: Covered if branch at line 25-27\n'] 0.6666666666666666
+37
+['LOOP #3: Entered for loop at line 39-42\n', 'LOOP #1: Entered for loop at line 15-18\n', 'LOOP #1: Entered for loop at line 15-18\n', 'BRANCH #1: Covered if branch at line 16-17\n', 'LOOP #1: Entered for loop at line 15-18\n'] 1.0
+0
+['BRANCH #1: Covered if branch at line 13-14\n'] 0.0
 0
 ['BRANCH #6: Covered else branch at line 35-36\n', 'LOOP #2: Entered for loop at line 26-40\n', 'BRANCH #4: Covered if branch at line 31-32\n', 'LOOP #2: Entered for loop at line 26-40\n', 'BRANCH #4: Covered if branch at line 31-32\n'] 0.0
-1458
+1457
 ['LOOP #3: Entered for loop at line 33-34\n', 'LOOP #3: Entered for loop at line 33-34\n', 'LOOP #3: Entered for loop at line 33-34\n', 'LOOP #3: Entered for loop at line 33-34\n', 'LOOP #3: Entered for loop at line 33-34\n'] 1.0
-12
-['LOOP #3: Entered for loop at line 30-38\n', 'BRANCH #2: Covered if branch at line 31-32\n', 'LOOP #3: Entered for loop at line 30-38\n', 'LOOP #2: Entered while loop at line 25-38\n', 'LOOP #3: Entered for loop at line 30-38\n'] 1.0
+160
+['LOOP #2: Entered for loop at line 28-31\n', 'LOOP #2: Entered for loop at line 28-31\n', 'LOOP #2: Entered for loop at line 28-31\n', 'LOOP #2: Entered for loop at line 28-31\n', 'LOOP #2: Entered for loop at line 28-31\n'] 1.0
 0
 ['LOOP #1: Entered for loop at line 15-21\n', 'LOOP #1: Entered for loop at line 15-21\n', 'BRANCH #1: Covered if branch at line 19-20\n', 'LOOP #3: Entered for loop at line 28-31\n'] 0.0
-10
-['LOOP #2: Entered for loop at line 18-25\n', 'BRANCH #1: Covered if branch at line 19-20\n', 'LOOP #2: Entered for loop at line 18-25\n', 'BRANCH #2: Covered if branch at line 21-22\n', 'BRANCH #3: Covered if branch at line 23-24\n'] 0.4
-15
-['BRANCH #5: Covered if branch at line 39-40\n', 'BRANCH #6: Covered if branch at line 58-60\n', 'LOOP #2: Entered for loop at line 56-61\n', 'LOOP #2: Entered for loop at line 56-61\n', 'BRANCH #5: Covered if branch at line 39-40\n'] 0.6
-15
-['BRANCH #5: Covered if branch at line 39-40\n', 'BRANCH #3: Covered elif branch at line 28-31\n', 'LOOP #1: Entered for loop at line 53-55\n', 'BRANCH #5: Covered if branch at line 39-40\n', 'BRANCH #1: Covered if branch at line 22-23\n'] 0.4
-17
-['BRANCH #9: Covered if branch at line 59-61\n', 'LOOP #5: Entered while loop at line 54-62\n', 'LOOP #6: Entered for loop at line 58-62\n', 'LOOP #5: Entered while loop at line 54-62\n', 'LOOP #6: Entered for loop at line 58-62\n'] 0.6
-24
-['LOOP #1: Entered for loop at line 17-22\n', 'LOOP #1: Entered for loop at line 17-22\n', 'LOOP #1: Entered for loop at line 17-22\n', 'BRANCH #1: Covered if branch at line 18-19\n', 'LOOP #5: Entered while loop at line 54-62\n'] 0.4
-9
-['LOOP #1: Entered for loop at line 20-30\n', 'BRANCH #1: Covered if branch at line 21-23\n', 'LOOP #1: Entered for loop at line 20-30\n', 'BRANCH #2: Covered elif branch at line 24-27\n', 'BRANCH #6: Covered if branch at line 35-36\n'] 0.8
-syntax error
-    def test_canTraverseAllPairs(self):
-        nums = [2, 3]
-        self.assertEqual(Solution().canTraverseAllPairs(nums), True)
-
-if __name__ == '__main__':
-    unittest.main()
-[15, -1]
-10
-['LOOP #2: Entered while loop at line 42-48\n', 'LOOP #4: Entered while loop at line 60-65\n', 'BRANCH #4: Covered if branch at line 62-63\n', 'BRANCH #3: Covered else branch at line 52-53\n', 'LOOP #1: Entered for loop at line 41-54\n'] 0.8
-17
-['BRANCH #3: Covered else branch at line 52-53\n', 'LOOP #1: Entered for loop at line 41-54\n', 'LOOP #2: Entered while loop at line 42-48\n', 'LOOP #4: Entered while loop at line 60-65\n', 'BRANCH #4: Covered if branch at line 62-63\n'] 1.0
-24
-['LOOP #1: Entered for loop at line 41-54\n', 'BRANCH #2: Covered if branch at line 50-51\n'] 1.0
 0
-['LOOP #1: Entered for loop at line 25-41\n', 'BRANCH #1: Covered if branch at line 26-28\n', 'LOOP #1: Entered for loop at line 25-41\n', 'LOOP #2: Entered while loop at line 29-38\n', 'BRANCH #2: Covered if branch at line 30-32\n'] 0.0
-6
-['BRANCH #2: Covered if branch at line 30-32\n', 'LOOP #1: Entered for loop at line 25-41\n', 'BRANCH #1: Covered if branch at line 26-28\n', 'LOOP #1: Entered for loop at line 25-41\n', 'LOOP #2: Entered while loop at line 29-38\n'] 0.6
-71
-['LOOP #7: Entered for loop at line 61-69\n', 'BRANCH #8: Covered if branch at line 66-67\n', 'LOOP #6: Entered for loop at line 58-69\n', 'LOOP #7: Entered for loop at line 61-69\n', 'BRANCH #8: Covered if branch at line 66-67\n'] 0.6
+['LOOP #1: Entered for loop at line 15-21\n', 'LOOP #2: Entered while loop at line 17-18\n', 'LOOP #1: Entered for loop at line 15-21\n'] 0.0
 0
-['BRANCH #1: Covered if branch at line 37-38\n', 'LOOP #5: Entered for loop at line 43-49\n', 'BRANCH #2: Covered if branch at line 39-40\n', 'BRANCH #1: Covered if branch at line 37-38\n', 'LOOP #5: Entered for loop at line 43-49\n'] 0.0
-22
-['LOOP #3: Entered for loop at line 24-28\n', 'LOOP #3: Entered for loop at line 24-28\n', 'LOOP #4: Entered for loop at line 29-37\n', 'LOOP #5: Entered for loop at line 32-35\n', 'LOOP #5: Entered for loop at line 32-35\n'] 0.8
+['LOOP #2: Entered for loop at line 18-25\n', 'BRANCH #1: Covered if branch at line 19-20\n', 'BRANCH #3: Covered if branch at line 23-24\n', 'LOOP #2: Entered for loop at line 18-25\n', 'LOOP #2: Entered for loop at line 18-25\n'] 0.0
+1
 0
-['LOOP #1: Entered for loop at line 17-28\n', 'LOOP #1: Entered for loop at line 17-28\n', 'BRANCH #5: Covered if branch at line 29-30\n'] 0.0
+['BRANCH #1: Covered if branch at line 19-20\n', 'BRANCH #2: Covered if branch at line 21-22\n', 'LOOP #1: Entered for loop at line 17-25\n', 'LOOP #2: Entered for loop at line 18-25\n', 'LOOP #2: Entered for loop at line 18-25\n'] 0.0
 func under test not called
+func under test not called
+func under test not called
+3
+['LOOP #1: Entered for loop at line 17-28\n', 'LOOP #1: Entered for loop at line 17-28\n', 'BRANCH #5: Covered if branch at line 29-30\n'] 0.6666666666666666
+3
+['LOOP #1: Entered for loop at line 17-28\n', 'LOOP #1: Entered for loop at line 17-28\n', 'LOOP #1: Entered for loop at line 17-28\n', 'LOOP #1: Entered for loop at line 17-28\n', 'BRANCH #2: Covered if branch at line 20-21\n'] 0.4
+3
+['LOOP #1: Entered for loop at line 17-28\n', 'LOOP #1: Entered for loop at line 17-28\n', 'LOOP #1: Entered for loop at line 17-28\n', 'LOOP #1: Entered for loop at line 17-28\n', 'BRANCH #1: Covered if branch at line 18-19\n'] 0.6
 0
 0
-['LOOP #1: Entered for loop at line 17-28\n', 'LOOP #1: Entered for loop at line 17-28\n', 'LOOP #1: Entered for loop at line 17-28\n', 'LOOP #1: Entered for loop at line 17-28\n', 'BRANCH #1: Covered if branch at line 18-19\n'] 0.0
+['LOOP #4: Entered for loop at line 22-29\n', 'LOOP #4: Entered for loop at line 22-29\n', 'BRANCH #3: Covered if branch at line 23-28\n', 'BRANCH #1: Covered if branch at line 13-14\n', 'LOOP #4: Entered for loop at line 22-29\n'] 0.0
 0
 ['BRANCH #3: Covered if branch at line 37-38\n', 'LOOP #2: Entered for loop at line 36-43\n', 'BRANCH #3: Covered if branch at line 37-38\n', 'LOOP #2: Entered for loop at line 36-43\n', 'BRANCH #3: Covered if branch at line 37-38\n'] 0.0
 0
 ['LOOP #3: Entered while loop at line 39-40\n', 'LOOP #3: Entered while loop at line 39-40\n', 'LOOP #3: Entered while loop at line 39-40\n', 'BRANCH #4: Covered if branch at line 41-43\n', 'LOOP #2: Entered for loop at line 36-43\n'] 0.0
-11
-8
-['LOOP #1: Entered for loop at line 18-30\n', 'LOOP #1: Entered for loop at line 18-30\n', 'LOOP #1: Entered for loop at line 18-30\n', 'BRANCH #5: Covered if branch at line 31-32\n'] 0.25
+3
+0
+['LOOP #2: Entered for loop at line 36-43\n', 'BRANCH #3: Covered if branch at line 37-38\n', 'LOOP #2: Entered for loop at line 36-43\n', 'BRANCH #3: Covered if branch at line 37-38\n', 'LOOP #2: Entered for loop at line 36-43\n'] 0.0
+9
+['LOOP #1: Entered for loop at line 18-29\n', 'LOOP #2: Entered for loop at line 19-29\n', 'BRANCH #4: Covered if branch at line 26-28\n', 'LOOP #2: Entered for loop at line 19-29\n', 'BRANCH #1: Covered if branch at line 20-21\n'] 0.4
+9
+['BRANCH #4: Covered if branch at line 26-28\n', 'LOOP #1: Entered for loop at line 18-29\n', 'LOOP #2: Entered for loop at line 19-29\n', 'BRANCH #4: Covered if branch at line 26-28\n', 'LOOP #2: Entered for loop at line 19-29\n'] 0.4
+0
+['LOOP #1: Entered for loop at line 18-30\n', 'LOOP #1: Entered for loop at line 18-30\n', 'LOOP #1: Entered for loop at line 18-30\n', 'BRANCH #5: Covered if branch at line 31-32\n'] 0.0
 11
 0
 ['BRANCH #2: Covered if branch at line 22-24\n', 'BRANCH #4: Covered if branch at line 27-28\n', 'LOOP #1: Entered for loop at line 18-30\n', 'LOOP #1: Entered for loop at line 18-30\n', 'LOOP #1: Entered for loop at line 18-30\n'] 0.0
-0
-['LOOP #2: Entered while loop at line 21-30\n', 'BRANCH #3: Covered elif branch at line 25-26\n', 'LOOP #2: Entered while loop at line 21-30\n', 'BRANCH #2: Covered if branch at line 22-24\n', 'BRANCH #4: Covered if branch at line 27-28\n'] 0.0
-0
-0
-['BRANCH #3: Covered elif branch at line 25-26\n', 'LOOP #2: Entered while loop at line 21-30\n', 'BRANCH #2: Covered if branch at line 22-24\n', 'BRANCH #4: Covered if branch at line 27-28\n', 'BRANCH #6: Covered else branch at line 33-34\n'] 0.0
 111
 0
-['BRANCH #1: Covered if branch at line 19-20\n', 'LOOP #2: Entered while loop at line 21-30\n', 'BRANCH #2: Covered if branch at line 22-24\n', 'BRANCH #4: Covered if branch at line 27-28\n', 'LOOP #1: Entered for loop at line 18-30\n'] 0.0
-syntax error
-def test_minimumChanges():
-    solution = Solution()
-
-    def get_result(s, k):
+['LOOP #2: Entered while loop at line 21-30\n', 'BRANCH #3: Covered elif branch at line 25-26\n', 'LOOP #2: Entered while loop at line 21-30\n', 'BRANCH #2: Covered if branch at line 22-24\n', 'BRANCH #4: Covered if branch at line 27-28\n'] 0.0
+111
 0
-['LOOP #2: Entered for loop at line 21-24\n', 'LOOP #3: Entered for loop at line 22-24\n', 'LOOP #1: Entered for loop at line 20-24\n', 'LOOP #2: Entered for loop at line 21-24\n', 'LOOP #3: Entered for loop at line 22-24\n'] 0.0
-375
-['BRANCH #1: Covered if branch at line 51-52\n', 'LOOP #7: Entered for loop at line 37-42\n', 'LOOP #8: Entered for loop at line 40-41\n', 'LOOP #9: Entered for loop at line 47-54\n', 'LOOP #10: Entered while loop at line 50-54\n'] 1.0
-66
-['LOOP #10: Entered while loop at line 50-54\n', 'BRANCH #1: Covered if branch at line 51-52\n', 'LOOP #6: Entered for loop at line 36-42\n', 'LOOP #7: Entered for loop at line 37-42\n', 'LOOP #8: Entered for loop at line 40-41\n'] 0.6
-syntax error
-def test_minimumChanges():
-    s = "abcabca"
-    k = 1
-    def assert_execute(solution):
-[1, 2]
+['BRANCH #3: Covered elif branch at line 25-26\n', 'LOOP #2: Entered while loop at line 21-30\n', 'BRANCH #2: Covered if branch at line 22-24\n', 'BRANCH #4: Covered if branch at line 27-28\n', 'BRANCH #6: Covered else branch at line 33-34\n'] 0.0
+11
+0
+['BRANCH #1: Covered if branch at line 19-20\n', 'LOOP #2: Entered while loop at line 21-30\n', 'BRANCH #2: Covered if branch at line 22-24\n', 'BRANCH #4: Covered if branch at line 27-28\n', 'LOOP #1: Entered for loop at line 18-30\n'] 0.0
+func under test not called
+181
+['LOOP #2: Entered for loop at line 21-24\n', 'LOOP #3: Entered for loop at line 22-24\n', 'LOOP #3: Entered for loop at line 22-24\n', 'LOOP #2: Entered for loop at line 21-24\n', 'LOOP #3: Entered for loop at line 22-24\n'] 1.0
+181
+['LOOP #2: Entered for loop at line 21-24\n', 'LOOP #3: Entered for loop at line 22-24\n', 'LOOP #1: Entered for loop at line 20-24\n', 'LOOP #2: Entered for loop at line 21-24\n', 'LOOP #3: Entered for loop at line 22-24\n'] 1.0
+func under test not called
+160
+['LOOP #10: Entered while loop at line 50-54\n', 'BRANCH #1: Covered if branch at line 51-52\n', 'LOOP #6: Entered for loop at line 36-42\n', 'LOOP #7: Entered for loop at line 37-42\n', 'LOOP #8: Entered for loop at line 40-41\n'] 1.0
+func under test not called
+4
+['BRANCH #3: Covered if branch at line 39-40\n', 'LOOP #1: Entered for loop at line 29-41\n', 'BRANCH #2: Covered else branch at line 32-40\n', 'LOOP #2: Entered while loop at line 33-37\n', 'LOOP #4: Entered while loop at line 47-52\n'] 0.4
 4
 ['LOOP #4: Entered while loop at line 47-52\n', 'BRANCH #4: Covered if branch at line 49-50\n', 'LOOP #4: Entered while loop at line 47-52\n', 'BRANCH #4: Covered if branch at line 49-50\n', 'BRANCH #3: Covered if branch at line 39-40\n'] 0.0
-7
-['LOOP #1: Entered for loop at line 17-22\n', 'BRANCH #1: Covered if branch at line 18-19\n', 'LOOP #1: Entered for loop at line 17-22\n', 'BRANCH #2: Covered else branch at line 20-21\n', 'LOOP #1: Entered for loop at line 17-22\n'] 0.8
-11
-['BRANCH #2: Covered else branch at line 20-21\n', 'LOOP #2: Entered for loop at line 23-28\n', 'LOOP #3: Entered for loop at line 26-28\n', 'LOOP #3: Entered for loop at line 26-28\n', 'LOOP #3: Entered for loop at line 26-28\n'] 0.6
-False
 func under test not called
-syntax error
-def test_numberOfSets():
-    class Solution:
-        def numberOfSets(self, n: int, maxDistance: int, roads: List[List[int]]) -> int:
-            return sum(self._floydWarshall(n, maxDistance, roads, mask) <= maxDistance for mask in range(1 << n))
-
-        def _floydWarshall(self, n: int, maxDistanceThreshold: int, roads: List[List[int]], mask: int) -> List[List[int]]:
-            # ... (rest of the code remains the same)
-
-    solution = Solution()
-    roads = [[0, 1, 5], [1, 2, 3]]
-    assert solution.numberOfSets(3, 6, roads) == 7
-790
-['LOOP #3: Entered for loop at line 22-27\n', 'LOOP #3: Entered for loop at line 22-27\n', 'LOOP #3: Entered for loop at line 22-27\n', 'LOOP #3: Entered for loop at line 22-27\n', 'LOOP #3: Entered for loop at line 22-27\n'] 1.0
 func under test not called
-0
-59
-['LOOP #7: Entered for loop at line 57-59\n', 'LOOP #7: Entered for loop at line 57-59\n', 'LOOP #7: Entered for loop at line 57-59\n', 'LOOP #1: Entered for loop at line 19-23\n', 'LOOP #1: Entered for loop at line 19-23\n'] 1.0
-0
+func under test not called
+func under test not called
+52
+['LOOP #3: Entered for loop at line 25-30\n', 'LOOP #3: Entered for loop at line 25-30\n', 'LOOP #3: Entered for loop at line 25-30\n', 'LOOP #2: Entered for loop at line 24-30\n', 'LOOP #3: Entered for loop at line 25-30\n'] 0.8
+func under test not called
+2
 syntax error
 def test_minMovesToCaptureTheQueen():
-
-    class Solution:
-
-        def minMovesToCaptureTheQueen(self, a: int, b: int, c: int, d: int, e: int, f: int) -> int:
-            return 2 if c == a and (b < d < f or b > d > f) else None
     solution = Solution()
-    assert solution.minMovesToCaptureTheQueen(1, 3, 1, 5, 7, 5) is not None
+    assert solution.minMovesToCaptureTheQueen(1, 2, 3, 4, 5, 6) == 1
 2
 ['BRANCH #1: Covered if branch at line 13-17\n', 'BRANCH #3: Covered else branch at line 16-17\n'] 1.0
-func under test not called
-0
-['LOOP #2: Entered for loop at line 28-35\n', 'LOOP #3: Entered while loop at line 31-32\n', 'LOOP #3: Entered while loop at line 31-32\n', 'LOOP #3: Entered while loop at line 31-32\n', 'BRANCH #3: Covered if branch at line 33-35\n'] 0.0
+25
+['BRANCH #3: Covered if branch at line 43-48\n', 'BRANCH #4: Covered if branch at line 46-48\n', 'LOOP #5: Entered while loop at line 42-52\n', 'BRANCH #6: Covered else branch at line 51-52\n', 'LOOP #5: Entered while loop at line 42-52\n'] 1.0
+26
+['LOOP #3: Entered for loop at line 30-35\n', 'LOOP #3: Entered for loop at line 30-35\n', 'LOOP #3: Entered for loop at line 30-35\n', 'LOOP #3: Entered for loop at line 30-35\n', 'LOOP #3: Entered for loop at line 30-35\n'] 0.2
+25
+['LOOP #5: Entered while loop at line 42-52\n', 'BRANCH #3: Covered if branch at line 43-48\n', 'LOOP #5: Entered while loop at line 42-52\n', 'BRANCH #3: Covered if branch at line 43-48\n', 'LOOP #5: Entered while loop at line 42-52\n'] 0.8
+6
+['LOOP #3: Entered while loop at line 31-32\n', 'BRANCH #3: Covered if branch at line 33-35\n', 'LOOP #2: Entered for loop at line 28-35\n', 'LOOP #2: Entered for loop at line 28-35\n', 'LOOP #3: Entered while loop at line 31-32\n'] 0.4
+6
+['BRANCH #3: Covered if branch at line 33-35\n', 'LOOP #2: Entered for loop at line 28-35\n', 'BRANCH #3: Covered if branch at line 33-35\n', 'LOOP #2: Entered for loop at line 28-35\n', 'BRANCH #3: Covered if branch at line 33-35\n'] 0.8
+6
+['LOOP #3: Entered while loop at line 31-32\n', 'LOOP #3: Entered while loop at line 31-32\n', 'BRANCH #3: Covered if branch at line 33-35\n', 'LOOP #2: Entered for loop at line 28-35\n', 'BRANCH #2: Covered if branch at line 29-30\n'] 0.4
 0
 syntax error
 def test_resultGrid():
@@ -1143,31 +886,26 @@ def test_resultGrid():
                         return False
             return True
     solution = Solution()
-    image = [[5, 5, 5], [5, 0, 0], [5, 5, 5]]
-    result = solution.resultGrid(image, 1)
-func under test not called
-syntax error
-def test_minimumDistance():
-    class Solution:
-        def _maxManhattanDistance(self, points: List[List[int]], excludedIndex: int) -> int:
-            # ... (same as original code)
-        
-        def minimumDistance(self, points: List[List[int]]) -> int:
-            # ... (same as original code)
-
-    solution = Solution()
-    points = [[0, 0], [1, 2]]
-    assert solution.minimumDistance(points) == 3
-syntax error
-    def test_minimumCost(self):
-        n = 3
-        edges = [[0,1,5],[1,2,3]]
-        query = [[0,2]]
-        self.assertEqual(Solution().minimumCost(n,edges,query),[-6])
-
-if __name__ == '__main__':
-    unittest.main()
-Syntax Correctness: 0.9625292740046838
-Executable Correctness: 0.3337236533957845
-path exact match accuracy: 0.0702576112412178
-path similarity score: 0.13175253708040588
+    image = [[10, 20, 30], [40, 50, 60], [70, 80, 90]]
+    threshold = 5
+    result = solution.resultGrid(image, threshold)
+13
+['LOOP #4: Entered for loop at line 64-66\n', 'LOOP #4: Entered for loop at line 64-66\n', 'LOOP #4: Entered for loop at line 64-66\n', 'LOOP #1: Entered while loop at line 16-19\n', 'LOOP #1: Entered while loop at line 16-19\n'] 1.0
+30
+['LOOP #1: Entered while loop at line 16-19\n', 'LOOP #1: Entered while loop at line 16-19\n', 'LOOP #3: Entered for loop at line 47-58\n', 'LOOP #2: Entered while loop at line 22-24\n', 'LOOP #2: Entered while loop at line 22-24\n'] 1.0
+13
+['LOOP #4: Entered for loop at line 64-66\n', 'LOOP #1: Entered while loop at line 16-19\n', 'LOOP #1: Entered while loop at line 16-19\n', 'LOOP #1: Entered while loop at line 16-19\n', 'LOOP #3: Entered for loop at line 47-58\n'] 1.0
+22
+['LOOP #3: Entered for loop at line 47-58\n', 'LOOP #2: Entered while loop at line 22-24\n', 'LOOP #2: Entered while loop at line 22-24\n', 'BRANCH #4: Covered else branch at line 56-57\n', 'LOOP #1: Entered while loop at line 16-19\n'] 0.8
+0
+['BRANCH #2: Covered if branch at line 33-35\n', 'BRANCH #3: Covered if branch at line 36-38\n', 'BRANCH #4: Covered if branch at line 39-41\n', 'BRANCH #5: Covered if branch at line 42-44\n', 'LOOP #1: Entered for loop at line 28-45\n'] 0.0
+0
+['LOOP #1: Entered for loop at line 28-45\n', 'BRANCH #6: Covered if branch at line 46-47\n', 'LOOP #1: Entered for loop at line 28-45\n', 'BRANCH #1: Covered if branch at line 29-30\n', 'LOOP #1: Entered for loop at line 28-45\n'] 0.0
+0
+['BRANCH #4: Covered if branch at line 39-41\n', 'LOOP #1: Entered for loop at line 28-45\n', 'BRANCH #1: Covered if branch at line 29-30\n', 'LOOP #1: Entered for loop at line 28-45\n', 'BRANCH #2: Covered if branch at line 33-35\n'] 0.0
+0
+['BRANCH #4: Covered if branch at line 39-41\n', 'BRANCH #5: Covered if branch at line 42-44\n', 'LOOP #1: Entered for loop at line 28-45\n', 'BRANCH #6: Covered if branch at line 46-47\n', 'LOOP #1: Entered for loop at line 28-45\n'] 0.0
+Syntax Correctness: 0.9964871194379391
+Executable Correctness: 0.36533957845433257
+path exact match accuracy: 0.07377049180327869
+path similarity score: 0.13733411397345824
