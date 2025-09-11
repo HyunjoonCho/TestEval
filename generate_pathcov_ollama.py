@@ -10,7 +10,7 @@ def parse_args():
     parser = ArgumentParser()
     parser.add_argument("--dataset", type=str, default='leetcode')
     parser.add_argument("--lang", type=str, default='python')
-    parser.add_argument("--model", type=str, default='llama3', choices=['llama3', 'llama3.1', 'mistral-nemo', 'qwen2.5-coder', 'phi4'])
+    parser.add_argument("--model", type=str, default='llama3')
     parser.add_argument("--max_tokens", type=int, default=256)
     parser.add_argument("--temperature", type=float, default=0)
     return parser.parse_args()

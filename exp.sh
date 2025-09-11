@@ -5,6 +5,7 @@
 # python generate_targetcov_ollama.py --covmode line --model mistral-nemo
 # python generate_targetcov_ollama.py --covmode line --model qwen2.5-coder
 python generate_targetcov_ollama.py --covmode line --model phi4 
+python generate_targetcov_ollama.py --covmode line --model deepseek-coder-v2 
 # python generate_targetcov_openai.py --covmode line --model gpt-4o 
 
 # python generate_targetcov_ollama.py --covmode branch --model llama3
@@ -12,6 +13,7 @@ python generate_targetcov_ollama.py --covmode line --model phi4
 # python generate_targetcov_ollama.py --covmode branch --model mistral-nemo
 # python generate_targetcov_ollama.py --covmode branch --model qwen2.5-coder
 python generate_targetcov_ollama.py --covmode branch --model phi4
+python generate_targetcov_ollama.py --covmode branch --model deepseek-coder-v2
 # python generate_targetcov_openai.py --covmode branch --model gpt-4o
 
 # python generate_pathcov_ollama.py --model llama3
@@ -19,6 +21,7 @@ python generate_targetcov_ollama.py --covmode branch --model phi4
 # python generate_pathcov_ollama.py --model mistral-nemo 
 # python generate_pathcov_ollama.py --model qwen2.5-coder 
 python generate_pathcov_ollama.py --model phi4 
+python generate_pathcov_ollama.py --model deepseek-coder-v2 
 # python generate_pathcov_openai.py --model gpt-4o
 
 # evaluate
@@ -39,6 +42,9 @@ python generate_pathcov_ollama.py --model phi4
 python format.py --mode line --path linecov_phi4.jsonl
 python eval_linecov.py --path linecov_phi4_format.jsonl > predictions/linecov_phi4_output.txt
 
+python format.py --mode line --path linecov_deepseek-coder-v2.jsonl
+python eval_linecov.py --path linecov_deepseek-coder-v2_format.jsonl > predictions/linecov_deepseek-coder-v2_output.txt
+
 # python format.py --mode line --path linecov_gpt-4o.jsonl
 # python eval_linecov.py --path linecov_gpt-4o_format.jsonl > predictions/linecov_gpt-4o_output.txt
 
@@ -58,6 +64,9 @@ python eval_linecov.py --path linecov_phi4_format.jsonl > predictions/linecov_ph
 python format.py --mode branch --path branchcov_phi4.jsonl
 python eval_branchcov.py --path branchcov_phi4_format.jsonl > predictions/branchcov_phi4_output.txt
 
+python format.py --mode branch --path branchcov_deepseek-coder-v2.jsonl
+python eval_branchcov.py --path branchcov_deepseek-coder-v2_format.jsonl > predictions/branchcov_deepseek-coder-v2_output.txt
+
 # python format.py --mode branch --path branchcov_gpt-4o.jsonl
 # python eval_branchcov.py --path branchcov_gpt-4o_format.jsonl > predictions/branchcov_gpt-4o_output.txt
 
@@ -76,6 +85,9 @@ python eval_branchcov.py --path branchcov_phi4_format.jsonl > predictions/branch
 
 python format.py --mode overall --path pathcov_phi4.jsonl
 python eval_pathcov.py --path pathcov_phi4_format.jsonl > predictions/pathcov_phi4_output.txt
+
+python format.py --mode overall --path pathcov_deepseek-coder-v2.jsonl
+python eval_pathcov.py --path pathcov_deepseek-coder-v2_format.jsonl > predictions/pathcov_deepseek-coder-v2_output.txt
 
 # python format.py --mode overall --path pathcov_gpt-4o.jsonl
 # python eval_pathcov.py --path pathcov_gpt-4o_format.jsonl > predictions/pathcov_gpt-4o_output.txt
