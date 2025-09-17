@@ -1,3 +1,4 @@
+import json
 from argparse import ArgumentParser
 from tqdm import tqdm
 from pathlib import Path
@@ -14,7 +15,7 @@ def parse_args():
     return parser.parse_args()
 
 def generate_completion(args,prompt,system_message=''):
-    code_output = query_ollama_served_model({
+    code_output, costs = query_ollama_served_model({
         'model': args.model,
         'prompt': f'{system_message}\n{prompt}',
         'stream': False,
@@ -22,7 +23,7 @@ def generate_completion(args,prompt,system_message=''):
             'temperature': args.temperature, 
         },
     })
-    return code_output
+    return code_output, costs
 
 
 if __name__=='__main__':
@@ -40,6 +41,7 @@ if __name__=='__main__':
 
     data_size=len(dataset)
     testing_results=[]
+    generation_costs = {}
     for i in tqdm(range(data_size)):
         data=dataset[i]
         func_name=data['func_name']
@@ -64,9 +66,10 @@ if __name__=='__main__':
 
                 prompt=prompt_template.format(lang='python', program=code_input, description=desc, func_name=func_name, lineno=line_input)
 
-                generated_test=generate_completion(args,prompt,system_message)
+                generated_test, costs=generate_completion(args,prompt,system_message)
                 print(generated_test)
                 tests[lineno]=generated_test
+                generation_costs[f"{data['task_num']}_{lineno}"]=costs
             testing_data={'task_num':data['task_num'],'task_title':data['task_title'],'func_name':func_name,'difficulty':difficulty,'code':code,'tests':tests}
         
         elif args.covmode=='branch':
@@ -87,13 +90,16 @@ if __name__=='__main__':
 
                 prompt=prompt_template_branch.format(lang='python', program=code_input, description=desc, func_name=func_name, branch=branch_input)
 
-                generated_test=generate_completion(args,prompt,system_message)
+                generated_test, costs=generate_completion(args,prompt,system_message)
                 print(generated_test)
                 generatedtest_branch={'start':startline,'end':endline,'test':generated_test}
                 tests_branch.append(generatedtest_branch)
+                generation_costs[f"{data['task_num']}_{startline}_{endline}"] = costs
             testing_data={'task_num':data['task_num'],'task_title':data['task_title'],'func_name':func_name,'difficulty':difficulty,'code':code,'tests':tests_branch}
         
         testing_results.append(testing_data)
         print('<<<<----------------------------------------->>>>')
         write_jsonl(testing_results, output_dir / f'{args.covmode}cov_{args.model}_temp.jsonl')
     write_jsonl(testing_results, output_dir / f'{args.covmode}cov_{args.model}.jsonl')
+    with open(output_dir / f'{args.covmode}cov_{args.model}_cost.json', 'w') as f:
+        json.dump(generation_costs, f, indent=2)

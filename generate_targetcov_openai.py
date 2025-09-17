@@ -1,3 +1,4 @@
+import json
 import os
 from argparse import ArgumentParser
 from tqdm import tqdm
@@ -18,6 +19,13 @@ def parse_args():
     parser.add_argument("--temperature", type=float, default=0)
     return parser.parse_args()
 
+def extract_costs(response):
+    usage = response.usage
+    return {
+        'prompt_tokens': usage.prompt_tokens,
+        'completion_tokens': usage.completion_tokens,
+        'total_tokens': usage.total_tokens,
+    }
 
 def generate_completion(args,prompt,system_message=''):
     response = client.chat.completions.create(
@@ -29,8 +37,9 @@ def generate_completion(args,prompt,system_message=''):
         temperature=args.temperature,
         max_tokens=args.max_tokens
     )
+    costs = extract_costs(response)
     code_output=response.choices[0].message.content
-    return code_output
+    return code_output, costs
 
 
 if __name__=='__main__':
@@ -48,6 +57,7 @@ if __name__=='__main__':
 
     data_size=len(dataset)
     testing_results=[]
+    generation_costs = {}
     for i in tqdm(range(data_size)):
         data=dataset[i]
         func_name=data['func_name']
@@ -72,9 +82,10 @@ if __name__=='__main__':
 
                 prompt=prompt_template.format(lang='python', program=code_input, description=desc, func_name=func_name, lineno=line_input)
 
-                generated_test=generate_completion(args,prompt,system_message)
+                generated_test, costs=generate_completion(args,prompt,system_message)
                 print(generated_test)
                 tests[lineno]=generated_test
+                generation_costs[f"{data['task_num']}_{lineno}"]=costs
             testing_data={'task_num':data['task_num'],'task_title':data['task_title'],'func_name':func_name,'difficulty':difficulty,'code':code,'tests':tests}
         
         elif args.covmode=='branch':
@@ -95,13 +106,16 @@ if __name__=='__main__':
 
                 prompt=prompt_template_branch.format(lang='python', program=code_input, description=desc, func_name=func_name, branch=branch_input)
 
-                generated_test=generate_completion(args,prompt,system_message)
+                generated_test, costs=generate_completion(args,prompt,system_message)
                 print(generated_test)
                 generatedtest_branch={'start':startline,'end':endline,'test':generated_test}
                 tests_branch.append(generatedtest_branch)
+                generation_costs[f"{data['task_num']}_{startline}_{endline}"] = costs                
             testing_data={'task_num':data['task_num'],'task_title':data['task_title'],'func_name':func_name,'difficulty':difficulty,'code':code,'tests':tests_branch}
         
         testing_results.append(testing_data)
         print('<<<<----------------------------------------->>>>')
         write_jsonl(testing_results, output_dir / f'{args.covmode}cov_{args.model}_temp.jsonl')
     write_jsonl(testing_results, output_dir / f'{args.covmode}cov_{args.model}.jsonl')
+    with open(output_dir / f'{args.covmode}cov_{args.model}_cost.json', 'w') as f:
+        json.dump(generation_costs, f, indent=2)

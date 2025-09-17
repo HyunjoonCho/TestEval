@@ -7,13 +7,21 @@ DEFAULT_OLLAMA_ENDPOINT = 'http://localhost:11434/api/generate'
 def messages_to_prompt(messages):
     return '\n'.join([f"{msg['role']}: {msg['content']}" for msg in messages])
 
+def extract_costs(response):
+    return {
+        key: response[key]
+        for key in ['total_duration', 'load_duration', 'prompt_eval_count', 'prompt_eval_duration', 'eval_count', 'eval_duration']
+        if key in response
+    }
+
 def query_ollama_served_model(payload):
     for _ in range(5):
         try:
             json_payload = json.dumps(payload)
             headers = {'Content-Type': 'application/json'}
             response = json.loads(requests.post(DEFAULT_OLLAMA_ENDPOINT, data=json_payload, headers=headers).text)
-            return response['response']
+            costs = extract_costs(response)
+            return response['response'], costs
         except Exception as e:
             save_err = e
             if "The server had an error processing your request." in str(e):

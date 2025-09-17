@@ -23,7 +23,7 @@ def testgeneration_multiround(args,prompt,system_message=''):
             {"role": "user", "content": prompt},
         ]
     for _ in range(args.num_tests):
-        generated_test = query_ollama_served_model({
+        generated_test, _ = query_ollama_served_model({
             'model': args.model,
             'prompt': messages_to_prompt(messages),
             'stream': False,
