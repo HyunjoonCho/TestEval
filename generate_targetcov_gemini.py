@@ -4,6 +4,7 @@ from google.api_core.exceptions import InternalServerError, ResourceExhausted
 
 api_key=os.getenv("GOOGLE_API_KEY")
 
+import json
 import os
 import time
 from argparse import ArgumentParser
@@ -18,12 +19,18 @@ def parse_args():
     parser = ArgumentParser()
     parser.add_argument("--dataset", type=str, default='leetcode')
     parser.add_argument("--lang", type=str, default='python')
-    parser.add_argument("--model", type=str, default='models/gemini-1.0-pro-latest', choices=['models/gemini-1.0-pro-latest', 'models/gemini-1.5-pro-latest'])
+    parser.add_argument("--model", type=str, default='models/gemini-2.5-flash-lite', choices=['models/gemini-1.0-pro-latest', 'models/gemini-1.5-pro-latest', 'models/gemini-2.5-flash-lite'])
     parser.add_argument("--covmode", type=str, default='line', choices=['line', 'branch'], help='cover targets at line level or branch level')
     parser.add_argument("--max_tokens", type=int, default=256)
     parser.add_argument("--temperature", type=float, default=0)
     return parser.parse_args()
 
+def extract_costs(response):
+    usage = response.usage_metadata
+    return {
+        'prompt_tokens': usage.prompt_token_count,
+        'completion_tokens': usage.candidates_token_count,
+    }
 
 if __name__=='__main__':
     args=parse_args()
@@ -48,6 +55,7 @@ if __name__=='__main__':
     
     data_size=len(dataset)
     testing_results=[]
+    generation_costs={}
     for i in tqdm(range(data_size)):
         data=dataset[i]
         func_name=data['func_name']
@@ -76,6 +84,7 @@ if __name__=='__main__':
 
                 if generated.candidates[0].finish_reason==1: #normal stop
                     generated_test=generated.text
+                    generation_costs[f"{data['task_num']}_{lineno}"]=extract_costs(generated)
                 else: #max_token, safety, ...
                     generated_test=''
 
@@ -103,6 +112,7 @@ if __name__=='__main__':
                 generated=model.generate_content(prompt, generation_config=generation_config)
                 if generated.candidates[0].finish_reason==1: #normal stop
                     generated_test=generated.text
+                    generation_costs[f"{data['task_num']}_{startline}_{endline}"] = extract_costs(generated)
                 else: #max_token, safety, ...
                     generated_test=''
                 print(generated_test)
@@ -115,3 +125,5 @@ if __name__=='__main__':
         print('<<<<----------------------------------------->>>>')
         write_jsonl(testing_results, output_dir / f'{args.covmode}cov_{model_abbrv}_temp.jsonl')
     write_jsonl(testing_results, output_dir / f'{args.covmode}cov_{model_abbrv}.jsonl')
+    with open(output_dir / f'{args.covmode}cov_{args.model}_cost.json', 'w') as f:
+        json.dump(generation_costs, f, indent=2)

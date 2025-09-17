@@ -3,6 +3,7 @@ from google.generativeai import GenerationConfig
 
 api_key=os.getenv("GOOGLE_API_KEY")
 
+import json
 import os
 import time
 from pathlib import Path
@@ -18,11 +19,17 @@ def parse_args():
     parser = ArgumentParser()
     parser.add_argument("--dataset", type=str, default='leetcode')
     parser.add_argument("--lang", type=str, default='python')
-    parser.add_argument("--model", type=str, default='models/gemini-1.5-flash-latest', choices=['models/gemini-1.0-pro-latest', 'models/gemini-1.5-pro-latest', 'models/gemini-1.5-flash-latest'])
+    parser.add_argument("--model", type=str, default='models/gemini-2.5-flash-lite', choices=['models/gemini-1.0-pro-latest', 'models/gemini-1.5-pro-latest', 'models/gemini-1.5-flash-latest', 'models/gemini-2.5-flash-lite'])
     parser.add_argument("--temperature", type=float, default=0)
     parser.add_argument("--max_tokens", type=int, default=256)
     return parser.parse_args()
 
+def extract_costs(response):
+    usage = response.usage_metadata
+    return {
+        'prompt_tokens': usage.prompt_token_count,
+        'completion_tokens': usage.candidates_token_count,
+    }
 
 if __name__=='__main__':
     args=parse_args()
@@ -45,6 +52,7 @@ if __name__=='__main__':
     path_dataset=read_jsonl('data/tgt_paths.jsonl')
     data_size=len(dataset)
     testing_results=[]
+    generation_costs = {}
 
     for i in tqdm(range(data_size)):
         data=dataset[i]
@@ -68,6 +76,7 @@ if __name__=='__main__':
             generated=model.generate_content(prompt, generation_config=generation_config)
             if generated.candidates[0].finish_reason==1: #normal stop
                 generated_test=generated.text
+                generation_costs[f"{data['task_num']}_{j}"] = extract_costs(generated)
             else: #max_token, safety, ...
                 generated_test=''
             print(generated_test)
@@ -77,3 +86,5 @@ if __name__=='__main__':
         testing_results.append(testing_data)
 
     write_jsonl(testing_results, output_dir / f'pathcov_{model_abbrv}.jsonl')
+    with open(output_dir / f'pathcov_{args.model}_cost.json', 'w') as f:
+        json.dump(generation_costs, f, indent=2)

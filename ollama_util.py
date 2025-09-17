@@ -9,9 +9,8 @@ def messages_to_prompt(messages):
 
 def extract_costs(response):
     return {
-        key: response[key]
-        for key in ['total_duration', 'load_duration', 'prompt_eval_count', 'prompt_eval_duration', 'eval_count', 'eval_duration']
-        if key in response
+        'prompt_tokens': response['prompt_eval_count'],
+        'completion_tokens': response['eval_count'],
     }
 
 def query_ollama_served_model(payload):

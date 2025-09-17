@@ -24,7 +24,6 @@ def extract_costs(response):
     return {
         'prompt_tokens': usage.prompt_tokens,
         'completion_tokens': usage.completion_tokens,
-        'total_tokens': usage.total_tokens,
     }
 
 def generate_completion(args,prompt,system_message=''):
