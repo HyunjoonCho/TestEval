@@ -2,10 +2,10 @@ import google.generativeai as genai
 from google.generativeai import GenerationConfig
 from google.api_core.exceptions import InternalServerError, ResourceExhausted
 
+import os
 api_key=os.getenv("GOOGLE_API_KEY")
 
 import json
-import os
 import time
 from argparse import ArgumentParser
 from tqdm import tqdm
@@ -125,5 +125,5 @@ if __name__=='__main__':
         print('<<<<----------------------------------------->>>>')
         write_jsonl(testing_results, output_dir / f'{args.covmode}cov_{model_abbrv}_temp.jsonl')
     write_jsonl(testing_results, output_dir / f'{args.covmode}cov_{model_abbrv}.jsonl')
-    with open(output_dir / f'{args.covmode}cov_{args.model}_cost.json', 'w') as f:
+    with open(output_dir / f'{args.covmode}cov_{model_abbrv}_cost.json', 'w') as f:
         json.dump(generation_costs, f, indent=2)
