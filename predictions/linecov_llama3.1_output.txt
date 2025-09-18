@@ -694,3 +694,13 @@ covered line 31
 0
 0
 0
+failed to measure coverage
+covered line 38
+not covered
+covered line 41
+not covered
+covered line 44
+1319 482 1340
+Syntax Correctness: 0.9843283582089553
+Executable Correctness: 0.3597014925373134
+Accuracy in cover selected line: 0.1126865671641791

@@ -123,16 +123,19 @@ def eval_correctness(generated_data, covmode='branch'):
                 cov_command.append(test)
 
                 subprocess.run(cov_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-                cov_report=json.load(open('coverage.json'))
-                executed_lines=cov_report['files']['under_test.py']['executed_lines']
-                #missline_lines=
-                if lineno in executed_lines:
-                    cov_line_success+=1
-                    per_line_results[f"{task_num}_{lineno}"] = True 
-                    print(f'covered line {lineno}')
-                else:
-                    print('not covered')
-                    pass
+                try:
+                    cov_report=json.load(open('coverage.json'))
+                    executed_lines=cov_report['files']['under_test.py']['executed_lines']
+                    #missline_lines=
+                    if lineno in executed_lines:
+                        cov_line_success+=1
+                        per_line_results[f"{task_num}_{lineno}"] = True 
+                        print(f'covered line {lineno}')
+                    else:
+                        print('not covered')
+                        pass
+                except Exception as e:
+                    print('failed to measure coverage')
             os.chdir('..') #exit tmp_ folder
         else: #no test cases passed
             pass
