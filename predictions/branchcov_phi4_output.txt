@@ -9,10 +9,10 @@ not covered
 covered branch 22-23
 covered branch 27-30
 covered branch 31-32
-func under test not called
 covered branch 13-14
 covered branch 21-22
 not covered
+covered branch 36-37
 covered branch 38-39
 covered branch 22-23
 covered branch 27-30
@@ -37,11 +37,11 @@ func under test not called
 func under test not called
 func under test not called
 func under test not called
-func under test not called
-func under test not called
-func under test not called
 covered branch 21-22
 not covered
+covered branch 54-56
+covered branch 60-63
+covered branch 40-42
 covered branch 13-14
 covered branch 23-26
 covered branch 33-34
@@ -57,7 +57,7 @@ not covered
 covered branch 55-56
 covered branch 32-35
 covered branch 36-39
-not covered
+covered branch 19-20
 not covered
 covered branch 22-24
 covered branch 25-26
@@ -86,7 +86,7 @@ covered branch 30-31
 not covered
 covered branch 29-30
 not covered
-covered branch 39-40
+not covered
 not covered
 covered branch 44-45
 not covered
@@ -110,7 +110,7 @@ covered branch 32-33
 covered branch 34-35
 covered branch 16-17
 not covered
-not covered
+covered branch 26-29
 not covered
 covered branch 20-22
 covered branch 18-19
@@ -267,7 +267,7 @@ covered branch 28-29
 covered branch 30-31
 covered branch 32-33
 covered branch 34-35
-not covered
+covered branch 22-23
 covered branch 41-42
 not covered
 not covered
@@ -312,7 +312,7 @@ covered branch 29-30
 covered branch 33-35
 not covered
 covered branch 17-19
-covered branch 25-26
+not covered
 covered branch 27-28
 not covered
 not covered
@@ -328,11 +328,11 @@ covered branch 24-25
 covered branch 26-27
 covered branch 28-29
 covered branch 36-37
+func under test not called
 covered branch 26-27
 covered branch 21-22
 covered branch 23-24
 covered branch 39-40
-covered branch 41-42
 not covered
 not covered
 covered branch 30-31
@@ -356,8 +356,8 @@ covered branch 38-40
 not covered
 func under test not called
 func under test not called
+func under test not called
 covered branch 44-45
-covered branch 18-19
 covered branch 31-32
 covered branch 51-54
 covered branch 35-37
@@ -441,7 +441,7 @@ not covered
 not covered
 covered branch 22-24
 not covered
-covered branch 47-48
+not covered
 not covered
 not covered
 covered branch 18-19
@@ -456,7 +456,7 @@ not covered
 not covered
 covered branch 31-32
 covered branch 23-24
-covered branch 25-27
+not covered
 covered branch 24-25
 covered branch 30-31
 covered branch 32-33
@@ -569,7 +569,7 @@ not covered
 not covered
 not covered
 not covered
-covered branch 30-31
+not covered
 covered branch 23-24
 covered branch 25-27
 not covered
@@ -607,7 +607,7 @@ covered branch 42-43
 covered branch 44-45
 covered branch 29-31
 covered branch 32-36
-not covered
+covered branch 33-34
 covered branch 23-24
 covered branch 25-26
 not covered
@@ -615,7 +615,7 @@ covered branch 21-22
 covered branch 30-31
 not covered
 covered branch 25-27
-not covered
+covered branch 44-50
 covered branch 52-53
 covered branch 48-50
 not covered
@@ -636,7 +636,7 @@ not covered
 not covered
 covered branch 69-70
 not covered
-covered branch 56-58
+not covered
 covered branch 59-65
 covered branch 22-26
 covered branch 34-38
@@ -669,12 +669,12 @@ covered branch 40-42
 covered branch 27-28
 not covered
 not covered
-not covered
+covered branch 29-30
 covered branch 31-32
 covered branch 35-36
+covered branch 37-38
 not covered
 not covered
-covered branch 45-46
 covered branch 49-50
 covered branch 51-52
 not covered
@@ -694,7 +694,7 @@ not covered
 not covered
 not covered
 covered branch 13-14
-covered branch 15-16
+not covered
 covered branch 17-18
 not covered
 covered branch 21-22
@@ -754,11 +754,11 @@ not covered
 not covered
 not covered
 covered branch 19-20
-not covered
+covered branch 16-17
 covered branch 28-31
 covered branch 40-42
 not covered
-not covered
+covered branch 32-36
 not covered
 not covered
 covered branch 40-41
@@ -767,11 +767,11 @@ not covered
 not covered
 not covered
 not covered
-not covered
+covered branch 31-32
 not covered
 not covered
 covered branch 19-20
-covered branch 21-22
+not covered
 covered branch 32-34
 not covered
 not covered
@@ -795,7 +795,7 @@ covered branch 21-22
 covered branch 23-24
 not covered
 not covered
-not covered
+covered branch 39-40
 not covered
 not covered
 not covered
@@ -857,7 +857,7 @@ not covered
 not covered
 not covered
 not covered
-covered branch 47-48
+not covered
 not covered
 covered branch 13-14
 covered branch 20-28
@@ -904,7 +904,7 @@ covered branch 27-28
 not covered
 covered branch 32-33
 covered branch 34-35
-covered branch 52-53
+not covered
 covered branch 29-30
 not covered
 covered branch 23-26
@@ -932,7 +932,7 @@ not covered
 not covered
 covered branch 14-15
 covered branch 16-17
-covered branch 19-20
+not covered
 covered branch 21-22
 not covered
 not covered
@@ -941,13 +941,13 @@ covered branch 31-32
 covered branch 21-22
 covered branch 43-48
 not covered
-not covered
+covered branch 46-48
 covered branch 49-50
 covered branch 51-52
 not covered
 covered branch 29-30
 covered branch 33-35
-not covered
+covered branch 20-25
 not covered
 not covered
 covered branch 39-40
@@ -983,10 +983,10 @@ covered branch 40-41
 covered branch 32-34
 covered branch 31-32
 covered branch 34-36
-983 964 983
+983 966 983
 Syntax Correctness: 1.0
-Executable Correctness: 0.9806714140386572
-Accuracy in cover selected branch: 0.6663275686673449
-Easy branch coverage rate: 0.7469879518072289
-Medium branch coverage rate: 0.6622222222222223
-Hard branch coverage rate: 0.5153846153846153
+Executable Correctness: 0.982706002034588
+Accuracy in cover selected branch: 0.669379450661241
+Easy branch coverage rate: 0.751004016064257
+Medium branch coverage rate: 0.6488888888888888
+Hard branch coverage rate: 0.5307692307692308

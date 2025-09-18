@@ -174,13 +174,13 @@ pathcov_mistral-nemo_format.jsonl
 ['LOOP #1: Entered for loop at line 19-39\n', 'LOOP #2: Entered while loop at line 25-32\n', 'LOOP #2: Entered while loop at line 25-32\n', 'LOOP #2: Entered while loop at line 25-32\n', 'BRANCH #3: Covered if branch at line 26-29\n'] 0.6
 5
 ['LOOP #3: Entered while loop at line 35-39\n', 'LOOP #1: Entered for loop at line 19-39\n', 'LOOP #3: Entered while loop at line 35-39\n', 'LOOP #1: Entered for loop at line 19-39\n', 'LOOP #3: Entered while loop at line 35-39\n'] 0.2
-24
+35
 ['LOOP #2: Entered for loop at line 17-19\n', 'LOOP #2: Entered for loop at line 17-19\n', 'LOOP #2: Entered for loop at line 17-19\n', 'LOOP #2: Entered for loop at line 17-19\n', 'LOOP #2: Entered for loop at line 17-19\n'] 0.8
 19
 ['LOOP #2: Entered for loop at line 17-19\n', 'LOOP #2: Entered for loop at line 17-19\n', 'LOOP #1: Entered for loop at line 15-23\n', 'LOOP #2: Entered for loop at line 17-19\n', 'LOOP #2: Entered for loop at line 17-19\n'] 0.8
-23
-['LOOP #2: Entered for loop at line 17-19\n', 'LOOP #2: Entered for loop at line 17-19\n', 'LOOP #2: Entered for loop at line 17-19\n', 'BRANCH #2: Covered if branch at line 20-22\n', 'BRANCH #3: Covered if branch at line 21-22\n'] 0.6
 16
+['LOOP #2: Entered for loop at line 17-19\n', 'LOOP #2: Entered for loop at line 17-19\n', 'LOOP #2: Entered for loop at line 17-19\n', 'BRANCH #2: Covered if branch at line 20-22\n', 'BRANCH #3: Covered if branch at line 21-22\n'] 0.6
+22
 ['LOOP #2: Entered for loop at line 17-19\n', 'BRANCH #1: Covered if branch at line 18-19\n', 'LOOP #2: Entered for loop at line 17-19\n', 'BRANCH #1: Covered if branch at line 18-19\n', 'LOOP #2: Entered for loop at line 17-19\n'] 1.0
 42
 ['BRANCH #3: Covered if branch at line 32-33\n', 'LOOP #3: Entered while loop at line 25-37\n', 'LOOP #4: Entered for loop at line 27-37\n', 'BRANCH #3: Covered if branch at line 32-33\n', 'LOOP #4: Entered for loop at line 27-37\n'] 0.8

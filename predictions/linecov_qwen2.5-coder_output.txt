@@ -502,7 +502,7 @@ covered line 32
 not covered
 covered line 40
 func under test not called
-func under test not called
+covered line 22
 covered line 28
 func under test not called
 covered line 17
@@ -1319,7 +1319,7 @@ covered line 45
 covered line 32
 covered line 35
 covered line 36
-1340 1299 1340
+1340 1300 1340
 Syntax Correctness: 1.0
-Executable Correctness: 0.9694029850746269
-Accuracy in cover selected line: 0.673134328358209
+Executable Correctness: 0.9701492537313433
+Accuracy in cover selected line: 0.6738805970149254

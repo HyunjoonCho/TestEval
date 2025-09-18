@@ -121,7 +121,7 @@
   },
   "73_26_27": {
     "difficulty": 2,
-    "covered": false
+    "covered": true
   },
   "97_15_16": {
     "difficulty": 1,
@@ -309,7 +309,7 @@
   },
   "336_23_24": {
     "difficulty": 1,
-    "covered": false
+    "covered": true
   },
   "336_25_26": {
     "difficulty": 1,
@@ -497,7 +497,7 @@
   },
   "581_18_19": {
     "difficulty": 0,
-    "covered": false
+    "covered": true
   },
   "581_20_21": {
     "difficulty": 0,
@@ -513,7 +513,7 @@
   },
   "581_32_33": {
     "difficulty": 0,
-    "covered": false
+    "covered": true
   },
   "581_36_37": {
     "difficulty": 0,
@@ -1141,7 +1141,7 @@
   },
   "923_26_27": {
     "difficulty": 1,
-    "covered": true
+    "covered": false
   },
   "927_15_16": {
     "difficulty": 2,
@@ -2097,7 +2097,7 @@
   },
   "1805_32_33": {
     "difficulty": 0,
-    "covered": true
+    "covered": false
   },
   "1805_17_18": {
     "difficulty": 0,

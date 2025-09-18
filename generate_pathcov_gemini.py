@@ -1,10 +1,10 @@
 import google.generativeai as genai
 from google.generativeai import GenerationConfig
 
+import os
 api_key=os.getenv("GOOGLE_API_KEY")
 
 import json
-import os
 import time
 from pathlib import Path
 from argparse import ArgumentParser

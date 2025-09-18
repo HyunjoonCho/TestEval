@@ -305,11 +305,11 @@
   },
   "336_17_18": {
     "difficulty": 1,
-    "covered": true
+    "covered": false
   },
   "336_23_24": {
     "difficulty": 1,
-    "covered": true
+    "covered": false
   },
   "336_25_26": {
     "difficulty": 1,
@@ -765,7 +765,7 @@
   },
   "735_18_26": {
     "difficulty": 0,
-    "covered": false
+    "covered": true
   },
   "735_21_22": {
     "difficulty": 0,
@@ -1041,7 +1041,7 @@
   },
   "861_14_15": {
     "difficulty": 1,
-    "covered": true
+    "covered": false
   },
   "861_18_19": {
     "difficulty": 1,

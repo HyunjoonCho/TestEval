@@ -72,13 +72,12 @@ covered line 34
 covered line 38
 not covered
 func under test not called
-func under test not called
 covered line 20
 covered line 22
 covered line 23
+covered line 24
 covered line 25
 covered line 26
-covered line 28
 covered line 32
 covered line 24
 covered line 27
@@ -97,7 +96,7 @@ not covered
 not covered
 func under test not called
 func under test not called
-not covered
+func under test not called
 not covered
 covered line 31
 covered line 34
@@ -143,6 +142,7 @@ covered line 22
 covered line 22
 covered line 23
 covered line 31
+covered line 33
 covered line 21
 not covered
 not covered
@@ -341,13 +341,12 @@ covered line 43
 covered line 44
 covered line 24
 covered line 33
+func under test not called
 not covered
-not covered
-1
 covered line 21
 not covered
 covered line 25
-covered line 27
+not covered
 func under test not called
 func under test not called
 not covered
@@ -1126,7 +1125,7 @@ covered line 33
 covered line 32
 covered line 35
 covered line 36
-1303 980 1340
+1303 979 1340
 Syntax Correctness: 0.9723880597014926
-Executable Correctness: 0.7313432835820896
+Executable Correctness: 0.7305970149253731
 Accuracy in cover selected line: 0.47238805970149256

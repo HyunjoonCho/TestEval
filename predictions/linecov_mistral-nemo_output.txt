@@ -71,7 +71,6 @@ covered line 34
 covered line 36
 covered line 43
 covered line 45
-covered line 28
 covered line 32
 covered line 15
 covered line 17
@@ -546,7 +545,7 @@ covered line 31
 not covered
 covered line 35
 covered line 37
-not covered
+covered line 27
 covered line 29
 not covered
 covered line 23
@@ -1111,7 +1110,7 @@ covered line 21
 covered line 22
 covered line 23
 not covered
-covered line 25
+not covered
 not covered
 not covered
 not covered
@@ -1277,7 +1276,7 @@ covered line 34
 covered line 32
 covered line 35
 covered line 36
-1340 1276 1340
+1340 1275 1340
 Syntax Correctness: 1.0
-Executable Correctness: 0.9522388059701492
-Accuracy in cover selected line: 0.6305970149253731
+Executable Correctness: 0.9514925373134329
+Accuracy in cover selected line: 0.6298507462686567

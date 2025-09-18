@@ -34,7 +34,7 @@ covered branch 36-37
 not covered
 not covered
 covered branch 20-22
-not covered
+covered branch 26-27
 func under test not called
 not covered
 not covered
@@ -82,8 +82,8 @@ covered branch 17-18
 not covered
 not covered
 func under test not called
-[]
-not covered
+[[0, 1], [1, 0]]
+covered branch 23-24
 not covered
 func under test not called
 not covered
@@ -136,11 +136,12 @@ not covered
 not covered
 not covered
 func under test not called
+5
 func under test not called
-func under test not called
+covered branch 18-19
 not covered
 not covered
-not covered
+covered branch 32-33
 False
 False
 False
@@ -316,7 +317,7 @@ not covered
 not covered
 not covered
 not covered
-covered branch 26-27
+not covered
 func under test not called
 func under test not called
 not covered
@@ -562,10 +563,11 @@ not covered
 not covered
 not covered
 not covered
+3
 func under test not called
 covered branch 23-24
 not covered
-covered branch 32-33
+not covered
 covered branch 19-21
 func under test not called
 not covered
@@ -670,6 +672,7 @@ not covered
 2
 2
 2
+2
 not covered
 not covered
 covered branch 19-20
@@ -745,6 +748,7 @@ not covered
 not covered
 not covered
 not covered
+False
 False
 False
 covered branch 13-14
@@ -1051,10 +1055,10 @@ not covered
 not covered
 not covered
 not covered
-973 803 983
+973 804 983
 Syntax Correctness: 0.9898270600203459
-Executable Correctness: 0.8168870803662258
-Accuracy in cover selected branch: 0.10274669379450661
-Easy branch coverage rate: 0.12248995983935743
+Executable Correctness: 0.8179043743641913
+Accuracy in cover selected branch: 0.10478128179043744
+Easy branch coverage rate: 0.12449799196787148
 Medium branch coverage rate: 0.057777777777777775
-Hard branch coverage rate: 0.10384615384615385
+Hard branch coverage rate: 0.1076923076923077
