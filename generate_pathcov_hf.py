@@ -1,3 +1,4 @@
+import json
 import os
 import transformers
 import torch
@@ -11,7 +12,7 @@ from transformers import pipeline
 access_token=os.getenv("HUGGINGFACE_TOKEN")
 
 from data_utils import read_jsonl, write_jsonl, add_lineno
-from prompt_utils import generate_path
+from prompt_utils import generate_path, extract_hf_tokens
 
 
 def parse_args():
@@ -24,14 +25,13 @@ def parse_args():
     return parser.parse_args()
 
 
-model_list=['codellama/CodeLlama-7b-Instruct-hf','codellama/CodeLlama-13b-Instruct-hf','codellama/CodeLlama-34b-Instruct-hf',
-            'meta-llama/Meta-Llama-3-8B-Instruct',
-            'bigcode/starcoder2-15b-instruct-v0.1',
-            'google/gemma-1.1-7b-it'
-            'deepseek-ai/deepseek-coder-1.3b-instruct', 'deepseek-ai/deepseek-coder-6.7b-instruct',
-            'deepseek-ai/deepseek-coder-33b-instruct',
-            'mistralai/Mistral-7B-Instruct-v0.3'
-            ]
+model_list=[
+    "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "meta-llama/Meta-Llama-3-8B-Instruct",
+    "Qwen/Qwen2.5-Coder-7B-Instruct"
+    "mistralai/Mistral-Nemo-Instruct-2407",
+    "microsoft/phi-4",
+]
 
 #models do not support system message
 models_nosys=['google/gemma-1.1-7b-it',
@@ -53,6 +53,7 @@ if __name__=='__main__':
     path_dataset=read_jsonl('data/tgt_paths.jsonl')
     data_size=len(dataset)
     testing_results=[]
+    generation_costs = {}
 
     model = AutoModelForCausalLM.from_pretrained(args.model, token=access_token, torch_dtype=torch.bfloat16, trust_remote_code=True, device_map='auto')
     tokenizer = AutoTokenizer.from_pretrained(args.model, token=access_token, torch_dtype=torch.bfloat16, trust_remote_code=True, device_map='auto')
@@ -88,6 +89,7 @@ if __name__=='__main__':
                                 temperature=args.temperature, 
                                 return_full_text=False)
             generated_test=generated[0]['generated_text']
+            generation_costs[f"{data['task_num']}_{j}"] = extract_hf_tokens(prompt, generated_test, tokenizer)
             if generated_test.startswith('  '): #remove extra indents (encountered in codellama)
                 generated_test=textwrap.dedent(generated_test)
             print(generated_test)
@@ -97,3 +99,5 @@ if __name__=='__main__':
         testing_results.append(testing_data)
 
     write_jsonl(testing_results, output_dir / f'pathcov_{model_abbrv}.jsonl')
+    with open(output_dir / f'pathcov_{args.model}_cost.json', 'w') as f:
+        json.dump(generation_costs, f, indent=2)
