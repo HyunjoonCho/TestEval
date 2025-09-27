@@ -148,5 +148,5 @@ if __name__=='__main__':
         print('<<<<----------------------------------------->>>>')
         write_jsonl(testing_results, output_dir / f'{args.covmode}cov_{model_abbrv}_temp.jsonl')
     write_jsonl(testing_results, output_dir / f'{args.covmode}cov_{model_abbrv}.jsonl')
-    with open(output_dir / f'{args.covmode}cov_{args.model}_cost.json', 'w') as f:
+    with open(output_dir / f'{args.covmode}cov_{model_abbrv}_cost.json', 'w') as f:
         json.dump(generation_costs, f, indent=2)
