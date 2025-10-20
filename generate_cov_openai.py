@@ -1,4 +1,5 @@
 #baseline for targeted line coverage: not providing the target line number
+import json
 import os
 from pathlib import Path
 from argparse import ArgumentParser
