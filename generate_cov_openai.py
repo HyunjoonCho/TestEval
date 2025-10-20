@@ -21,25 +21,18 @@ def parse_args():
     parser.add_argument("--max_tokens", type=int, default=256)
     return parser.parse_args()
 
-
-def generate_completion(args,prompt,system_message=''):
-    response = client.chat.completions.create(
-        model=args.model,
-        messages=[
-            {"role": "system", "content": system_message},
-            {"role": "user", "content": prompt},
-        ],
-        temperature=args.temperature,
-        max_tokens=args.max_tokens
-    )
-    code_output=response.choices[0].message.content
-    return code_output
-
+def extract_costs(response):
+    usage = response.usage
+    return {
+        'prompt_tokens': usage.prompt_tokens,
+        'completion_tokens': usage.completion_tokens,
+    }
 
 def testgeneration_multiround(args,prompt,system_message=''):
     """generate test cases with multi-round conversation, each time generate one test case"""
     template_append="Generate another test method for the function under test. Your answer must be different from previously-generated test cases, and should cover different statements and branches."
     generated_tests=[]
+    costs=[]
     messages=[
             {"role": "system", "content": system_message},
             {"role": "user", "content": prompt},
@@ -51,6 +44,7 @@ def testgeneration_multiround(args,prompt,system_message=''):
             temperature=args.temperature,
             max_tokens=args.max_tokens
         )
+        costs.append(extract_costs(response))
         generated_test=response.choices[0].message.content
         messages.append({"role": "assistant", "content": generated_test})
         messages.append({"role": "user", "content": template_append})
@@ -58,7 +52,7 @@ def testgeneration_multiround(args,prompt,system_message=''):
         generated_tests.append(generated_test)
         print(generated_test)
 
-    return generated_tests
+    return generated_tests, costs
 
 
 lang_exts={'python':'py', 'java':'java', 'c++':'cpp'}
@@ -78,6 +72,7 @@ if __name__=='__main__':
     data_size=len(dataset)
 
     testing_results=[]
+    generation_costs = {}
     for i in tqdm(range(data_size)):
         data=dataset[i]
         func_name=data['func_name']
@@ -89,11 +84,14 @@ if __name__=='__main__':
 
         #generate test case
         prompt=prompt_template.format(lang='python', program=code, description=desc, func_name=func_name)
-        generated_tests=testgeneration_multiround(args,prompt,system_message)
-                   
+        generated_tests, costs=testgeneration_multiround(args,prompt,system_message)
+        generation_costs[data['task_num']] = costs
+
         testing_data={'task_num':data['task_num'],'task_title':data['task_title'],'func_name':func_name,'difficulty':difficulty,'code':code,'tests':generated_tests}
         testing_results.append(testing_data)
         print('<<<<----------------------------------------->>>>')
         write_jsonl(testing_results, output_dir / f'totalcov_{args.model}_temp.jsonl')
 
     write_jsonl(testing_results, output_dir / f'totalcov_{args.model}.jsonl')
+    with open(output_dir / f'totalcov_{args.model}_cost.json', 'w') as f:
+        json.dump(generation_costs, f, indent=2)

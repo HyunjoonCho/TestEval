@@ -10,7 +10,7 @@ from transformers import pipeline
 access_token=os.getenv("HUGGINGFACE_TOKEN")
 
 from data_utils import read_jsonl, write_jsonl, add_lineno
-
+from prompt_utils import extract_hf_tokens
 
 def parse_args():
     parser = ArgumentParser()
@@ -21,16 +21,13 @@ def parse_args():
     parser.add_argument("--max_tokens", type=int, default=256)
     return parser.parse_args()
 
-model_list=['codellama/CodeLlama-7b-Instruct-hf','codellama/CodeLlama-13b-Instruct-hf','codellama/CodeLlama-34b-Instruct-hf',
-            'meta-llama/Meta-Llama-3-8B-Instruct',
-            'bigcode/starcoder2-15b-instruct-v0.1',
-            'google/gemma-1.1-2b-it', 'google/gemma-1.1-7b-it'
-            'google/codegemma-7b-it',
-            'deepseek-ai/deepseek-coder-1.3b-instruct', 'deepseek-ai/deepseek-coder-6.7b-instruct',
-            'deepseek-ai/deepseek-coder-33b-instruct',
-            'mistralai/Mistral-7B-Instruct-v0.2', 'mistralai/Mistral-7B-Instruct-v0.3'
-            'Qwen/CodeQwen1.5-7B-Chat'
-            ]
+model_list=[
+    "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "meta-llama/Meta-Llama-3-8B-Instruct",
+    "Qwen/Qwen2.5-Coder-7B-Instruct"
+    "mistralai/Mistral-Nemo-Instruct-2407",
+    "microsoft/phi-4",
+]
 
 #models do not support system message
 models_nosys=['google/gemma-1.1-7b-it',
@@ -38,10 +35,11 @@ models_nosys=['google/gemma-1.1-7b-it',
             'mistralai/Mistral-7B-Instruct-v0.3']
 
 
-def testgeneration_multiround(args,prompt,system_message=''):
+def testgeneration_multiround(args,prompt,tokenizer,system_message=''):
     """generate test cases with multi-round conversation, each time generate one test case"""
     template_append="Generate another test method for the function under test. Your answer must be different from previously-generated test cases, and should cover different statements and branches."
     generated_tests=[]
+    costs = []
 
     if args.model in models_nosys: #models don't support system message
         messages=[{"role": "user", "content": system_message+prompt}]
@@ -57,8 +55,8 @@ def testgeneration_multiround(args,prompt,system_message=''):
                             max_new_tokens=args.max_tokens, 
                             temperature=args.temperature, 
                             return_full_text=False)
-        
         generated_test=generated[0]['generated_text']
+        costs.append(extract_hf_tokens(prompt, generated_test, tokenizer))
         print(generated_test)
 
         messages.append({"role": "assistant", "content": generated_test})
@@ -66,7 +64,7 @@ def testgeneration_multiround(args,prompt,system_message=''):
         
 
         generated_tests.append(generated_test)
-    return generated_tests
+    return generated_tests, costs
 
 
 if __name__=='__main__':
@@ -88,6 +86,7 @@ if __name__=='__main__':
     data_size=len(dataset)
     testing_results=[]
     print('number of samples:',len(dataset))
+    generation_costs = {}
     
     for i in tqdm(range(data_size)):
         data=dataset[i]
@@ -99,7 +98,8 @@ if __name__=='__main__':
         target_lines=data['target_lines']
 
         prompt=prompt_template.format(lang='python', program=code, description=desc, func_name=func_name)
-        generated_tests=testgeneration_multiround(args,prompt,system_message)
+        generated_tests, costs=testgeneration_multiround(args,prompt,tokenizer,system_message)
+        generation_costs[data['task_num']] = costs
 
         testing_data={'task_num':data['task_num'],'task_title':data['task_title'],'func_name':func_name,'difficulty':difficulty,'code':code,'tests':generated_tests}
         testing_results.append(testing_data)
@@ -107,3 +107,5 @@ if __name__=='__main__':
         write_jsonl(testing_results,output_dir / f'totalcov_{model_abbrv}_temp.jsonl')
 
     write_jsonl(testing_results,output_dir / f'totalcov_{model_abbrv}.jsonl')
+    with open(output_dir / f'totalcov_{model_abbrv}_cost.json', 'w') as f:
+        json.dump(generation_costs, f, indent=2)
