@@ -1,0 +1,75 @@
+totalcov_Mistral-Nemo-Instruct-2407_format.jsonl
+[1, 2, 5]
+210
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+Syntax Correctness: 0.9785714285714285
+Executable Correctness: 0.8857142857142857
+line coverage@1 0.8164366875326593
+branch coverage@1 0.7166225490857724
+line coverage@2 0.854362471296916
+branch coverage@2 0.7710450008545244
+line coverage@5 0.895937263482977
+branch coverage@5 0.8360690457029738
+Average Line Coverage: 0.9567169914816867, Average Branch Coverage: 0.9302187561116132

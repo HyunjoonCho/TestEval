@@ -1,0 +1,56 @@
+totalcov_Qwen2.5-Coder-7B-Instruct_format.jsonl
+[1, 2, 5]
+210
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+Syntax Correctness: 0.9961904761904762
+Executable Correctness: 0.9180952380952381
+line coverage@1 0.8066143488894024
+branch coverage@1 0.7089201451892776
+line coverage@2 0.8452451250299062
+branch coverage@2 0.7663561487289166
+line coverage@5 0.8868172773213798
+branch coverage@5 0.8316165573844149
+Average Line Coverage: 0.9444497529939765, Average Branch Coverage: 0.9232662971948684
