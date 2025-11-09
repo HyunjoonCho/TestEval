@@ -16,17 +16,24 @@ def parse_args():
     parser = ArgumentParser()
     parser.add_argument("--dataset", type=str, default='leetcode')
     parser.add_argument("--lang", type=str, default='python')
-    parser.add_argument("--model", type=str, default='models/gemini-1.0-pro-latest', choices=['models/gemini-1.0-pro-latest', 'models/gemini-1.5-pro-latest', 'models/gemini-1.5-flash-latest'])
+    parser.add_argument("--model", type=str, default='models/gemini-2.5-flash-lite', choices=['models/gemini-1.0-pro-latest', 'models/gemini-1.5-pro-latest', 'models/gemini-1.5-flash-latest', 'models/gemini-2.5-flash-lite'])
     parser.add_argument("--num_tests", type=int, default=20, help='number of tests generated per program')
     parser.add_argument("--temperature", type=float, default=0)
     parser.add_argument("--max_tokens", type=int, default=256)
     return parser.parse_args()
 
+def extract_costs(response):
+    usage = response.usage_metadata
+    return {
+        'prompt_tokens': usage.prompt_token_count,
+        'completion_tokens': usage.candidates_token_count,
+    }
 
 def testgeneration_multiround(args, model, prompt):
     """generate test cases with multi-round conversation, each time generate one test case"""
     template_append="Generate another test method for the function under test. Your answer must be different from previously-generated test cases, and should cover different statements and branches."
     generated_tests=[]
+    costs = []
 
     for i in range(args.num_tests):
         generated=model.generate_content(prompt, generation_config=generation_config)
@@ -34,6 +41,7 @@ def testgeneration_multiround(args, model, prompt):
             generated_test=generated.text
         else: #max_token, safety, ...
             generated_test=''
+        costs.append(extract_costs(generated))
         print(generated_test)
 
         test_append=f'''Generated test:
@@ -44,7 +52,7 @@ def testgeneration_multiround(args, model, prompt):
 
         generated_tests.append(generated_test)
 
-    return generated_tests
+    return generated_tests, costs
 
 
 if __name__=='__main__':
@@ -55,7 +63,7 @@ if __name__=='__main__':
     #print(model)
     output_dir = Path('predictions')
 
-    dataset=read_jsonl('LC_data/leetcode-bench-py.jsonl')
+    dataset=read_jsonl('data/leetcode-py.jsonl')
 
     prompt_template=open('prompt/template_base.txt').read()
     system_template=open('prompt/system.txt').read()
@@ -69,6 +77,8 @@ if __name__=='__main__':
     
     data_size=len(dataset)
     testing_results=[]
+    generation_costs = {}
+
     for i in tqdm(range(data_size)):
         data=dataset[i]
         func_name=data['func_name']
@@ -82,7 +92,8 @@ if __name__=='__main__':
         #generate test cases
         prompt=prompt_template.format(lang='python', program=code, description=desc, func_name=func_name)
         prompt=system_message+prompt
-        generated_tests=testgeneration_multiround(args,model,prompt)
+        generated_tests, costs = testgeneration_multiround(args,model,prompt)
+        generation_costs[data['task_num']] = costs
 
         testing_data={'task_num':data['task_num'],'task_title':data['task_title'],'func_name':func_name,'difficulty':difficulty,'code':code,'tests':generated_tests}
         testing_results.append(testing_data)
@@ -90,3 +101,5 @@ if __name__=='__main__':
         write_jsonl(testing_results, output_dir / f'totalcov_{model_abbrv}_temp.jsonl')
     
     write_jsonl(testing_results, output_dir / f'totalcov_{model_abbrv}.jsonl')
+    with open(output_dir / f'totalcov_{model_abbrv}_cost.json', 'w') as f:
+        json.dump(generation_costs, f, indent=2)
