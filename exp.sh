@@ -101,7 +101,7 @@ python eval_overall.py --path totalcov_gemini-2.5-flash-lite_format.jsonl > pred
 # python format.py --mode branch --path branchcov_gemini-2.5-flash-lite.jsonl
 # python eval_branchcov.py --path branchcov_gemini-2.5-flash-lite_format.jsonl > predictions/branchcov_gemini-2.5-flash-lite_output.txt
 
-# Targeted Branch Coverage
+# Targeted Path Coverage
 # python format.py --mode overall --path pathcov_Meta-Llama-3-8B-Instruct.jsonl
 # python eval_pathcov.py --path pathcov_Meta-Llama-3-8B-Instruct_format.jsonl > predictions/pathcov_Meta-Llama-3-8B-Instruct_output.txt
 
