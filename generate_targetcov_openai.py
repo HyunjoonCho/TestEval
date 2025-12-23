@@ -17,6 +17,7 @@ def parse_args():
     parser.add_argument("--covmode", type=str, default='line', choices=['line', 'branch'], help='cover targets at line level or branch level')
     parser.add_argument("--max_tokens", type=int, default=256)
     parser.add_argument("--temperature", type=float, default=0)
+    parser.add_argument("--index", type=int, default=0)
     return parser.parse_args()
 
 def extract_costs(response):
@@ -115,6 +116,14 @@ if __name__=='__main__':
         testing_results.append(testing_data)
         print('<<<<----------------------------------------->>>>')
         write_jsonl(testing_results, output_dir / f'{args.covmode}cov_{args.model}_temp.jsonl')
-    write_jsonl(testing_results, output_dir / f'{args.covmode}cov_{args.model}.jsonl')
-    with open(output_dir / f'{args.covmode}cov_{args.model}_cost.json', 'w') as f:
+
+    if args.index:
+        output_path = testing_results, output_dir / f'{args.covmode}cov_{args.model}_{args.index}.jsonl'
+        cost_path = output_dir / f'{args.covmode}cov_{args.model}_cost_{args.index}.json'
+    else: 
+        output_path = output_dir / f'{args.covmode}cov_{args.model}.jsonl'
+        cost_path = output_dir / f'{args.covmode}cov_{args.model}_cost.json'
+
+    write_jsonl(testing_results, output_path)
+    with open(cost_path, 'w') as f:
         json.dump(generation_costs, f, indent=2)
