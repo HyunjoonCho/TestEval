@@ -17,6 +17,7 @@ def parse_args():
     parser.add_argument("--model", type=str, default='gpt-3.5-turbo', choices=['gpt-3.5-turbo', 'gpt-4', 'gpt-4-turbo', 'gpt-4o'])
     parser.add_argument("--max_tokens", type=int, default=256)
     parser.add_argument("--temperature", type=float, default=0)
+    parser.add_argument("--index", type=int, default=0)
     return parser.parse_args()
 
 def extract_costs(response):
@@ -82,6 +83,13 @@ if __name__=='__main__':
         testing_data={'task_num':data['task_num'],'task_title':data['task_title'],'func_name':func_name,'difficulty':difficulty,'code':code,'tests':generated_path_tests}
         testing_results.append(testing_data)
 
-    write_jsonl(testing_results, output_dir / f'pathcov_{args.model}.jsonl')
-    with open(output_dir / f'pathcov_{args.model}_cost.json', 'w') as f:
+    if args.index:
+        output_path = output_dir / f'pathcov_{args.model}_{args.index}.jsonl'
+        cost_path = output_dir / f'pathcov_{args.model}_cost_{args.index}.json'
+    else:
+        output_path = output_dir / f'pathcov_{args.model}.jsonl'
+        cost_path = output_dir / f'pathcov_{args.model}_cost.json'
+
+    write_jsonl(testing_results, output_path)
+    with open(cost_path, 'w') as f:
         json.dump(generation_costs, f, indent=2)
