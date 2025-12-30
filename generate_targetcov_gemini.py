@@ -14,6 +14,7 @@ from pathlib import Path
 from data_utils import read_jsonl, write_jsonl, add_lineno
 
 genai.configure(api_key=api_key)
+from llm_util import generate_with_timeout_gemini
 
 def parse_args():
     parser = ArgumentParser()
@@ -81,7 +82,7 @@ if __name__=='__main__':
                 prompt=prompt_template.format(lang='python', program=code_input, description=desc, func_name=func_name, lineno=line_input)
                 prompt=system_message+prompt
 
-                generated=model.generate_content(prompt, generation_config=generation_config)
+                generated=generate_with_timeout_gemini(model, prompt, generation_config=generation_config)
 
                 if generated.candidates[0].finish_reason==1: #normal stop
                     generated_test=generated.text
@@ -110,7 +111,7 @@ if __name__=='__main__':
 
                 prompt=prompt_template_branch.format(lang='python', program=code_input, description=desc, func_name=func_name, branch=branch_input)
                 prompt=system_message+prompt
-                generated=model.generate_content(prompt, generation_config=generation_config)
+                generated=generate_with_timeout_gemini(model, prompt, generation_config=generation_config)
                 if generated.candidates[0].finish_reason==1: #normal stop
                     generated_test=generated.text
                     generation_costs[f"{data['task_num']}_{startline}_{endline}"] = extract_costs(generated)

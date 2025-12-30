@@ -14,6 +14,7 @@ from data_utils import read_jsonl, write_jsonl, add_lineno
 from prompt_utils import generate_path
 
 genai.configure(api_key=api_key)
+from llm_util import generate_with_timeout_gemini
 
 def parse_args():
     parser = ArgumentParser()
@@ -74,7 +75,7 @@ if __name__=='__main__':
             prompt=prompt_template.format(func_name=func_name, description=desc, program=code_withlineno, path=path_prompt)
             prompt=system_message+prompt
 
-            generated=model.generate_content(prompt, generation_config=generation_config)
+            generated=generate_with_timeout_gemini(model, prompt, generation_config=generation_config)
             if generated.candidates[0].finish_reason==1: #normal stop
                 generated_test=generated.text
                 generation_costs[f"{data['task_num']}_{j}"] = extract_costs(generated)

@@ -12,6 +12,7 @@ api_key=os.getenv("GOOGLE_API_KEY")
 from data_utils import read_jsonl, write_jsonl, add_lineno
 
 genai.configure(api_key=api_key)
+from llm_util import generate_with_timeout_gemini
 
 def parse_args():
     parser = ArgumentParser()
@@ -38,7 +39,7 @@ def testgeneration_multiround(args, model, prompt):
     costs = []
 
     for i in range(args.num_tests):
-        generated=model.generate_content(prompt, generation_config=generation_config)
+        generated=generate_with_timeout_gemini(model, prompt, generation_config=generation_config)
         if generated.candidates[0].finish_reason==1: #normal stop
             generated_test=generated.text
         else: #max_token, safety, ...
