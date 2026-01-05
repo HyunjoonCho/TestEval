@@ -1,0 +1,68 @@
+totalcov_Mistral-Nemo-Instruct-2407_6_format.jsonl
+[1, 2, 5]
+210
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+Syntax Correctness: 0.9785714285714285
+Executable Correctness: 0.8947619047619048
+line coverage@1 0.8215852937852309
+branch coverage@1 0.7213854574658153
+line coverage@2 0.8533805551910413
+branch coverage@2 0.7696308605415749
+line coverage@5 0.9011441445338152
+branch coverage@5 0.8413114365792936
+Average Line Coverage: 0.9562668855443293, Average Branch Coverage: 0.9299726298833441

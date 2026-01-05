@@ -1,0 +1,74 @@
+totalcov_Mistral-Nemo-Instruct-2407_4_format.jsonl
+[1, 2, 5]
+210
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+Syntax Correctness: 0.9776190476190476
+Executable Correctness: 0.8919047619047619
+line coverage@1 0.8240169650701399
+branch coverage@1 0.7255486598362167
+line coverage@2 0.8582247573203965
+branch coverage@2 0.7758789534980012
+line coverage@5 0.8999146693709865
+branch coverage@5 0.8405389326282184
+Average Line Coverage: 0.9565442705873806, Average Branch Coverage: 0.9291123691123688

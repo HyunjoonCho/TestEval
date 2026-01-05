@@ -1,0 +1,38 @@
+totalcov_Meta-Llama-3.1-8B-Instruct_1_format.jsonl
+[1, 2, 5]
+210
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+Syntax Correctness: 0.9961904761904762
+Executable Correctness: 0.8480952380952381
+line coverage@1 0.7445430617000763
+branch coverage@1 0.6560776513997887
+line coverage@2 0.7756292791793327
+branch coverage@2 0.7012560715298813
+line coverage@5 0.8123159358276737
+branch coverage@5 0.7606703181078183
+Average Line Coverage: 0.861385851787886, Average Branch Coverage: 0.8344596342810627

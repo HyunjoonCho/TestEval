@@ -1,0 +1,24 @@
+totalcov_gpt-4o_7_format.jsonl
+[1, 2, 5]
+210
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+Syntax Correctness: 0.9995238095238095
+Executable Correctness: 0.9823809523809524
+line coverage@1 0.8730055205138397
+branch coverage@1 0.7962984234680663
+line coverage@2 0.8967398295377049
+branch coverage@2 0.8327262800030657
+line coverage@5 0.927284785343907
+branch coverage@5 0.8805273767238053
+Average Line Coverage: 0.9695482230176233, Average Branch Coverage: 0.9505221927543357

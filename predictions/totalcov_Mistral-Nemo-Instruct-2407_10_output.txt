@@ -1,0 +1,69 @@
+totalcov_Mistral-Nemo-Instruct-2407_10_format.jsonl
+[1, 2, 5]
+210
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+Syntax Correctness: 0.9809523809523809
+Executable Correctness: 0.8942857142857142
+line coverage@1 0.820081186360977
+branch coverage@1 0.7205127977233987
+line coverage@2 0.8562241001317247
+branch coverage@2 0.773339333671179
+line coverage@5 0.9009889424301429
+branch coverage@5 0.8409594895844895
+Average Line Coverage: 0.9585408526454525, Average Branch Coverage: 0.9316371062799633
