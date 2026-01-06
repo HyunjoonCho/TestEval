@@ -1,0 +1,53 @@
+totalcov_gemini-2.5-flash-lite_9_format.jsonl
+[1, 2, 5]
+210
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+func under test not called
+Syntax Correctness: 1.0
+Executable Correctness: 0.9519047619047619
+line coverage@1 0.8620525839646243
+branch coverage@1 0.7809965894628589
+line coverage@2 0.8876841789223648
+branch coverage@2 0.820670339746233
+line coverage@5 0.9169081196944678
+branch coverage@5 0.8706627347520202
+Average Line Coverage: 0.9595030169658758, Average Branch Coverage: 0.9384918124203838
