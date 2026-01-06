@@ -118,7 +118,7 @@ if __name__=='__main__':
         write_jsonl(testing_results, output_dir / f'{args.covmode}cov_{args.model}_temp.jsonl')
 
     if args.index:
-        output_path = testing_results, output_dir / f'{args.covmode}cov_{args.model}_{args.index}.jsonl'
+        output_path = output_dir / f'{args.covmode}cov_{args.model}_{args.index}.jsonl'
         cost_path = output_dir / f'{args.covmode}cov_{args.model}_cost_{args.index}.json'
     else: 
         output_path = output_dir / f'{args.covmode}cov_{args.model}.jsonl'
