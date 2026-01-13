@@ -1,2 +1,14 @@
 totalcov_phi-4_6_format.jsonl
 [1, 2, 5]
+210
+func under test not called
+func under test not called
+Syntax Correctness: 0.9995238095238095
+Executable Correctness: 0.9728571428571429
+line coverage@1 0.845558362828485
+branch coverage@1 0.7587633979147588
+line coverage@2 0.87371894687316
+branch coverage@2 0.8027191302414517
+line coverage@5 0.9157072854845353
+branch coverage@5 0.8672011394689966
+Average Line Coverage: 0.9649865939953667, Average Branch Coverage: 0.9433279022564738
